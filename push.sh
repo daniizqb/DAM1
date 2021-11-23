@@ -1,4 +1,4 @@
-
+d=`date +"%d %m %y %H:%M"`
 git add -A
-git commit -m "Commit de clase"
+git commit -m "$d"
 git push
