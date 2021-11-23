@@ -1,0 +1,7 @@
+en cada parada que realizen los camiones (2h30min) y se enviara la ubicacion del paquete, con esta informacion comprobaremos el tiempo que tarda
+en realizar la ruta incluyendo en ese tiempo estimado los descansos correspondientes que tenga que hacer el camionero en funcion del tiempo de viaje
+que le quede con dicha informacion se enviara un mail al cliente en el que se indique si van tarde o en hora, la direccion a la cual se enviara dicho mail
+no sera visible para el camionero.
+
+el usuario se loogeara en la aplicacion en la cual apareceran los viajes pendientes por realizar los cuales estaran almacenados en una base de datos ubicada en un servidor
+al acceder al viaje tendra un boton mediante el cual se obtendra su ubicacion y le mostrara el tiempo estimado del viaje y otro que aparecera despues para enviar la informacion al cliente mediante un mail

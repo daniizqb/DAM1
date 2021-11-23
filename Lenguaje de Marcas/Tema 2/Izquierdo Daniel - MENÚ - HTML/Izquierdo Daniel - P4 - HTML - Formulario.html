@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio FORMULARIO</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+	<body>
+		<div class="dropdownmenu">
+			<ul>
+				<li><a href="./Izquierdo Daniel - MENÚ - HTML.html">Inicio</a></li>
+				<li><a href="./Izquierdo Daniel - P1 - HTML - DOC.html">Ejercicio 1</a></li>
+				<li><a href="./Izquierdo Daniel - CAJAS 2.html">Cajas 2</a></li>
+				<li><a href="./Izquierdo Daniel - P2 - Ejercicio LISTAS.html">Listas</a>
+				<li><a class="paginaActual" href="./Izquierdo Daniel - P4 - HTML - Formulario.html">Formulario</a></li>
+			</ul>
+		</div>
+		<h1>Formualario DATOS</h1>
+		<p>Rellena el siguiente formualario con tus datos</p>
+		<p>Numero de habitaciones: (Ejemplo una respuesta posible)</p>
+		<form action="mailto:jeje@jaja.com" method="post" enctype="text/plain">
+		 	<input type="radio" id="1" name="habitaciones" value="1">
+		  	<label for="1">1</label><br>
+		  	<input type="radio" id="2" name="habitaciones" value="2">
+		  	<label for="2">2</label><br>
+		  	<input type="radio" id="3" name="habitaciones" value="3">
+		  	<label for="3">3</label><br>
+		  	<input type="radio" id="4" name="habitaciones" value="4">
+		  	<label for="4">4</label>
+		<p>Conocimientos: (Ejemplo varias respuestas posibles)</p>
+		 	<input type="checkbox" id="musica" name="musica" value="Musica">
+		  	<label for="musica"> Musica</label><br>
+		  	<input type="checkbox" id="pintura" name="pintura" value="Pintura">
+		  	<label for="pintura"> Pintura</label><br>
+		  	<input type="checkbox" id="teatro" name="teatro" value="Teatro">
+		  	<label for="teatro"> Teatro</label><br>
+		  	<input type="checkbox" id="none" name="none" value="Ninguna">
+		  	<label for="none"> Ninguna</label><br><br>
+
+		  	<label for="nombre">Nombre:</label>
+		  	<input type="text" id="nombre" name="nombre"><br><br>
+		  	<label for="apellido">Apellidos:</label>
+		  	<input type="text" id="apellido" name="apellido"><br><br>
+		  	<label for="password">Password:</label>
+		  	<input type="password" id="password" name="password"><br><br>
+			<select id="mascota" name="mascota">
+		    	<option value="perro">Perro</option>
+		    	<option value="gato">Gato</option>
+		    	<option value="colibri">Colibri</option>
+		    	<option value="cerdo">Cerdo</option>
+	  		</select>
+  			<input type="submit" value="Nashe">
+		</form>
+	</body>
+</html>

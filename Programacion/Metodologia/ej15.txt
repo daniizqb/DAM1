@@ -1,0 +1,19 @@
+
+#Entorno
+Entero cont
+fich_avion es fichero de reg_avion
+	reg_avion se compone de
+		alfanumerico destino, numAvion
+#inicializacion
+cont=0
+#Proceso
+ASIGNAR(fich_avion,./aviones.dat);
+ABRIR(fich_avion,lectura.escritura);
+cont=1
+LEER(fich_avion,reg_avion,cont);
+Mientras no ff(fich_avion):
+	BORRAR(fich_avion);
+	cont=cont+1
+	LEER(fich_avion,reg_avion,cont);
+FinMientras
+CERRAR(fich_avion)

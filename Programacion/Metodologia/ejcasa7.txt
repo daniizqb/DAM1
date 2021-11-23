@@ -1,0 +1,68 @@
+Cantidad dinero:300_
+solicitar cantidad y devolver con el menor numero de billetes
+billetes: 500, 200, 100, 50, 20, 10, 5
+monedas: 2, 1
+numero de billetes y monedas introducidas por usuario
+--------------------------------------------------------------------------------------
+#Constantes
+TAM=9;
+#Variables
+Entero cantidad,i,aB(TAM),aC(TAM),aU(TAM),auxC(TAM);
+Caracter uChar
+#Inicializacion
+para i=1 hasta TAM:
+    aU(i)=0;
+    aC(i)=0;
+    auxC(i)=0;
+finpara
+cantidad=0;i=0;uChar='';
+aB(1)=500;
+aB(2)=200;
+aB(3)=100;
+aB(4)=50;
+aB(5)=20;
+aB(6)=10;
+aB(7)=5;
+aB(8)=2;
+aB(9)=1;
+#Proceso
+Escribir("Introduzca la cantidad que va a haber de cada billete/moneda")
+para i=1 hasta TAM:
+    Escribir("Billetes de:",aB(i));
+    Leer(aC(i));
+finpara
+Repetir:
+    para i=1 hasta TAM:
+        aU(i)=0;
+    finpara
+    Escribir("Introduce cantidad");
+    Leer(cantidad);
+    i=1
+    Repetir
+        si cantidad>=aB(i):
+            si aC(i)>0:
+                aC(i)=aC(i)-1;
+                cantidad=cantidad-aB(i);
+                aU(i)=aU(i)+1   
+            sino
+                Escribir("No se dispone de billetes de:",aB(i));
+            finsi
+        i=i+1;
+    Hasta cantidad=0 o i>TAM 
+
+    si cantidad=0:
+        para i=1 hasta TAM:
+            auxC(i)=aC(i);
+            si aU(i)>0:
+                Escribir Ha sacado aU(i) billetes de aB(i);
+            finsi
+        finpara
+    sino
+        Escribir("No se ha podido sacar la cantidad solicitada, introduzca una cantidad diferente");
+        para i=1 hasta TAM:
+            aC(i)=auxC(i);
+        finpara
+    finsi
+    Escribir("Desea sacar otra cantidad?");
+    Leer(uChar);
+Hasta uChar='N'

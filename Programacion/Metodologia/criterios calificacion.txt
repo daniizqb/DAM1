@@ -1,0 +1,5 @@
+incializar variable 	1pt
+utilizacion correcta	2pt
+resultado correcto		3pt
+menos variables			2pt
+usar constantes			2pt

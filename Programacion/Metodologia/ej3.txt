@@ -1,0 +1,23 @@
+#Entorno
+entero num
+#Inicializacion
+num=0
+#Programa
+Escribir ("Numero");
+Leer(num);
+si num<>0
+	si num MOD 2 <> 0
+		Escribir("El numero ", num, " es impar");
+	si num<0
+		Escribir("El numero ", num, " es negativo");
+	sino
+		Escribir("El numero ", num, " es positivo");
+	si num MOD 5 = 0
+		Escribir("El numero ", num, " es multiplo de 5");
+	sino
+		Escribir("El numero ", num, " no es multiplo de 5");
+	finsi
+sino
+	Escribir("El numero 0 es nulo");
+	Escribir("El numero 0 no es multiplo de 5");
+finsi

@@ -1,0 +1,24 @@
+BARATO
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+CPU:https://www.pccomponentes.com/intel-core-i3-10100-360-ghz
+MB:https://www.pccomponentes.com/asrock-b560m-itx-ac
+DISIPADOR:https://www.pccomponentes.com/cooler-master-hyper-212-rgb-black-edition
+RAM:https://www.pccomponentes.com/kingston-fury-beast-ddr4-3200-mhz-8gb-2x4gb-cl16
+SSD:https://www.pccomponentes.com/samsung-970-evo-plus-250gb-ssd-nvme-m2
+HDD:https://www.pccomponentes.com/seagate-barracuda-35-1tb-sata3
+PSU:https://www.pccomponentes.com/evga-w1-600w-80-plus
+TORRE:https://www.pccomponentes.com/nfortec-lynx-cristal-templado-usb-30-rgb-negra
+481,49 €
+CARO
+-----------------------------------------------------------------------------------------------------------------------------------------------------CPU:https://www.pccomponentes.com/intel-core-i7-10700k-38ghz-avengers-edition
+LIQUIDA:https://www.pccomponentes.com/asus-rog-strix-lc-240-rgb-white-edition-kit-de-refrigeracion-liquida
+MB:https://www.pccomponentes.com/asus-rog-strix-z590-f-gaming-wifi
+RAM:https://www.pccomponentes.com/corsair-vengeance-lpx-ddr4-3200mhz-pc4-25600-32gb-2x16gb-cl16
+SSD:https://www.pccomponentes.com/samsung-980-ssd-1tb-pcie-30-nvme-m2
+GPU:https://www.pccomponentes.com/gigabyte-aorus-geforce-rtx-3060-ti-elite-8gb-gddr6-rev-20
+PSU:https://www.pccomponentes.com/corsair-rm-series-rm850-850w-80-plus-gold-full-modular
+TORRE:https://www.pccomponentes.com/corsair-icue-220t-rgb-airflow-cristal-templado-usb-30-blanca
+MONITOR:https://www.pccomponentes.com/msi-optix-g241v-238-led-ips-fullhd-freesync
+TECLADO:https://www.pccomponentes.com/tempest-doom-h-mech-teclado-rgb
+RATON:https://www.pccomponentes.com/logitech-g203-lightsync-2nd-gen-raton-gaming-8000dpi-rgb-negro
+2.296,53 €

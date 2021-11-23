@@ -1,0 +1,14 @@
+TAM = 6
+entero aNum(TAM), aNum2(TAM), i
+i=0
+para i=1 hasta TAM:
+	aNum(i)=0;
+	aNum2(i)=0;
+finpara
+
+Escribir("Numeros");
+para i=1 hasta TAM:
+	Leer(aNum(i));
+	aNum2(i)=aNum(i)*5;
+	Escribir(aNum2(i));
+finpara

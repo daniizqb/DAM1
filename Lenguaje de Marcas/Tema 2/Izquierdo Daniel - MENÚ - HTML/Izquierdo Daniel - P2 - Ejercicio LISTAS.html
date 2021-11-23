@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	.negrita {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	.disco {
+		list-style-type: disc;
+	}
+
+	.nada {
+		list-style-type: none;
+	}
+
+	.circulo {
+		list-style-type: circle;
+	}
+</style>
+<head>
+	<meta charset="utf-8">
+	<title>P2 - Ejercicio LISTAS</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+	<body>
+		<div class="dropdownmenu">
+			<ul>
+				<li><a href="./Izquierdo Daniel - MENÚ - HTML.html">Inicio</a></li>
+				<li><a href="./Izquierdo Daniel - P1 - HTML - DOC.html">Ejercicio 1</a></li>
+				<li><a href="./Izquierdo Daniel - CAJAS 2.html">Cajas 2</a></li>
+				<li><a class="paginaActual" href="./Izquierdo Daniel - P2 - Ejercicio LISTAS.html">Listas</a>
+				<li><a href="./Izquierdo Daniel - P4 - HTML - Formulario.html">Formulario</a></li>
+			</ul>
+		</div>
+		<ul class="nada">
+			<li>EQUIPOS PISTA</li>
+
+				<ul class="nada">
+					<li class="negrita">Futbol</li>
+						<ul class="disco">
+
+							<li>Alevines</li>
+								<ol>
+
+									<li>2002/2003</li>
+									<li>2003/2004</li>
+
+								</ol>
+
+							<li>Infantiles</li>
+								<ol start="3">
+
+									<li>2008/2009</li>
+									<li>2009/2010</li>
+
+								</ol>
+
+						</ul>
+
+					<li class="negrita">Baloncesto</li>
+						<ul class="disco">
+							<li>Masculino</li>
+								<ol type="A">
+
+									<li>2007/2008</li>
+									<li>2006/2007</li>
+
+								</ol>
+
+							<li>Femenino</li>
+								<ol type="A" start="3">
+
+									<li>2008/2009</li>
+									<li>2010/2011</li>
+
+								</ol>
+
+						</ul>
+				</ul>
+
+			<li>EQUIPOS AGUA</li>
+
+			<ul class="nada">
+					<li class="negrita">Gimnasia</li>
+						<ul>
+
+							<li>Hombres</li>
+								<ol type="I" start="4">
+
+									<li>Senior</li>
+									<li>Cadete</li>
+									<li>Infantil</li>
+
+								</ol>
+
+							<li>Mujeres</li>
+								<ol type="i" start="3">
+
+									<li>Cadete</li>
+									<li value="1">Infantil</li>
+
+								</ol>
+						</ul>
+
+					<li class="negrita">Waterpolo</li>
+						<ul class="circulo">
+
+							<li>Chicos</li>
+							<li>Chicas</li>
+
+						</ul>
+			</ul>
+		</ul>
+	</body>
+</html>

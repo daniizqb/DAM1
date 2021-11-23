@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #fbe9e7;
+}
+}
+section
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+}
+section .text
+{
+	position: relative;
+	font-size: 2.4em;
+	letter-spacing: 2px;
+}
+section .text span
+{
+	position: relative;
+	display: inline-block;
+	animation: animate 3s ease-in-out infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: translateY(0px);
+	}
+	25%
+	{
+		transform: translateY(-100px);
+	}
+	50%,100%
+	{
+		transform: translateY(0px);
+	}
+}
+.metrologo
+{
+	width: 30px;
+	position: absolute;
+	top: 8vh;
+	left: 4vw;
+	transform: rotate(-20deg);
+}
+.tunel
+{
+	background-image: url("tunelwp.jpg");
+	background-size: cover;
+}
+.metro
+{
+	background-image: url("trainwp.jpg");
+	background-size: cover;
+}
+.burger
+{
+	background-image: url("burgerwp.jpg");
+	background-size: cover;
+}
+.pizza
+{
+	background-image: url("pizzawp.jpg");
+	background-size: cover;
+}
+.pato
+{
+	background-image: url("patowp.jpg");
+	background-size: cover;
+}
+.vagabundo
+{
+	background-image: url("vagabundowp.jpg");
+	background-size: cover;
+}
+.cruce
+{
+	background-image: url("crucewp.jpg");
+	background-size: cover;
+}
+.run
+{
+	background-image: url("runwp.jpg");
+	background-size: cover;
+}
+.pelea
+{
+	background-image: url("peleawp.jpg");
+	background-size: cover;
+}
+.machete
+{
+	background-image: url("machetewp.jpg");
+	background-size: cover;
+}
+.box {
+	position: relative;
+	width: 400px;
+	height: auto;
+	margin-left: 10%;
+	background: #ffffff90;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	border-radius: 20px;
+	box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+	transition: 1s;
+}
+.box .content
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.box .content h2
+{
+	text-align: center;
+	font-size: 1em;
+	margin: 15px 10px;
+}
+.box .content a
+{
+	position: relative;
+	width: 230px;
+	height: 50px;
+	margin: 15px 10px;
+	background: #222;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+	border-radius: 20px;
+}
+.box .content a:hover
+{
+	background: #e21212;
+}
+.box .content a span
+{
+	position: absolute;
+	color: #fff;
+}
+
+
+/*Pagina carta*/
+.card
+{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: #fff;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+	transition: 1s;
+}
+.card:hover
+{
+	transform: translateX(50%);
+}
+.card .imgBox
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	background: #000;
+	transition: 1s;
+}
+.card:hover .imgBox
+{
+	transform: rotateY(-180deg);
+}
+.card .imgBox img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform-style: preserve-3d;
+}
+.details
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+.card .details .content
+{
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-direction: column;
+}
+.card .details .content h2
+{
+	text-align: center;
+	font-weight: 700;
+	line-height: 1em;
+}
+.card .details .content h2 span
+{
+	color: #e21212;
+	font-size: 0.8em;
+}
+.card .details .content a
+{
+	position: relative;
+	width: 160px;
+	height: 50px;
+	margin: 15px 10px;
+	background: #222;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	transition: 1s;
+}
+.card .details .content a:hover
+{
+	background: #e21212;
+}
+.card .details .content a span
+{
+	position: absolute;
+	color: #fff;
+}
+/*Flecha*/
+.container{
+  display: flex;
+}
+.arrow{
+	position: absolute;
+	top: 55vh;
+	left: 20.5vw;
+    padding: 10px;
+    animation: bounce 0.6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.arrow-head{
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right:  4px solid transparent;
+    border-bottom: 4px solid black;
+
+}
+.arrow-body{
+    height: 50px;
+    width: 2px;
+    background-color: black;
+    margin-left: 3px
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 10px, 0); }
+}

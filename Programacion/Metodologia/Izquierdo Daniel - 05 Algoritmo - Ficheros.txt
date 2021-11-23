@@ -1,0 +1,36 @@
+#Entorno
+	fich_ag es fichero de reg_ag
+		reg_ag se compone de:
+			alfanumerico dni;
+			alfanumerico nombre;
+			alfanumerico apellido1;
+			alfanumerico apellido2;
+			alfanumerico direccion;
+			entero telefono;
+			caracter sexo;
+			entero edad;
+	Caracter userChar;
+#Inicializacion
+	userChar='';
+#Proceso
+	ASIGNAR(fich_ag,./AGENDAI.txt);
+	ABRIR(fich_ag,lectura.escritura);
+	Repetir:
+		Escribir("Introduzca el DNI del registro a modificar:");
+		Leer(dni);
+		LEER(fich_ag,reg_ag,dni);
+		Escribir("Los datos de la persona son:");
+		Escribir(dni, " ", nombre, " ", apellido1, " ",apellido2, " ",direccion, " ",telefono, " ",sexo," ",edad);
+		Escribir("El nuevo telefono es:");
+		Leer(telefono);
+		Escribir("La nueva direccion es:")''
+		Leer(direccion);
+		ESCRIBIR(fich_ag,reg_ag);
+		Escribir("Desea introducir otro DNI? S/N");
+		Leer(userChar);		
+		Mientras userChar<>'s' o userChar<>'S' o userChar<>'n' o userChar<>'N':
+			Escribir("Introduzca un caracter valido");
+			Leer(userChar);
+		FinMientras
+	Hasta userChar='n' o userChar='N'
+	CERRAR(fich_ag);

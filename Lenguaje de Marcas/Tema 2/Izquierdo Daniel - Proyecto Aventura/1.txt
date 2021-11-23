@@ -1,0 +1,3 @@
+index.html logo metro que redirija a fondo con tunel en la cual haya una flecha que redirija a una habitacion en la que puedas elegir un arma(ak o boli), se definira una variable la cual cambiara de valor en funcion del arma escogida, al elegir una de las armas se ejecutara una funcion que cambiara el texto de los finales
+
+en cada pagina de fin cargar juego pokemon en el que te pelees con el enemigo(solo tendras dos botones, uno de atacar y otro de huir, si le das a huir te aparecera un pop up con un mensaje en el qu ), en caso de que muera mostrar fondo de pizarra y texto escribiendose maquina escribir

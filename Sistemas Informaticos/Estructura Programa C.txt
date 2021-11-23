@@ -1,0 +1,78 @@
+Estructura Programa C
+
+	-Comandos del preprocesador
+	
+		Librerias
+		Macros
+		
+	-Definicion de constantes
+	
+		#define nombre_constante valor
+		#define PI 3.1415
+		#define NREAL 7.8
+	
+	-Definicion de tipos
+	
+	-Declaracion de prototipos (Cabeceras de funciones)
+	
+	-Declaracion de variables globales (!!!DANGER!!!)
+	
+	-Funcion main() {
+		
+		Declaracion de variables locales
+		
+		Sentencias de programacion
+		
+	}
+	
+	-Declaracion y cuerpo de las funciones
+	
+Comentarios
+
+	-Comentario de una sola linea: //
+	
+	-Comentario en bloque: /*Contenido*/
+	
+Tipos de datos
+
+	-char: char car;
+	
+	-entero:
+		
+		short (entero corto -32k a 32k)
+	
+		int (entero -2 147 785 648)
+	 
+		long (entero largo)
+	
+	-reales:
+		
+		float
+	
+		double
+	
+		long double
+	
+	-booleanos
+	
+		0=false
+		
+		<>0=true
+		
+	-unsigned: no permite numeros negativos
+	
+Declarar variables
+
+	-tipo nombre_variables [valor];
+	
+	-float nReal=0;
+	
+	-char cadena [TAM]="";
+	
+Peculiaridades
+
+	-no booleanos
+	
+	-no cadenas nativas
+	
+	-al crear cadena poner de maximo un numero mas

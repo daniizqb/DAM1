@@ -1,0 +1,20 @@
+8.15.100.12.13.28 => 28.13.12.100.15.8
+28.13.12.100.15.8
+A:dos array B:un array
+
+TAM=6
+entero aOrig(TAM), aCopy(TAM), i;
+para i=1 hasta TAM:
+	aOrig(i)=0;
+	aCopy(i)=0;
+finpara
+
+Escribir("Numeros");
+i=1
+Leer(aOrig(i));
+aCopy(TAM)=aOrig(i);
+para i=2 hasta TAM:
+	Leer(aOrig(i));
+	aCopy(TAM-1)=aOrig(i)
+	Escribir(aCopy);
+finpara

@@ -1,0 +1,7 @@
+PERSONAJES(nombre_,nf,ni,nh,genero,tipo,armadura*distancia*,codgo_esc)
+codgo_esc es FK desde ESCENARIO NOT NULL
+OBJETOS(codgo_esc_,autonumerico_,nombre,nombre_personaje)
+codgo_esc es FK desde ESCENARIO NOT NULL
+nombre_personaje es FK desde PERSONAJES NULL
+
+ESCENARIO(codgo_esc_)

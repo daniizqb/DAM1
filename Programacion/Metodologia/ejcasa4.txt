@@ -1,0 +1,39 @@
+Numeros: #Depende de la variable max
+3-
+7-
+5-
+1-
+0-
+Desea iinuar(s/n)?
+S-					N-
+0-					Hasta luego, chati!
+1
+5
+7
+3
+---------------------------------------
+caracter userChar;
+entero aNum(MAX), i;
+MAX=5;
+i=0; aNum=0; userChar='';
+Para i=1 hasta MAX:
+	aNum(i)=0;
+FinPara
+
+Escribir("Numeros:");
+Para i=1 hasta MAX:
+	Leer(aNum(i));
+FinPara
+Escribir("Desea continuar?");
+Repetir:
+	Leer(userChar); 
+Hasta userChar='s' o userChar='S' o userChar='n' o userChar='N'
+Si userChar='s' o userChar='S':
+	Para i=MAX hasta 1 con incremento de -1:
+		Escribir(aNum(i));
+	FinPara
+Sino
+	Si userChar='n' o userChar='N':
+		Escribir("Hasta luego, chati!!!");
+	Finsi
+Finsi

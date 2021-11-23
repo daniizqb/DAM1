@@ -1,0 +1,67 @@
+#Constantes
+	TAM=50; PC1=1; PC2=20; 
+
+#Variables
+	Entero cont,num,pos,neg,a(TAM),i,suma;
+	Logico flag;
+	Caracter sn;
+
+#Inicializacion
+	cont=0;num=0;pos=0;neg=0;i=0;suma=0;
+	sn='';
+	flag=F;
+
+#Proceso
+	Escribir("Numero:");
+	Leer(num);
+
+	#Comprobar si el numero introducido esta en el bucle, si el dato del array es negativo y sumar los datos positivos.
+	cont=0;
+	Para i=1 hasta TAM:
+		si a(i)=num y cont=1:
+			Escribir("El numero introducido esta en el array");
+			cont=cont+1;
+		finsi
+		si a(i)<0:
+			neg=neg+1;
+		sino
+			suma=suma+a(i);
+		finsi
+	finpara
+
+	#Mostrar datos.
+	Escribir("La suma de todos los numeros positivos es:",suma);
+	Escribir("La cantidad de numeros negativos es:",neg);
+	suma=a(PC1)+a(PC2)+a(TAM);
+	si suma>0:
+		Escribir("La suma de las posiciones es ",suma, " y es positiva");
+	sino
+		si suma<0:
+			Escribir("La suma de las posiciones es ",suma, " y es negativa");
+		sino
+			Escribir("La suma de las posiciones es nula");
+		finsi
+	finsi
+
+	#Comprobar si el usuario quiere comprobar mas numeros.
+	sn=''
+	Repetir
+		Escribir("Desea continuar buscando numeros (S/N)");
+		Leer(sn);
+		si sn='S':
+			Escribir("Numero:")
+			Leer(num);
+			i=1;
+			flag=F;
+			Repetir:
+				si a(i)=num
+					flag=T;
+				sino
+					i=i+1
+				finsi
+			Hasta flag=T o i>TAM
+			si flag=T:
+				Escribir("El numero introducido esta en el array")
+			finsi
+		finsi
+	Hasta sn='N'

@@ -1,0 +1,17 @@
+num avion | destino
+
+borrar todos los registros
+#Entorno
+fich_avion es fichero de reg_avion
+
+	reg_avion se compone de
+		alfanumerico destino, numAvion
+#Proceso
+ASIGNAR(fich_avion,./aviones.dat);
+ABRIR(fich_avion,lectura.escritura);
+LEER(fich_avion,reg_avion);
+Mientras no ff(fich_avion):
+	BORRAR(fich_avion);
+	LEER(fich_avion,reg_avion);
+FinMientras
+CERRAR(fich_avion)

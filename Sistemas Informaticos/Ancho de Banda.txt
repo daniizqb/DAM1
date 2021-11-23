@@ -1,0 +1,31 @@
+ANCHO DE BANDA = ciclos*bytes*modulos
+
+1
+
+Sin DDR:1.6*10e9x16x4=102.4*10e9=102.4 GB/s
+Con DDR:102.4*2=204.8
+
+Con o sin DDR (x2)
+1.6GHz = 1600000000Hz
+128 bits = 16bytes
+4 modulos
+
+2
+
+Sin DDR:2*10e9x32x2=128 GB/s
+Con DDR:128*2=256
+
+Con o sin DDR (x2)
+2GHz = 2000000000Hz
+256 bits = 32bytes
+2 modulos
+
+3
+
+Sin DDR:33x100x8=26.4 GB/s
+Con DDR:26.4*2=52.8 GB/sn
+
+Con o sin DDR (x2)
+33000000Hz
+800 bits = 100bytes
+8 modulos

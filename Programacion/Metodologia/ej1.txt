@@ -1,0 +1,9 @@
+si a>b
+	"a es mayor";
+sino
+	si a<b
+		"b es mayor"
+	sino
+		"a y b son iguales";
+	finsi
+finsi

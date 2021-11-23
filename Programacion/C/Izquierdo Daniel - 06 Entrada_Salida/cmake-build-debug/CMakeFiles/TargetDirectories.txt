@@ -1,0 +1,3 @@
+C:/Users/AlumnoM/Documents/Programacion/C/Izquierdo Daniel - 06 Entrada_Salida/cmake-build-debug/CMakeFiles/Izquierdo_Daniel___06_Entrada_Salida.dir
+C:/Users/AlumnoM/Documents/Programacion/C/Izquierdo Daniel - 06 Entrada_Salida/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/AlumnoM/Documents/Programacion/C/Izquierdo Daniel - 06 Entrada_Salida/cmake-build-debug/CMakeFiles/rebuild_cache.dir

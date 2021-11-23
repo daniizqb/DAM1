@@ -1,0 +1,25 @@
+numero avion:AZZ_
+destino:Madrid_
+numero avion: ATY_
+destino: roma_
+numero avion:*_
+
+#Constantes
+FINAL = "*"
+#Entorno
+fich_avion es fichero de reg_avion
+	reg_avion se compone de
+		alfanumerico destino, numAvion
+#Proceso
+ASIGNAR(fich_avion,./aviones.dat);
+ABRIR(fich_avion,anadir);
+Escribir("Numero Avion:");
+Leer(numAvion);
+Mientras numero<>FINAL:
+	Escribir("Destino:");
+	Leer(destino);
+	ESCRIBIR(fich_avion,reg_avion);
+	Escribir("Numero Avion:");
+	Leer(numAvion);
+FinMientras
+CERRAR(fich_avion);

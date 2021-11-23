@@ -1,0 +1,10 @@
+
+						aula
+						|
+					<seimparteen>
+						|	
+alumno-<matriculado>-asignatura-<imparte>-profersor
+						|						|
+					<impartidaen>			<tutorde>
+						|						|
+						curso-------------------

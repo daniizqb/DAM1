@@ -1,0 +1,6 @@
+socios(nombre, direccion, DNI, telefono, fecha de ingreso al club)
+embarcaciones(matricula, nombre, tipo, dimensiones)
+amarres(numero de amarre, lectura contador agua y luz, si tienen matenimiento contratado)
+empleado(codigo, nombre, direccion, telefono y especialidad)
+zona(letra)
+embarcacion pertenece a un socio pero un socio puede tener varias embarcaciones, embaracacion ocupa mismo amarre, fecha embaracion se asigna a amarre fecha asignacion amarre, un socio puede tener amarres, fecha compra amarre, club dividido en zonas por letra zona tiene varios amarres y amarre solo una letra, empleado asignado a varias zonas y en una zona puede haber mas de un empleado, numero barcos por empleado, empleado no tiene xq encargarse de todos los barcos de una zona

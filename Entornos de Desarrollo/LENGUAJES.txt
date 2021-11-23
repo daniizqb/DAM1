@@ -1,0 +1,4 @@
+LENGUAJES
+
+lenguajes de programacion compilados(abrir y va si el cpu es compatible)
+lenguajes de programacion interpretados(necesita tener instalado un interprete)

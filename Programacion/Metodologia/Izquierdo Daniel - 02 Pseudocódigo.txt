@@ -1,0 +1,23 @@
+#Entorno
+caracter userData
+entero carac,digi,k,
+#Variables
+userData=''; carac=0; digi=0; k=0;
+#Proceso
+Leer(userData);
+carac=1
+Mientras userData<>'a' o userData<>'e' o userData<>'i' o userData<>'o' o userData<>'u' o userData<>'A' o userData<>'E' o userData<>'I' o userData<>'O' o userData<>'U':
+	flag=T
+	si userData='1' o userData='2' o userData='3' o userData='4' o userData='5' o userData='6' o userData='7' o userData='8' o userData='9':
+		digi=digi+1;
+	sino
+		si userData='K'o userData='k':
+			k=k+1;
+		finsi
+	finsi
+	Leer(userData);
+	carac=carac+1
+FinMientras
+Escribir("Numeros de caracteres introducidos:",carac);
+Escribir("Numeros de digitos introducidos:",digi);
+Escribir("Letras k introducidas:",k);

@@ -1,0 +1,205 @@
+TERMINOS PROGRAMACION
+
+	indentificadores/variables(nombres que utilizaremos en algoritmos/programas para referenciar los distintos elementos que se utilizan dentro de ellos)
+
+	dato(algo que nos sirve para representar la informacion)
+
+	tipos de datos: 
+
+						-numericos(operables)
+
+							enteros(1,2,3)
+							reales(7,6)
+
+						-alfanumericos(contiene numeros y letras | no operables | entre comillas dobles)
+
+						-caracter(0, a ,i ,3 | entre comillas simple)
+
+						-booleanos/logicos(verdadero o falso)
+
+						-fecha
+
+	operadores:		
+
+						-aritmetricos(+, -, *, /(division real), DIV(division aprox), MOD(resto de la division), ^(potencia))
+
+						-relacion(<,>,>=,<=,<>,=)
+
+						-logicos(y(cumple todas las condiciones), o(cumple una de las dos), no(revierte la condicion condicion))
+
+						-de asignacion(=, asigna la parte derecha a la izquierda )
+
+	variables: 		una porcion de memoria que contiene un malor y dicho valor puede ser modificado durante el transcurso del programa(ultimaLetra)
+
+						-Entero
+
+						-Real
+
+						-Alfanumerico
+
+						-Caracter
+
+						-Logico 
+						
+						-tipado: hay que declarlas previamente
+
+						-no tipado: no es necesario declaralas previamente
+
+						-para declarla saber tipo de dato que contendra y el nombre(identificador) y punto y coma correspondiente(en pseudocodigo)
+
+						-hay que inicializar la variable (#Inicializacion\ num=0; nombre=""; ultimaLetra=''; cierto=F)
+
+						-inicializaciones: pura y dura | de proceso(forma parte de las instrucciones)
+
+							ej: Entero a; | Entero a,b; | Caracter ultimaLetra;
+
+	constantes:		una porcion de memoria que contiene un valor y dicho valor no puede ser modificado durante el transcuros del programa (se 						utiliza para: valores que son supcetibles a cambiar durante la vida del proyecto o para comodidad del programador cuando un 					dato se utiliza mucho)
+
+							ej: PI = 3,14; | MES = "Enero";
+
+	expresion:		un conjunto de variables constantes y operadores
+
+	instrucciones:	
+
+					-Salida:
+
+						Escribir: mostrar datos en pantalla
+
+							ej: Escribir (constante (tanto literal como declarada), variable, expresion(resultado de la operacion), conjuntas(se saepara por coma cada una));
+
+					-Entrada desde teclado:
+
+						Leer: va a guardar en variables
+
+							ej: Leer (nombrevariable [,nombrevariable, ...]); | Leer (a) | Leer (a,b)
+
+	estructuras condicionales:
+
+					-Simple
+
+						Si condicion [Entonces];
+							Instrucion
+						Finsi
+
+					-Compuesta
+
+						Si condicion [Entonces];
+							Instrucion
+						Sino
+							Instrucion
+						Finsi
+
+					-Alternativa
+
+						segun variable:
+							1: Escribir("Lunes")
+							2: Escribir("Martes")
+							3: Escribir("Miercoles")
+							4: Escribir("Jueves")
+							5: Escribir("Viernes")
+							6: Escribir("Sabado")
+							7: Escribir("Domingo")
+							en caso contrario:
+								Escribir("Dia incorrecto")
+						finsegun
+
+	sentencias repetitivas/bucles:
+
+					-mietras condicion | siempre tener instruccion que haga que la concicion no se cumpla (ubicarla en el final) | se usara cuando exista la posibilidad de que el bucle nunca se haga
+
+						mientras condicion:
+							instrucciones
+						finmientras
+
+					-repetir hasta que la condicion se cumpla | se usara cuando querramos que se ejecute una vez minimo | siempre tener instruccion que haga que la concicion se cumpla (ubicarla en el final)
+
+						repetir:
+							instrucciones
+						hasta condicion;
+
+					-para a una variable se le asigna un valor inicial, se pregunta si esa variable ha superado un valor final, en caso de que lo supere el bucle se rompe, si no lo supera se ejecutaran las instrucciones correespondientes, a continuacion incrementa la variable | usarlo cuando se cuantas veces se va a realizar el bucle
+
+						para var=valorini hasta valorfinal con incrimento de valorincremento:
+							instrucciones
+						finpara
+
+	opt:
+					-contador: suma valor constante
+
+					-acumulador: suma valores distintos
+
+					-varAux: guarda dato
+
+					-array: conjunto de variables agrupadas bajo un mismo nombre, tienen lonjitud fija, tiene un tipo, tiene indice(permite acceso a una de las variables y empieza por 1),
+
+						-vector: un indice
+
+							tipo nombreArray(tamano); | Entero aNum(5);
+
+						-matriz: array con dos indices
+
+							entero a(TAMF,TAMC)
+
+						-poliedros: array con mas de dos indices
+
+	ficheros:
+
+					-Partes
+
+						-registros
+
+							-campos
+
+						-consulta, alta, modificacion, baja
+
+						-acceso
+
+							-directo/aleatorio
+
+							-secuencial
+
+							-indexado
+
+								-campo clave
+
+					-Declarar ficheros:
+
+						fich_ag es fichero de reg_ag
+
+						reg_ag se compone de
+							alfanumerico nombre, apellido;
+							entero telefono;
+
+					-Usar fichero en el proceso
+
+						ASIGNAR(nombre.interno,nombre.externo);
+
+							ASIGNAR(fich_ag, "C:/agenda/amigos.dat");
+
+						ABRIR(nombre.interno,modo.apertura)
+
+							-modo de apertura
+
+								-"lectura" | leer datos
+
+								-"escritura" | machaca archivo y añade datos
+
+								-"anadir" | añade datos al final
+
+								-"lectura.escritura" | modificar datos
+
+						CERRAR(nombre.interno);
+
+						LEER:
+
+							-Secuencial: LEER(nombre.interno,nombre.registro);
+
+							-Directa: LEER(nombre.interno,nombre.registro,num.reg);
+
+							-Indexada: LEER(nombre.interno,nombre.registro,contenido.a.buscar)
+
+						ESCRIBIR(nombre.interno,nombre.registro);
+
+						BORRAR(nombre.interno);
+
+						ff(nombre.interno) | V o F;

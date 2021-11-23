@@ -1,0 +1,6 @@
+entero var
+var = 0
+
+para var = 1 hasta 10 con incremento de 1:
+	Escribir(var);
+finpara

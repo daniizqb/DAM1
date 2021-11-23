@@ -1,0 +1,26 @@
+para a b y c (no son iguales) saber cual es mayor de los tres
+
+si a>b
+	si a>c
+		"a es mayor";
+	sino
+		"c es mayor";
+	finsi
+sino
+	si b>c
+		"b es mayor";
+	sino
+		"c es mayor";
+	finsi
+finsi
+
+
+si a>b y a>c
+	"a es mayor";
+sino
+	si b>c
+		"b es mayor";
+	sino
+		"c es mayor";
+	finsi
+finsi

@@ -1,0 +1,14 @@
+Entero aM(TAMF,TAMC), iF,iC
+iF=0; iC=0;
+para iF=1 hasta TAMF:
+	para iC=1 hasta TAMC:
+		aM(iF,iC)=0;
+	finpara
+finpara
+
+Escribir("Numeros:");
+para iF=1 hasta TAMF:
+	para iC=1 hasta TAMC:
+		Leer(aM(iF,iC));
+	finpara
+finpara

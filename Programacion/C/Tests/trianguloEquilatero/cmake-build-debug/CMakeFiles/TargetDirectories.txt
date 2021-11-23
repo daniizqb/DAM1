@@ -1,0 +1,3 @@
+C:/Users/AlumnoM/Documents/Programacion/C/trianguloEquilatero/cmake-build-debug/CMakeFiles/trianguloEquilatero.dir
+C:/Users/AlumnoM/Documents/Programacion/C/trianguloEquilatero/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/AlumnoM/Documents/Programacion/C/trianguloEquilatero/cmake-build-debug/CMakeFiles/rebuild_cache.dir

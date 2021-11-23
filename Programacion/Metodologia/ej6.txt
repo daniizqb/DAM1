@@ -1,0 +1,20 @@
+#Entorno
+entero num
+
+#Inicializacion
+num = 0
+
+#Programa
+num += 1
+mientras num<=10:
+	Escribir(num)
+	num += 1
+finmientras
+
+
+#Programa
+num+=1
+repetir:
+	Escribir(num);
+	num += 1
+hasta num>10;

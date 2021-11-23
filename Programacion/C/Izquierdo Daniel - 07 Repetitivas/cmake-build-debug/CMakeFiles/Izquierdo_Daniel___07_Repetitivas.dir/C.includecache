@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/AlumnoM/Documents/Programacion/C/Izquierdo Daniel - 07 Repetitivas/main.c
+stdio.h
+-
+stdlib.h
+-
+locale.h
+-
+

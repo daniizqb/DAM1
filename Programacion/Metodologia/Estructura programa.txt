@@ -1,0 +1,18 @@
+PROGRAMA: Nombre-Algoritmo
+	Comentario:
+	Analisis:
+	Proposito:
+	Entrada: dato de entrada
+	Salida: 
+	Suposiciones/Sugerencias:
+	Entorno:
+		-Constantes
+		-Variables
+		-Otros Objetos:
+	Programa Principal
+		-Inicio
+		-Pseudocodigo
+			Instrucciones
+			LLamada a Modulos
+		-Fin
+		-Modulos

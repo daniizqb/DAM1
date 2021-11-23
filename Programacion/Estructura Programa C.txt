@@ -1,0 +1,247 @@
+Estructura Programa C
+
+	-Comandos del preprocesador
+	
+		Librerias
+		Macros
+		
+	-Definicion de constantes
+	
+		#define nombre_constante valor
+		#define PI 3.1415
+		#define NREAL 7.8
+	
+	-Definicion de tipos
+	
+	-Declaracion de prototipos (Cabeceras de funciones)
+	
+	-Declaracion de variables globales (!!!DANGER!!!)
+	
+	-Funcion main() {
+		
+		Declaracion de variables locales
+		
+		Sentencias de programacion
+		
+	}
+	
+	-Declaracion y cuerpo de las funciones
+	
+Comentarios
+
+	-Comentario de una sola linea: //
+	
+	-Comentario en bloque: /*Contenido*/
+	
+Tipos de datos
+
+	-char: char car;
+	
+	-entero:
+		
+		short (entero corto -32k a 32k)
+	
+		int (entero -2 147 785 648)  DEFAULT
+	 
+		long (entero largo)
+	
+	-reales:
+		
+		float
+	
+		double	DEFAULT
+	
+		long double
+	
+	-booleanos
+	
+		0=false
+		
+		<>0=true
+		
+	-unsigned: no permite numeros negativos
+	
+Declarar variables
+
+	-tipo nombre_variables [valor];
+	
+	-float nReal=0;
+	
+	-char cadena [TAM]="";
+
+		cadena[0]='p';
+		cadena[0]='e';
+		cadena[0]='p';
+		cadena[0]='e';
+		cadena[0]='\0';
+
+		#include <string.h>
+		strcpy(cadena,"	PEPE");
+	
+Peculiaridades
+
+	-no booleanos
+	
+	-no cadenas nativas
+	
+	-al crear cadena poner de maximo un numero de mas
+	
+Operadores
+
+	Asignacion: =
+	
+	Artimeticos: +, -, *, / (divisiones asignada a entero trunca), %
+	
+		Incremento: ++ Postincremento=a++, Preincremento=++a
+	
+		Decrementos: --, Postincremento=a++, Preincremento=++a
+	
+	Relacionales: > >= < <= != ==
+	
+	Logicos: && (and), || (or), ! (not)
+	
+	Conversiones: 
+	
+		Inplicita: Operadores de rango mas bajo automaticamente se convierten en mas alto
+		
+		Explicita: a=(short)b;
+
+Estructura de control
+
+	?:
+
+		condicion ? expresion(true) : expresion(false);
+
+	if/si
+		if (condicion)
+			una instruccion;
+
+		if (condicion) {
+			instrucciones;
+		}
+
+		if (condicion) {
+			instrucciones
+		}else{
+			instrucciones
+		}
+
+	switch/segun
+		switch expresion(solo enteros o char){
+			case valor:instrucciones[break;]
+			case valor:instrucciones[break;]
+			[default:instrucciones]
+		}
+Salida de datos
+
+	printf("Cadena de control"[,argumentos])
+		
+		cadena de control:	
+					-literales
+					-especificador de formato (acompanados de %)
+						-%d short int long
+						-%hd short
+						-%f float double
+						-%c char
+						-%s alfanumericos/cadena
+					-secuencias de escape:
+						-\n salto de linea
+						-\t tabula
+						-\a pitido
+
+		reglas:
+			-tantos especificadores de formato como argumento
+		Ejemplo: 
+			printf("Hola Pepe\n Hola Juan");
+			printf("%d",num);
+
+Entrada de datos
+
+	scanf("Cadena de control", lista de variables)
+
+		cadena de control:
+					-especificador de formato
+						-%d short int long
+						-%hd short
+						-%f float double
+						-%c char
+						-%s alfanumericos/cadena
+
+		reglas:
+			-si es cadena no se pone &
+			-borrar buffer despues de cada scanf
+		Ejemplo:
+			scanf("%d",&num);
+
+Bucles
+
+	while
+
+		while (condicion)
+			instruccion;
+
+		while (condicion){
+			instrucciones;
+		}
+
+	do (mientras la condicion se cumpla)
+
+		do {
+			instrucciones
+		}while (condicion);
+
+	for (mientras no supere valor final)
+
+		for (inicializacion; condicion; incremento)
+			instruccion;
+
+		for (inicializacion; condicion; incremento) {
+			instrucciones;
+		}
+
+		Ejemplo:
+
+			for (i=1;i<=10;(i=i+1,++i,i++))
+			
+Arrays
+
+	Una dimension
+
+		tipo nombrearray [tamano];
+
+			char arrayC [20];
+
+			int arrayN [20];
+
+			int arrayN [5]={0,0,0,0,0};
+
+			int arrayN []={0,0,0};
+
+			char arrayC [] = {'j','u','a','n'};
+
+		acceso
+
+			arrayC [posicion a la que acceder];
+
+	Dos dimensiones
+
+		tipo matrixNum [TAMFIL][TAMCOL];
+
+		int matrixNum [3][5] = {{3,5,8}{5,8,98,3,2}}
+
+			X X X X X
+			X X X X X
+			X X X X X
+
+		inicializacion
+
+			int matrixNum [iF][iC];
+
+			for (i=0;i<iC;i++)
+				for (j=0;i<iF;j++)
+					matrixNum [iF][iC] = 0;
+
+		restricciones
+
+			-hay que poner el tamano del segundo campo siempres
+

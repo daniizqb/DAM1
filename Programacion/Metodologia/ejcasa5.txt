@@ -1,0 +1,26 @@
+5,7,6,2,1
+
+indicepar=9
+idiceimpar=12
+
+TAM=5
+entero i, aNum, iPar, iInpar;
+
+i=0;
+para i=1 hasta TAM:
+	aNum(i)=0;
+finpara
+
+Escribir("Numeros:")
+para i=1 hasta TAM:
+	Leer(aNum(i);
+	si iMOD2=0:
+		iPar=iPar+1;
+	sino
+		si iMOD<>0;
+			iInpar=iInpar+1;
+		finsi
+	finsi
+finpara
+Escribir("Indice Par:",iPar);
+Escribir("Indice Inpar:",iInpar);

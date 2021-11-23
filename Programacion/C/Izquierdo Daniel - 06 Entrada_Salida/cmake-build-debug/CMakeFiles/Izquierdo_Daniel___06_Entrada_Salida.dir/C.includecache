@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/AlumnoM/Documents/Programacion/C/Izquierdo Daniel - 06 Entrada_Salida/Izquierdo Daniel - 06 Entrada_Salida.c
+stdio.h
+-
+stdlib.h
+-
+locale.h
+-
+

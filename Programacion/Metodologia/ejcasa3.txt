@@ -1,0 +1,36 @@
+numeros:
+1_										-3_
+3_										-5_
+-5_										0_
+0_										0_
+0_										-1_
+2_										-2_
+Positivos 3,Negativos:1,Nulos:2_		Positivos:0, Negativos:3, Nulos:2
+Desea continuar(s/n):s_					Desea continuar(s/n):N
+-------------------------------------------------------------------------
+#Entorno
+entero pos,neg,nulo,num,cont,icr,sum,max
+caracter loop
+#Variables
+pos=0; neg=0; nul=0 num=0; cont=0; loop='';SUM=1; MAX=6;
+#Proceso
+loop=''
+Repetir:
+	Escribir("Numeros:");
+	Leer(num);
+	neg=0;pos=0;nul=0;
+	Para cont=1 hasta cont=MAX:
+		Si num>0:
+			pos=pos+SUM;
+		Sino
+			Si num<0:
+				neg=neg+SUM;
+			FinSi
+		FinSi
+		nul=MAX-(neg+pos);
+		Leer(num);
+	FinPara
+	Escribir("Positivos:",pos,"Negativos:",neg,"Nulos:",nul)
+	Escribir("Desea continuar(s/n)")
+	Leer(loop)
+Hasta loop='n' o loop='N';

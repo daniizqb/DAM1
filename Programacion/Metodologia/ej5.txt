@@ -1,0 +1,32 @@
+Numero1: 7-
+
+Numero2: 19-
+
+Originales: 
+	Num1: 7
+	Num2: 19
+
+Intercambio:
+	Num1: 19
+	Num2: 7
+
+#Entorno
+	Entero num1,num2,swap
+#Inicializacion
+	num1 = 0;
+	num2 = 0;
+	swap = 0;
+#Programa
+	Escribir("Numero1:");
+	Leer(num1);
+	Escribir("Numero2:");
+	Leer(num2);
+	Escribir("Originales:");
+	Escribir("Num1:",num1);
+	Escribir("Num2:",num2);
+	swap = num2;
+	num2 = num1;
+	num1 = swap;
+	Escribir("Intercambio");
+	Escribir("Num1:",num1);
+	Escribir("Num2:",num2);

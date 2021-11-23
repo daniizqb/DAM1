@@ -1,0 +1,6 @@
+gato caza raton
+
+gato		caza		raton
+PK nombre ->PK nombre	
+			PK apodo -- PK apodo
+			fecha

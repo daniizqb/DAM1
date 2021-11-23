@@ -1,0 +1,33 @@
+#Entorno
+	real ec1,ec2,ec3,et1,et2,et3,ac1,ac2,ac3;
+	entero nm1,nm2,nm3;
+#Inicializacion
+	ec1 = 0;
+	ec2 = 0;
+	ec3 = 0;
+	ec1 = 0;
+	ec2 = 0;
+	ec3 = 0;
+	ac1 = 0;
+	ac2 = 0;
+	ac3 = 0;
+	nm1 = 0;
+	nm2 = 0;
+	nm3 = 0;
+#Programa
+	#Notas 1Trim
+	Escribir("Introduce nota EC, ET y AC 1ºTrim:");
+	Leer(ec1,et1,ac1);
+	#Notas 2Trim
+	Escribir("Introduce nota EC, ET y AC 2ºTrim:");
+	Leer(ec2,et2,ac2);
+	#Notas 3Trim
+	Escribir("Introduce nota EC, ET y AC 3ºTrim:");
+	Leer(ec3,et3,ac3);
+	#Calcular Media
+	nm1 = (ec1*0.6) + (et1*0.35) + (ac1*0.05);
+	nm2 = (ec2*0.6) + (et2*0.35) + (ac2*0.05);
+	nm3 = (ec3*0.6) + (et3*0.35) + (ac3*0.05);
+	Escribir("La nota media del 1Trim es:",nm1;
+	Escribir("La nota media del 2Trim es:",nm2;
+	Escribir("La nota media del 3Trim es:",nm3;

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		body {
+
+			margin: 0;
+
+		}
+
+		.cajatop {
+
+			border: 2px solid black;
+
+		}
+
+		.caja {
+
+			border: 2px solid black;
+			height: 240px;
+			width: 20%;
+			margin: 15px;
+			padding: 5px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.caja1 {
+
+			border: 2px solid black;
+			height: 280px;
+			width: 20%;
+			margin: 15px;
+			padding: 5px;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.caja2 {
+
+			border: 2px solid black;
+			height: 200px;
+			width: 20%;
+			margin: 15px;
+			padding: 5px;
+			display: inline-block;
+			vertical-align: top;
+			float: right;
+		}
+		.caja2 {
+
+			height: 200px;
+			width: 20%;
+			margin: 15px;
+			padding: 5px;
+			display: inline-block;
+			vertical-align: top;
+			float: right;
+		}
+
+		.texto {
+
+			height: 160px;
+			width: 98%;
+			resize: vertical;
+
+		}
+
+		.centrado {
+
+			text-align: center;
+
+		}
+
+	</style>
+	<meta charset="utf-8">
+	<title>Ejercicio CAJAS + FORMULARIO</title>
+</head>
+	<body>
+		<div class="cajatop">
+			<h1 class="centrado">ESCUELA DE INGLES</h1>
+			<h1 class="centrado">Formulario de Acceso</h1>
+		</div>
+		<div>
+			<form action="mailto:jeje@jaja.com" method="post" enctype="text/plain">	
+			<div class="caja">
+				<p class="centrado">ACCESO</p>
+				<label for="usuario">Teclee codigo usuario</label><br>
+		  		<input type="text" id="usuario" name="usuario"><br><br>
+		  		<label for="password">Teccle su password:</label><br>
+		  		<input type="password" id="password" name="password"><br><br>
+		  		<label for="pass">Teccle su password de nuevo:</label><br>
+		  		<input type="password" id="password" name="password"><br><br>
+			</div>
+			<div class="caja1">
+				<p class="centrado">DATOS PERSOANALES</p>
+				<label for="nombre">Nombre</label><br>
+		  		<input type="text" id="nombre" name="nombre"><br><br>
+		  		<label for="apellido">Apellidos</label><br>
+		  		<input type="text" id="apellido" name="apellido"><br><br>
+		  		<label for="direccion">Direccion</label><br>
+		  		<input type="text" id="direccion" name="direccion"><br><br>
+		  		<label for="telefono">Telefono</label><br>
+		  		<input type="text" id="telefono" name="telefono"><br><br>
+			</div>
+			<div class="caja2">
+				<input type="checkbox" id="coments" name="coments" value="Comentario">
+  				<label for="coments">Comentarios</label><br>
+  				<textarea class="texto"></textarea>
+			</div>
+			<div class="caja3">
+				<input type="submit" value="Enviar Datos">
+				<input type="reset" value="Borrar Datos">
+			</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,3 @@
+C:/Users/AlumnoM/Documents/Programacion/C/Ej10/cmake-build-debug/CMakeFiles/Ej10.dir
+C:/Users/AlumnoM/Documents/Programacion/C/Ej10/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/AlumnoM/Documents/Programacion/C/Ej10/cmake-build-debug/CMakeFiles/rebuild_cache.dir

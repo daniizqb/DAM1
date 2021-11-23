@@ -1,0 +1,14 @@
+calcular la suma de los 15 primeros numero naturales
+
+entero num,cont
+suma=0;cont=0;MAX=15
+
+num=0
+para cont=1 hasta MAX con incremento de 1
+	suma=suma+cont	
+finpara
+Escribir("La suma de los",MAX" numeros naturales es:",num)
+
+
+
+

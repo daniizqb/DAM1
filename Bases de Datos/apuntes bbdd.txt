@@ -1,0 +1,27 @@
+redundancia: datos repetidos
+concurrencia: varios usuarios accediendo a la vez
+
+que es una base de datos? un conjunto estructurado de datos que representa entidades y sus interrelaciones
+
+sgbd's(sistema de gestion de bases de datos): oracle, mysql
+
+	objetivos:
+		Permitir consultas no predefinidas y complejas.
+ 		Ofrecer flexibilidad e independencia de datos.
+		Minimizar redundancia.
+		Garantizar integridad de los datos y referencial.
+		Permitir concurrencia de usuarios.
+		Proporcionar seguridad de la información.
+
+	arquitectura:
+		nivel interno: discos y archivos que componen la bd
+		nivel conceptual: tablas y sus respectivo atributos
+		nivel externo: lo que el usuario ve
+
+	independencia entre los distintos tipos de esquemas (conceptual, interno, fisico)
+
+	se componen de:
+		lenguajes(DML(manejar datos) DDL(definicion de datos) DCL(control))
+		diccionario de datos
+		mecanismos de seguridad e integridad
+		factor humano

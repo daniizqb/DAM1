@@ -1,0 +1,46 @@
+
+3 tipos de bucles
+numero inicial: 7-
+
+numero final: 11-
+
+7
+8
+9
+10
+11
+
+numero inicial: 6-
+
+numero final: 9-
+
+6
+7
+8
+9
+
+entero numIninicial
+entero numFinal
+
+numIninicial = 0
+numFinal = 0
+
+
+Escribir("Numero Inicial:");
+Leer(numIninicial);
+Escribir("Numero Final:");
+Leer(numFinal);
+
+mientras numIninicial<=numFinal:
+	Escrbir(numIninicial);
+	numIninicial = numIninicial + 1;
+finmientras;
+
+repetir:
+	Escribir(numIninicial);
+	numIninicial = numIninicial + 1;
+hasta numIninicial>numFinal;
+
+para var=numIninicial hasta numFinal con incremento de 1:
+	Escribir(numIninicial)
+finpara;

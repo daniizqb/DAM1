@@ -1,0 +1,33 @@
+Numeros:
+3-
+9-
+8-
+5-
+100-
+El numero mayor es 9
+---------------------------------------------------------------------
+logico paso
+entero num,mayor,menor
+num=0; mayor=0; paso=F; menor=0;
+#Proceso
+Escribir("Numeros");
+Leer(num)
+mayor=num
+paso=F
+Mientras num<>100:
+	paso=V
+	Si num>mayor:
+		mayor=num;
+	sino
+		si num<menor:
+			menor=num;
+		finsi
+	finsi
+	Leer(num);
+FinMientras;
+si paso=V:
+	Escribir("El numero mayor es",mayor)
+	si mayor<>menor:
+		Escribir("El numero menor es",menor)
+	finsi
+finsi

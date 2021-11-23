@@ -1,0 +1,22 @@
+localizar mayor y menor de una matriz
+
+Entero aM(TAMF,TAMC), iF, iC, mayor, menor
+iF=0; iC=0; mayor=0; menor=0;
+para iF=1 hasta TAMF:
+	para iC=1 hasta TAMC:
+		aM(iF,iC)=0;
+	finpara
+finpara
+
+mayor=aM(1,1);menor=aM(1,1);
+para iF=1 hasta TAMF:
+	para iC=1 hasta TAMC:
+		si aM(iF,iC)>mayor:
+			mayor=aM(iF,iC);
+		sino
+			si aM(iF,iC)<menor:
+				menor=aM(iF,iC);
+			finsi
+		finsi
+	finpara
+finpara

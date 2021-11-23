@@ -1,0 +1,24 @@
+
+TAM=6
+entero aNum(TAM)
+cont=0
+noCap=F;
+para i=1 hasta TAM con incremento de 1:
+	si aNum(i)<>aNum(TAM-(i-1)):
+		noCap=T;
+	finsi
+finpara
+si noCap=T:
+	Escribir("No es capicua");
+sino
+	Escribir("Es capicua");
+finsi
+
+para i=1 hasta TAM con incremento de -1:
+	aCopy(TAM-(i-1))=aOrig(i);
+finpara
+si aOrig=aCopy:
+	Escribir("No es capicua");
+sino
+	Escribir("Es capicua");
+finsi

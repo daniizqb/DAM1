@@ -1,0 +1,5 @@
+PROFE(DNI,nombre,apellido)
+ASIG(CODIGO,horas,dni_profesor) | dni_profesor es FK desde a PROFE
+ALUM(DNI,nombre,apellido)
+ASIG_ALUM(DNI_ALUM,CODIGO,nota) | dni_alum es FK desde a ALUM, codigo es FK desde ASIG
+TELEFONO(DNI_ALUMNO,TELEFONO) | dni_alum es FK desde ALUM
