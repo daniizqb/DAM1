@@ -2,7 +2,7 @@
 #include <locale.h>
 #define TAM 10
 main () {
-    short i = 0, noCap = 0, aNum[TAM] = {0,1,2,3,4,4,3,2,1,0};
+    short i = 0, noCap = 0, aNum[TAM] = {0,1,2,3,4,2,3,2,1,0};
 
     setlocale(LC_CTYPE,"Spanish");
 

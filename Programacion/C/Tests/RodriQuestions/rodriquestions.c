@@ -1,19 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 main() {
-    int num=0;
+    short num=0;
     int cont=0;
     printf("Pulsa 1 para contar y 2 para para el programa\n");
-    while (num!=2) {
-        scanf("%d", &num);
+
+    do {
+        scanf("%hd",&num);
         fflush(stdin);
-        if (num == 1)
-            cont += 1;
-        else;
-    }
-    printf("Rodria ha tocado la polla %d veces",cont);
-    printf("Escribe cualquier numero para finalizar el programa");
-    scanf("%d",num);
+        cont++;
+    } while (num == 1);
+
+    printf("Rodri a ha tocado la polla %d veces\n",cont);
+    system("pause");
+
     return 0;
 }
 
