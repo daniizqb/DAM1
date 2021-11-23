@@ -1,3 +1,0 @@
-C:/Users/AlumnoM/Documents/Programacion/C/Ej4/cmake-build-debug/CMakeFiles/Ej4.dir
-C:/Users/AlumnoM/Documents/Programacion/C/Ej4/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/AlumnoM/Documents/Programacion/C/Ej4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
