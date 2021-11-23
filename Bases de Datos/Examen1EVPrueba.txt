@@ -1,0 +1,18 @@
+1.
+    -Diccionario de Datos
+    -Lenguaje - SQL:
+                        -DDL: DROP, CREATE,ALTER
+                        -DML: SELECT, INSERT, DELETE, UPDATE
+                        -DCL: 
+    -Mecanismos de Seguridad
+    -Factor Humano:
+                    -DBA (Data Base Administrator)
+                    -Desarrollo
+                    -Usuarios
+
+2.
+Puedes modificar el hardware sin alterar el modelo logico ni las aplicaciones
+
+3.
+La consistencia significa que los datos son coherentes, es decir que se contradicen unos a otros
+La redundancia consiste en tener datos repetidos
