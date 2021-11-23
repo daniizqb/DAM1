@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Izquierdo_Daniel___07_Repetitivas.dir/objects.a
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\Izquierdo_Daniel___07_Repetitivas.dir/objects.a @CMakeFiles\Izquierdo_Daniel___07_Repetitivas.dir\objects1.rsp
-C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Izquierdo_Daniel___07_Repetitivas.dir/objects.a -Wl,--no-whole-archive -o Izquierdo_Daniel___07_Repetitivas.exe -Wl,--out-implib,libIzquierdo_Daniel___07_Repetitivas.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Izquierdo_Daniel___07_Repetitivas.dir\linklibs.rsp
