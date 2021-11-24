@@ -1,0 +1,56 @@
+TAMF=5;TAMC=5;
+#Entorno
+Entero mNum(TAMF,TAMC), pos, mayor, menor, i, j;
+#Inicializacion
+pos=0;mayor=0;menor=0;i=0;j=0;
+para i=1 hasta TAMF
+	para j=1 hasta TAMC
+		mNum(i,j)=0;
+	finpara
+finpara
+#Proceso
+para i=1 hasta TAMF
+	para j=1 hasta TAMC
+		Leer(mNum(i,j));
+		si j<2	
+			mayor=mNum(1,1);
+			menor=mNum(1,1);
+		sino
+			si mNum(i,j) > mayor
+				mayor = mNum(i,j);
+			sino
+				si mNum(i,j) < menor
+					menor= mNum(i,j);
+				finsi
+			finsi
+		finsi
+	finpara
+finpara
+
+para i=1 hasta TAMF
+	para j=1 hasta TAMC
+		si mNum(i,j) = mayor
+			Escribir("Posicion ",mNum(i,j),"mayor");
+		sino
+			si mNum(i,j) = menor
+				Escribir("Posicion ",mNum(i,j),"menor");
+			finsi
+		finsi
+	finpara
+finpara
+
+
+
+
+
+i=0;i=0;auxi=TAMF;auxj=TAMC;
+
+
+para i=1 hasta TRUNC(TAMF/2)
+	Repetir
+		mNum(auxi,auxj) = mNum(i,j);
+		j=j+1;
+		auxj=auxj-1;
+	Hasta j=TAMC o (i=TRUNC(TAMF/2) y j=TRUNC(TAMC/2))
+	auxi=auxi-1;
+finpara

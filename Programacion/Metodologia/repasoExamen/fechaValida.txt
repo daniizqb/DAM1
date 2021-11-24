@@ -1,0 +1,41 @@
+Entero dia,mes,ano
+
+dia=0;
+mes=0;
+ano=0;
+
+Escribir("Introduce dia mes ano");
+Leer(dia,mes,ano);
+
+si dia>31 o dia<0 o mes>12 o mes<0 o dia<0
+	Escribir("Fecha no valida");
+finsi
+
+si mes=4 o mes=6 o mes=9 o mes=11
+	si dia>31
+		Escribir("Error);
+	finsi
+sino
+	si ano MOD 4 = 0 y mes=2 y dia>29
+		Escribir("Error");
+	sino
+		si mes=2 y dia>28
+			Escribir("Error");
+		finsi
+	finsi
+	
+finsi
+
+segun ano:
+	1:Escribir("Enero")
+	2:Escribir("Febrero")
+	3:Escribir("Marzo")
+	4:Escribir("Abril")
+	5:Escribir("Mayo")
+	6:Escribir("Junio")
+	7:Escribir("Julio")
+	8:Escribir("Agosto")
+	9:Escribir("Septiembre")
+	10:Escribir("Octubre")
+	11:Escribir("Noviembre")
+	12:Escribir("Diciembre")

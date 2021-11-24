@@ -1,0 +1,23 @@
+#Entorno
+fich_notas es fichero de reg_notas
+reg_notas se compone de
+	alfanumerico nombre, apellido;
+	entero edad;
+	real primerTrim, segundoTrim, tercerTrim;
+entero cont;
+caracter userChar;
+#Inicializacion
+cont=0;
+media=0;
+userChar=' ';
+#Proceso
+ASIGNAR(fich_notas, "notas.txt");
+ABRIR(fich_notas,lectura);
+
+userChar=' ';
+cont=1;
+Repetir
+	LEER(fich_notas,reg_fich,cont)
+	Escribir("La nota media es: "primerTrim+segundoTrim+tercerTrim)/3);
+	cont=cont+1;
+Hasta ff(fich_notas) o userChar='N' o userChar='n'

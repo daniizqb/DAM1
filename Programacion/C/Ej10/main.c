@@ -1,5 +1,7 @@
 #include <stdio.h>
 #define TAM 10
+#define UNO 1
+#define DOS TAM*UNO
 int main() {
     //Definir variables
     short i=0, j=0, mayor=0, menor=0, aNum[]={0,7,100,14,17,200,0,9,200,0} ,aCheck[TAM];
