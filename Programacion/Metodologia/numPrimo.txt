@@ -1,20 +1,27 @@
 #Entorno
-Entero num,i,aux;
+Entero num,i,cont;
 #Inicializacion
-num=0;i=0;aux=0;
+num=0;i=0;cont=0;
 #Proceso
 Escribir("Introduce numero:");
 Repetir
 	Leer(num);
 Hasta num>0
 
+i=2;
+cont=0;
 Repetir
 	si num MOD i = 0 y i <> num
-		aux=aux+1;
+		cont=cont+1;
 		Escribir("El numero no es primo);
 	sino
 		i=i+1;
-Hasta aux <> 0 y i>10000
+Hasta cont <> 0 y i>10000
 
-si aux = 0
-	Escribir("El numero es primo");
+si num=1:
+	Escribir("El numero no es primo");
+sino
+	si cont = 0:
+		Escribir("El numero es primo");
+	finsi
+finsi
