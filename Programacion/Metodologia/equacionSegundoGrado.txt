@@ -1,0 +1,19 @@
+#Constantes
+LETRA = 'K'
+#Entorno
+real a,b,c,resulPos,resulNeg
+#Iniciar
+a=0;
+b=0;
+c=0;
+resulPos=0;
+resulNeg=0;
+#Proceso
+Escribir("Introduce a,b y c");
+Leer(a,b,c);
+
+resulPos=((b*(-1))+((b^2)-(4*a*c)))/2*a;
+resulNeg=((b*(-1))-((b^2)-(4*a*c)))/2*a;
+
+Escribir("Respuesta positiva",resulPos);
+Escribir("Respuesta negativa",resulNeg);

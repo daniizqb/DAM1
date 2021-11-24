@@ -1,0 +1,6 @@
+binario(conversiones y operaciones)
+gestion de memoria(fragmentacion
+gestion de procesos(fifo,sjt...)
+calculo disco duro
+latencia
+direccionamiento
