@@ -1,0 +1,104 @@
+body {
+    left: 0;
+    margin: 0;
+}
+
+/*Pagina1*/
+
+.p1b {
+    background-image: url("https://cdn.pixabay.com/photo/2018/05/26/01/21/wall-3430446_960_720.jpg");
+    background-size: cover;
+}
+.p1b .p1r:hover {
+    border: 3px solid red;
+    color: red;
+}
+
+.p1b .p1v:hover {
+    border: 3px solid green;
+    color: green;
+}
+
+.p1b div {
+    background: #fff;
+}
+.p1r {
+    font-family: Calibri, serif;
+    font-size: 20px;
+    width: 10%;
+    color: black;
+    display: inline-block;
+    border: 3px solid black;
+    position: absolute;
+    top:45%;
+    left: 35%;
+    text-align: center;
+}
+.p1v {
+    font-family: Calibri, serif;
+    font-size: 20px;
+    width: 10%;
+    color: black;
+    left: 55%;
+    top:45%;
+    display: inline-block;
+    border: 3px solid black;
+    position: absolute;
+    text-align: center;
+}
+
+/*Pagina2*/
+
+.p2b {
+    background-image: url("https://cdn.pixabay.com/photo/2014/06/16/23/40/ruby-370130_960_720.png");
+    background-size: cover;
+    color: #fff;
+}
+.p2b div h1 {
+    text-align: center;
+}
+
+.p2d {
+    margin: 5%;
+}
+
+.p2i input {
+    width: 5%;
+    margin-right: 1%;
+}
+
+/*Pagina3*/
+
+.p3b {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/22/23/01/field-1851064_960_720.jpg");
+    background-size: cover;
+    color: #fff;
+    font-family: Calibri, serif;
+    text-align: center;
+}
+
+ .p3t {
+     position: absolute;
+     display: block;
+     left: 35%;
+     right: 35%;
+     top:40%;
+     color: #000;
+ }
+
+ .p3t table {
+     border-collapse: collapse;
+     background: #fff;
+ }
+
+.p3t table tr td {
+    width: 120px;
+}
+
+ .p3t table td {
+     border: 1px solid black;
+ }
+
+ #weks {
+     background: grey;
+ }
