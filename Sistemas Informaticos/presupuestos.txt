@@ -22,3 +22,7 @@ MONITOR:https://www.pccomponentes.com/msi-optix-g241v-238-led-ips-fullhd-freesyn
 TECLADO:https://www.pccomponentes.com/tempest-doom-h-mech-teclado-rgb
 RATON:https://www.pccomponentes.com/logitech-g203-lightsync-2nd-gen-raton-gaming-8000dpi-rgb-negro
 2.296,53 €
+
+
+https://www.pccomponentes.com/hp-255-g8-amd-ryzen-5-5500u-16gb-512gb-ssd-156
+https://www.pccomponentes.com/acer-aspire-5-a515-56-77uc-intel-core-i7-1165g7-8gb-512gb-ssd-156

@@ -138,6 +138,7 @@ Estructura de control
 			case valor:instrucciones[break;]
 			[default:instrucciones]
 		}
+
 Salida de datos
 
 	printf("Cadena de control"[,argumentos])
@@ -161,6 +162,14 @@ Salida de datos
 			printf("Hola Pepe\n Hola Juan");
 			printf("%d",num);
 
+	putchar() | Igual que printf("%c"car)
+
+		putchar(car);
+
+	puts() | Igual que printf("%s\n",cadena)
+
+		puts(cadena);
+
 Entrada de datos
 
 	scanf("Cadena de control", lista de variables)
@@ -178,6 +187,15 @@ Entrada de datos
 			-borrar buffer despues de cada scanf
 		Ejemplo:
 			scanf("%d",&num);
+
+	getchar() | identico a scanf("%c")
+
+		car=''
+		car=getchar()
+
+	gets() | no corta cadena en espacios
+
+		gets(cadena);
 
 Bucles
 
@@ -251,3 +269,8 @@ Arrays
 
 			-hay que poner el tamano del segundo campo siempres
 
+char matriz [4] [7]
+
+printf("%c",matriz[3][7])
+
+printf("%s",matriz[1])

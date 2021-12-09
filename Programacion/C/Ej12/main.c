@@ -11,7 +11,7 @@ main () {
     scanf("%s",cadena2);
     fflush(stdin);
 
-    if (strcmp(cadena,cadena2) == 0)
+    if (!strcmp(cadena,cadena2))
         printf("Las palabras son iguales");
     else
         printf("Las palabras no son iguales");
