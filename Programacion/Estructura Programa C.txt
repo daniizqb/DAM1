@@ -74,9 +74,15 @@ Declarar variables
 		cadena[0]='p';
 		cadena[0]='e';
 		cadena[0]='\0';
+		
+		-asignar cadenas
 
-		#include <string.h>
-		strcpy(cadena,"	PEPE");
+			#include <string.h>
+			strcpy(cadena,"	PEPE");
+
+		-comparar cadenas
+
+			strcmp(cadena1,cadena2) => obtiene un 0 si ambas cadenas son iguales, >0 si cadena1 es mayor que cadena 2, <0 si cadena2 es mayor que cadena1
 	
 Peculiaridades
 
