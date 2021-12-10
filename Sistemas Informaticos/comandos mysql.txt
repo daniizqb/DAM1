@@ -1,0 +1,5 @@
+comandos mysql
+show tables
+CREATE DATABASE nombre
+CREATE TABLE nombre
+describe nombre
