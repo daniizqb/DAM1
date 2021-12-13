@@ -18,14 +18,19 @@ main () {
         gets(aString[i]);
     }
 
+    puts("Nombre y apellidos (0 para terminar)");
+
     do {
-        puts("Nombre y apellidos");
         scanf("%hd", &num);
         fflush(stdin);
+    } while (num > TAMF || num < 0);
 
-        system("cls");
+    while (num > TAMF || num < 0) {
         puts(aString[num-1]);
-    } while (num>0);
+        puts("Nombre y apellidos (0 para terminar)");
+        scanf("%hd", &num);
+        fflush(stdin);
+    }
 
     return 0;
 }
