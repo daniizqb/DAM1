@@ -2,7 +2,7 @@
 #include <string.h>
 
 #define TAMF 10
-#define TAMC 50
+#define TAMC 51
 main () {
     short i=0,num=0;
     char aString [TAMF][TAMC];
