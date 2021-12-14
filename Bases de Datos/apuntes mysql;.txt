@@ -1,0 +1,15 @@
+show databases;
+show tables;
+show CREATE TABLE [nombretabla]
+use [nombrebd];
+DESCRIBE [nombretabla]
+CREATE TABLE [nombretabla]
+CREATE DATABASE [nombrebd];
+DROP TABLE IF EXISTS [nombretabla];
+INSERT INTO [TABLA] VALUES
+(),
+();
+SELECT [columnas, o * para todo] FROM [nombretabla];
+SELECT [columnas, o * para todo] FROM [nombretabla] WHERE [nombrecolumna='valor'];
+SELECT nombre FROM ACTORES WHERE nacion='USA' AND sexo='M' ORDER BY fecha_nac DESC;
+SELECT COUNT(*), nacion,MAX(fecha_nac) FROM ACTORES GROUP BY nacion;

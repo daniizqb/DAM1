@@ -1,0 +1,48 @@
+DROP DATABASE IF EXISTS CALLEJON;
+CREATE DATABASE CALLEJON;
+USE CALLEJON;
+
+DROP TABLE IF EXISTS GATO;
+DROP TABLE IF EXISTS RATON;
+DROP TABLE IF EXISTS CAZA;
+
+CREATE TABLE GATO (
+nombre VARCHAR(30) NOT NULL,
+raza VARCHAR(30) NOT NULL,
+PRIMARY KEY (nombre)
+);
+
+CREATE TABLE RATON (
+nombre VARCHAR(30) NOT NULL,
+color VARCHAR(30) NOT NULL,
+PRIMARY KEY(nombre)
+);
+
+CREATE TABLE CAZA (
+nom_gato VARCHAR(30) NOT NULL,
+nom_raton VARCHAR(30) NOT NULL,
+fecha DATE NOT NULL,
+PRIMARY KEY(nom_raton)
+);
+
+ALTER TABLE CAZA ADD FOREIGN KEY (nom_gato) REFERENCES GATO (nombre) ON DELETE RESTRICT;
+ALTER TABLE CAZA ADD FOREIGN KEY (nom_raton) REFERENCES RATON (nombre) ON DELETE RESTRICT;
+
+INSERT INTO GATO VALUES
+('Misifu','Persa'),
+('Tom','Comun'),
+('Garfield','Atigrado'),
+('Silvestre','Comun');
+
+INSERT INTO RATON VALUES
+('Superraton','Marron'),
+('Jerry','Pardo'),
+('Ratatouille','Pardo'),
+('Mickey','Negro'),
+('Minnie','Negro');
+
+INSERT INTO CAZA VALUES
+('Misifu','Ratatouille','2016-01-01'),
+('Tom','Jerry','2017-01-01'),
+('Garfield','Mickey','2017-01-01'),
+('Garfield','Minnie','2017-02-01');
