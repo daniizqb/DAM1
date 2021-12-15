@@ -5,16 +5,16 @@
 #define TAMC 51
 main () {
     short i=0,num=0;
-    char aString [TAMF][TAMC];
+    char mString [TAMF][TAMC];
 
     for (i = 0; i < TAMF; i++) {
-        strcpy(aString[i], "");
+        strcpy(mString[i], "");
     }
 
     puts("Introduce nombre y apellidos");
 
     for (i=0;i<TAMF;i++) {
-        gets(aString[i]);
+        gets(mString[i]);
     }
 
     puts("Nombre y apellidos (0 para terminar)");
@@ -25,7 +25,7 @@ main () {
     } while (num > TAMF || num < 0);
 
     while (num > TAMF || num < 0) {
-        puts(aString[num-1]);
+        puts(mString[num-1]);
         puts("Nombre y apellidos (0 para terminar)");
         scanf("%hd", &num);
         fflush(stdin);

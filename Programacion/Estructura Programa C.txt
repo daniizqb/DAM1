@@ -274,3 +274,11 @@ char matriz [4] [7]
 printf("%c",matriz[3][7])
 
 printf("%s",matriz[1])
+
+Funcion: Su objetivo es obtener un valor
+
+	Internas: En el mismo fuente del programacion
+
+	Externas: Librerias
+
+Procedimiento: Su objetivo es realizar una tarea plus obtener valores a traves de unos determinados parametros
