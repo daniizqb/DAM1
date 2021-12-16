@@ -281,4 +281,13 @@ Funcion: Su objetivo es obtener un valor
 
 	Externas: Librerias
 
+	Sintaxis:
+
+		[tipo.retorno] nombre.funcion ([lista de parametros]) {
+
+			cuerpo.funcion; -> instrucciones
+			returne expresion; 
+
+		}
+
 Procedimiento: Su objetivo es realizar una tarea plus obtener valores a traves de unos determinados parametros
