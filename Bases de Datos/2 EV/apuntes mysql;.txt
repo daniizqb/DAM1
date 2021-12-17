@@ -1,15 +1,35 @@
-show databases;
-show tables;
-show CREATE TABLE [nombretabla]
-use [nombrebd];
-DESCRIBE [nombretabla]
-CREATE TABLE [nombretabla]
-CREATE DATABASE [nombrebd];
-DROP TABLE IF EXISTS [nombretabla];
-INSERT INTO [TABLA] VALUES
-(),
-();
-SELECT [columnas, o * para todo] FROM [nombretabla];
-SELECT [columnas, o * para todo] FROM [nombretabla] WHERE [nombrecolumna='valor'];
-SELECT nombre FROM ACTORES WHERE nacion='USA' AND sexo='M' ORDER BY fecha_nac DESC;
-SELECT COUNT(*), nacion,MAX(fecha_nac) FROM ACTORES GROUP BY nacion;
+show databases;                                             Mostrar Bases de Datos.
+show tables;                                                Mostrar Tablas de una Bases de Datos.
+show CREATE TABLE [nombretabla];                            Muestra como se ha creado la tabla.
+
+use [nombrebd];                                             Usar BD.
+
+DESCRIBE [nombretabla];                                     Mostrar campos de una tabla.
+
+DDL
+
+    CREATE TABLE [nombretabla];                                 Crear Tabla.
+    CREATE DATABASE [nombrebd];                                 Crear Base de Datos.
+
+    DROP TABLE IF EXISTS [nombretabla];                         Borrar tablas (hay que borrarlas en orden).
+
+    INSERT INTO [TABLA] VALUES                                  Insertar valores a una tabla.
+    ([valores]),
+    ([valores]);
+
+DML
+
+    SELECT:                                                     Mostrar datos en base a filtros.
+
+        SELECT [columnas, o * para todo] FROM [nombretabla];        
+        SELECT [columnas, o * para todo] FROM [nombretabla] WHERE [nombrecolumna='valor'];
+
+        SELECT nombre FROM ACTORES WHERE nacion='USA' AND sexo='M' ORDER BY fecha_nac DESC;
+        SELECT COUNT(*), nacion,MAX(fecha_nac) FROM ACTORES GROUP BY nacion;
+        select * from movies where title like'%godfather%';
+        SELECT max(year) FROM movies;
+
+    ALTER:                                                      Alterar tabla.
+
+        ALTER TABLE gato ADD COLUMN edad integer NOT NULL;
+        ALTER TABLE gato DROP COLUMN edad;
