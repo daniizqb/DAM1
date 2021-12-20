@@ -10,7 +10,7 @@
  * */
 
 int numPositivo ();
-int numMayor (int num1,int num2);
+int numMayor (int num1, int num2);
 void numMayorScan ();
 
 main () {
@@ -36,7 +36,7 @@ int numPositivo () {
     return num;
 }
 
-int numMayor (int num1,int num2) {
+int numMayor (int num1, int num2) {
     int mayor=0;
 
     mayor = num2;
@@ -48,4 +48,6 @@ int numMayor (int num1,int num2) {
 
 void numMayorScan () {
     printf("Mayor: %d\n", numMayor(numPositivo(),numPositivo()));
+
+    return;
 }
