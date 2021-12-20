@@ -3,22 +3,20 @@
 #include <stdlib.h>
 
 /*
- * 1 - Funcion para dar entrada a un numero positvo
- * 2 - Funcion para obtener el mayor de dos numeros
- * 3 - Procedimiento que solicite dos numeros posiivos e imprima por pantalla el mayor de ellos
- * 4 - Programa principal para comprobar el funcionamiento de 1 , 2 y 3
+ * 1 - Función para dar entrada a un número positvo
+ * 2 - Función para obtener el mayor de dos números
+ * 3 - Procedimiento que solicite dos números positivos e imprima por pantalla el mayor de ellos
+ * 4 - Programa principal para comprobar el funcionamiento de 1 2 y 3
  * */
 
 int numPositivo ();
-int numMayor ();
+int numMayor (int num1,int num2);
 void numMayorScan ();
 
 main () {
     setlocale(LC_CTYPE,"Spanish");
 
-    printf("1: %d\n", numPositivo());
-    printf("2: %d\n", numMayor());
-    puts("3");
+    puts("Procedimiento: ");
     numMayorScan();
 
     system("pause");
@@ -38,11 +36,8 @@ int numPositivo () {
     return num;
 }
 
-int numMayor () {
-    int num1=0,num2=0,mayor=0;
-
-    num1=numPositivo();
-    num2=numPositivo();
+int numMayor (int num1,int num2) {
+    int mayor=0;
 
     mayor = num2;
     if (mayor < num1)
@@ -52,5 +47,5 @@ int numMayor () {
 }
 
 void numMayorScan () {
-    printf("Mayor: %d\n", numMayor());
+    printf("Mayor: %d\n", numMayor(numPositivo(),numPositivo()));
 }
