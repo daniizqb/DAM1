@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
+#include <stdlib.h>
 
 /*
  * 1 - Funcion para dar entrada a un numero positvo
@@ -8,25 +9,28 @@
  * 4 - Programa principal para comprobar el funcionamiento de 1 , 2 y 3
  * */
 
-int numPositivo (int num);
+int numPositivo ();
 int numMayor ();
+void numMayorScan ();
 
 main () {
     setlocale(LC_CTYPE,"Spanish");
 
-    printf("F1: %d", numPositivo());
+    printf("1: %d\n", numPositivo());
+    printf("2: %d\n", numMayor());
+    puts("3");
+    numMayorScan();
+
+    system("pause");
 
     return 0;
 }
 
-/*float area (float num1,float num2) {
-    return (num1 * num2) / 2;
-}*/
-
-int numPositivo (int num) {
+int numPositivo () {
+    int num=0;
 
     do {
-        puts("Numero Positivo:");
+        puts("Número Positivo:");
         scanf("%d", &num);
         fflush(stdin);
     } while (num<0);
@@ -34,17 +38,19 @@ int numPositivo (int num) {
     return num;
 }
 
-int numMayor (num1,num2) {
-    int mayor = num2;
+int numMayor () {
+    int num1=0,num2=0,mayor=0;
 
-    if (mayor > num1)
+    num1=numPositivo();
+    num2=numPositivo();
+
+    mayor = num2;
+    if (mayor < num1)
         mayor = num1;
 
     return mayor;
 }
 
 void numMayorScan () {
-    int num1 = 0, mayor = 0;
-
-    printf("Mayor: %d", mayor);
+    printf("Mayor: %d\n", numMayor());
 }
