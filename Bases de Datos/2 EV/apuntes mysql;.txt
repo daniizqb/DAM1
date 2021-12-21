@@ -28,8 +28,13 @@ DML
         SELECT COUNT(*), nacion,MAX(fecha_nac) FROM ACTORES GROUP BY nacion;
         select * from movies where title like'%godfather%';
         SELECT max(year) FROM movies;
+        select title from movies, movies2actors where movies.movieid=movies2actors.movieid and actorid='511760';
 
     ALTER:                                                      Alterar tabla.
 
         ALTER TABLE gato ADD COLUMN edad integer NOT NULL;
         ALTER TABLE gato DROP COLUMN edad;
+
+    UPDATE
+
+        UPDATE ACTORES SET insertor='Carlos Rosique' WHERE insertor='Carlos';
