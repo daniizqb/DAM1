@@ -9,22 +9,28 @@
  * */
 
 int numPositivo (int num);
-int numMayor ();
+int numMayor (int num1,int num2);
+void numMayorScan ();
 
 main () {
+    int num=0;
+
     setlocale(LC_CTYPE,"Spanish");
 
-    printf("F1: %d", numPositivo());
+    puts("Funcion 1:");
+    numPositivo(num);
+
+    puts("Funcion 2:");
+    numMayor(num,num);
+
+    puts("Funcion 3:");
+    numMayorScan();
+
 
     return 0;
 }
 
-/*float area (float num1,float num2) {
-    return (num1 * num2) / 2;
-}*/
-
 int numPositivo (int num) {
-
     do {
         puts("Numero Positivo:");
         scanf("%d", &num);
@@ -34,17 +40,23 @@ int numPositivo (int num) {
     return num;
 }
 
-int numMayor (num1,num2) {
-    int mayor = num2;
+int numMayor (int num1,int num2) {
+    int mayor = 0;
+
+    num1=4;num2=6;
+    mayor=num2;
 
     if (mayor > num1)
         mayor = num1;
+
+    printf("El mayor es %d\n",mayor);
 
     return mayor;
 }
 
 void numMayorScan () {
-    int num1 = 0, mayor = 0;
 
-    printf("Mayor: %d", mayor);
+    numPositivo();
+    numPositivo(num2);
+    numMayor(num1,num2);
 }
