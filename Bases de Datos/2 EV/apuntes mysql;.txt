@@ -17,6 +17,17 @@ DDL
     ([valores]),
     ([valores]);
 
+    ALTER TABLE ALBUM ADD FOREIGN KEY (nombre_artista) REFERENCES ARTISTA (nombre) ON DELETE/UPDATE []];
+
+        CASCADE
+            todos los registros asociados a esa fk seran borrados
+            
+        SET NULL
+            deja a nulos los registros asociados a la fk
+
+        RESTRICT
+            no permite borrar los registros asociados a la fk
+
 DML
 
     SELECT:                                                     Mostrar datos en base a filtros.
