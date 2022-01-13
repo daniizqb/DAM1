@@ -291,3 +291,51 @@ Funcion: Su objetivo es obtener un valor
 		}
 
 Procedimiento: Su objetivo es realizar una tarea plus obtener valores a traves de unos determinados parametros
+
+parametros
+
+		por valor: es aquel que aunque su valor se modifique dentro de la funcion una vez que la funcion termina ese parametro permanece con dicho valor.
+
+			main () {
+				int numero=0;
+
+				numero=7;
+				imprimirNum(numero);
+				printf("%d",numero);
+
+				return 0;
+			}
+
+			void imprimirNum (int num) {
+				num+=1;
+				printf("%d",num);
+
+				return;
+			}
+
+		por referencia: si su valor se modifica se guarda dicho valor modificado
+
+			main () {
+				areaTP (b,a,&area);
+				printf(".2f",area);
+
+				return 0;
+			}
+
+			void areaTP (int base, int altura, float *area) {
+				*area = (float) base * altura / 2;
+			}
+
+			main () {
+				char mensaje [] = "Pepe";
+				impM (mensaje);
+				printf("%s",mensaje);
+
+				return 0;
+			}
+
+			void impM (const mensaje []) {
+				printf("%s",mensaje);
+				strcpy(mensaje,"Hola");
+				printf("Modificada %s",mensaje);
+			}
