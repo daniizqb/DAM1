@@ -40,6 +40,10 @@ DML
         select * from movies where title like'%godfather%';
         SELECT max(year) FROM movies;
         select title from movies, movies2actors where movies.movieid=movies2actors.movieid and actorid='511760';
+        select contcat(nombre_artista,nombre) from artista where nombre_artista="Pat Metheny" or nombre_artista="Camel";
+        select pais, sum(numerodiscos) as suma_discos from artista group by pais order by suma_discos desc;
+        select artista,pais,nom_album,fecha from artista join album on nom_artista=artista;
+        select * from album where fecha < (select fecha from album where nom_album="Moonmadness");
 
     ALTER:                                                      Alterar tabla.
 
