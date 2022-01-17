@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+    <equipo>
+        <nombre>Real Madrid</nombre>
+        <ciudad>Madrid</ciudad>
+        <entrenador/>
+        <jugadores>
+            <jugador posicion="Delantero">
+                <nombre>Karim Benzema</nombre>
+                <nacionalidad>Francesa</nacionalidad>
+            </jugador>
+            <jugador posicion="Medio">
+                <nombre>Casemiro</nombre>
+                <nacionalidad>Brasilena</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+</equipos>

@@ -339,3 +339,27 @@ parametros
 				strcpy(mensaje,"Hola");
 				printf("Modificada %s",mensaje);
 			}
+
+ctype
+
+	isalpha() si es letra dara true
+	isalnum() si es letra o num dara true
+	isdigi() si es num dara true
+	isupper() si es mayus dara true
+	islower() si no es mayus dara true
+	isspace() si es espacio true
+	ispunct() si es signo de puntuacion true
+	toupper()
+	tolower()
+
+string
+
+	strcpy() asignar cadenas
+	strcmp() si las cadenas son iguales da 0 si la c1 es mayor el valor es mayor q 0 si la c2 es mayor menor q 0
+	strlen() devuelve longitud de cadena
+	strncpy() copia el numero de caracteres q indiquemos de la segunda cadena a la primera cadena sobrescribiendo lo que hay tenia la cadena1
+	strcat() concatena la cadena del segundo parametro a la del primero
+	strncat() concatena la cadena del segundo parametro a la del primero pero solo hasta el numero que indiquemos
+	strncmp() compara dos cadenas hasta el numero que indiquemos
+	stricmp() compara cadenas sin tener en cuenta mayus y minus
+	strincmp() compara hasta un numero que indiquiemos sin tener en cuenta las mayusculas

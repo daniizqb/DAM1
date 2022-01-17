@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <locale.h>
 
-int esBisiesto (short year, short resto);
+int esBisiesto (short year);
 void esBisiestoP (short year, short *resto);
 
 main() {
@@ -16,25 +16,21 @@ main() {
     fflush(stdin);
 
     printf("Funcion:\n");
-    if (esBisiesto(year,resto) == 0)
-        printf("El año es bisiesto\n\n");
-    else
-        printf("El año no es bisiesto\n\n");
+    printf("El año %hd %s\n\n",year, esBisiesto(year)?"es bisiesto":"no es bisiesto");
+
 
     printf("Procedimiento:\n");
     esBisiestoP(year,&resto);
-    if (resto == 0)
-        printf("El año es bisiesto\n\n");
-    else
-        printf("El año no es bisiesto\n\n");
+
+    printf("El año %hd %s\n\n",year, !resto?"es bisiesto":"no es bisiesto");
 
     return 0;
 }
 
-int esBisiesto (short year, short resto) {
-    resto = year % 4;
-
-    return resto;
+int esBisiesto (short year) {
+    if (year % 4 == 0)
+        return 1;
+    else return 0;
 }
 
 void esBisiestoP (short year, short *resto) {
