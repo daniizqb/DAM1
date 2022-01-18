@@ -2,9 +2,11 @@
 #define TAMS 11
 #define TAMA 10
 int strLenght (const char string[]);
-void strBool (int aNum[], short num, short *bool);
+void strBool (int aNum[], int *aRep[], short num, short *bool, int *repe);
 int main() {
-    int i = 0, aNum [TAMA] = {2,5,7,5,2,8,4,0,9,1};
+    int i = 0, repe = 0, aRep[TAMA], aNum [TAMA] = {2,5,7,5,2,8,4,0,9,1};
+    for (i = 0; i < TAMA; i++)
+        aRep[i] = 0;
     short userNum = 0, bool = 0;
     char cadena [TAMS] = "";
 
@@ -20,9 +22,10 @@ int main() {
         fflush(stdin);
     } while (userNum < 0 || userNum > 9);
 
-    printf("Digito mas veces repetido: %d",);
-
-    strBool(aNum,userNum,&bool);
+    strBool(aNum,&aRep,userNum,&bool,&repe);
+    printf("Digito mas veces repetido:\n");
+    for (i=1; i<=repe; i++)
+        printf("%d ",aRep[i]);
     printf("%hd %s",bool, bool?"uno":"cero");
 
     return 0;
@@ -38,25 +41,29 @@ int strLenght (const char string[]) {
     return cont;
 }
 
-void strBool (int aNum[], short num, short *bool) {
-    int i = 0, j = 0, aRep[TAMA], cont = 0, masRep = 0;
+void strBool (int aNum[], int *aRep[], short num, short *bool, int *repe) {
+    int i = 0, j = 0, k = 0, cont = 0, masRep = 0;
 
-    for (i = 0; i < TAMA; i++)
-        aRep[i] = 0;
-
-    1 - add
-    2 - equal
-    3 - if gtr delete array
-
-
+    k=0;repe=0;
     for (i = 0; i < TAMA; i++) {
+        cont = 0;
         for (j = 0; j < TAMA; j++) {
-            if (aNum[i] == aNum[j])
+            if (aNum[i] == j)
+                cont++;
+        }
+        if (cont > *aRep[0]) {
+            for (i = 0; i < TAMA; i++)
+                *aRep[i] = 0;
+
+            *aRep[0] = cont;
+            *aRep[k] = j;
+            *repe++;
+            k++;
+        } else if (cont == *aRep[0]) {
+            *aRep[k] = j;
+            *repe++;
         }
     }
-
-
-
 
     do {
         if (aNum[i] == num)
