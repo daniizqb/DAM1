@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Izquierdo_Daniel___UEFA",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Izquierdo_Daniel___UEFA::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Izquierdo_Daniel___UEFA-Debug-81b5fe3742207d17c5d9.json",
+					"name" : "Izquierdo_Daniel___UEFA",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/daniizqb/Documentos/GitHub/DAM1/Programacion/C/Izquierdo Daniel - UEFA/cmake-build-debug",
+		"source" : "/Users/daniizqb/Documentos/GitHub/DAM1/Programacion/C/Izquierdo Daniel - UEFA"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

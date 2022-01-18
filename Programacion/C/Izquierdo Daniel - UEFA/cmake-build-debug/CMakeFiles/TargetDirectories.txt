@@ -1,0 +1,3 @@
+/Users/daniizqb/Documentos/GitHub/DAM1/Programacion/C/Izquierdo Daniel - UEFA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/daniizqb/Documentos/GitHub/DAM1/Programacion/C/Izquierdo Daniel - UEFA/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/daniizqb/Documentos/GitHub/DAM1/Programacion/C/Izquierdo Daniel - UEFA/cmake-build-debug/CMakeFiles/Izquierdo_Daniel___UEFA.dir
