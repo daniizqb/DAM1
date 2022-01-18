@@ -2,10 +2,10 @@
 #define TAMS 11
 #define TAMA 10
 int strLenght (const char string[]);
-void strBool (short aNum[],short num, short *bool);
+void strBool (int aNum[], short num, short *bool);
 int main() {
-    int i = 0;
-    short aNum [TAMA] = {2,5,7,5,2,8,4,0,9,1}, userNum = 0, bool = 0;
+    int i = 0, aNum [TAMA] = {2,5,7,5,2,8,4,0,9,1};
+    short userNum = 0, bool = 0;
     char cadena [TAMS] = "";
 
     printf("Introduce Cadena: ");
@@ -19,6 +19,8 @@ int main() {
         scanf("%hd",&userNum);
         fflush(stdin);
     } while (userNum < 0 || userNum > 9);
+
+    printf("Digito mas veces repetido: %d",);
 
     strBool(aNum,userNum,&bool);
     printf("%hd %s",bool, bool?"uno":"cero");
@@ -36,8 +38,21 @@ int strLenght (const char string[]) {
     return cont;
 }
 
-void strBool (short aNum[],short num, short *bool) {
-    int i = 0;
+void strBool (int aNum[], short num, short *bool) {
+    int i = 0, j = 0, aRep[TAMA], cont = 0, masRep = 0;
+
+    for (i = 0;i < TAMA; i++)
+        aRep[i] = 0;
+
+
+    for (i = 0; i < TAMA; i++) {
+        for (j = 0; j < TAMA; j++) {
+            if (aNum[i] == aNum[j])
+        }
+    }
+
+
+
 
     do {
         if (aNum[i] == num)
