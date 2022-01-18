@@ -41,8 +41,12 @@ int strLenght (const char string[]) {
 void strBool (int aNum[], short num, short *bool) {
     int i = 0, j = 0, aRep[TAMA], cont = 0, masRep = 0;
 
-    for (i = 0;i < TAMA; i++)
+    for (i = 0; i < TAMA; i++)
         aRep[i] = 0;
+
+    1 - add
+    2 - equal
+    3 - if gtr delete array
 
 
     for (i = 0; i < TAMA; i++) {
