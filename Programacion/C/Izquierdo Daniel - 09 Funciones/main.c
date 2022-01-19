@@ -2,9 +2,10 @@
 #define TAMS 11
 #define TAMA 10
 int strLenght (const char string[]);
-void strBool (int aNum[], int *aRep[], short num, short *bool, int *repe);
-int main() {
-    int i = 0, repe = 0, aRep[TAMA], aNum [TAMA] = {2,5,7,5,2,8,4,0,9,1};
+void strBool (int aNum[], int aRep[], short num, short *bool, int *masRep);
+
+main () {
+    int i = 0, masRep = 0, aRep[TAMA], aNum [TAMA] = {2,5,7,5,2,8,4,0,9,1};
     for (i = 0; i < TAMA; i++)
         aRep[i] = 0;
     short userNum = 0, bool = 0;
@@ -22,9 +23,9 @@ int main() {
         fflush(stdin);
     } while (userNum < 0 || userNum > 9);
 
-    strBool(aNum,&aRep,userNum,&bool,&repe);
-    printf("Digito mas veces repetido:\n");
-    for (i=1; i<=repe; i++)
+    strBool(aNum,aRep,userNum,&bool,&masRep);
+    printf("Digito mas veces masReptido:\n");
+    for (i=1; i<=masRep; i++)
         printf("%d ",aRep[i]);
     printf("%hd %s",bool, bool?"uno":"cero");
 
@@ -41,30 +42,33 @@ int strLenght (const char string[]) {
     return cont;
 }
 
-void strBool (int aNum[], int *aRep[], short num, short *bool, int *repe) {
-    int i = 0, j = 0, k = 0, cont = 0, masRep = 0;
+void strBool (int aNum[], int aRep[], short num, short *bool, int *masRep) {
+    int i = 0, j = 0, k = 0, h = 0, cont = 0;
 
-    k=0;repe=0;
+    k=1;
     for (i = 0; i < TAMA; i++) {
         cont = 0;
         for (j = 0; j < TAMA; j++) {
-            if (aNum[i] == j)
+            if (aNum[j] == i)
                 cont++;
         }
-        if (cont > *aRep[0]) {
-            for (i = 0; i < TAMA; i++)
-                *aRep[i] = 0;
-
-            *aRep[0] = cont;
-            *aRep[k] = j;
-            *repe++;
+        if (cont > aRep[0]) {
+            *masRep = 0;
+            for (h = 0; h < TAMA; h++)
+                aRep[h] = 0;
+            k = 1;
+            aRep[0] = cont;
+            aRep[k] = i;
+            *masRep++;
             k++;
-        } else if (cont == *aRep[0]) {
-            *aRep[k] = j;
-            *repe++;
+        } else if (cont == aRep[0]) {
+            aRep[k] = i;
+            *masRep++;
+            k++;
         }
     }
 
+    i=0;
     do {
         if (aNum[i] == num)
             *bool = 1;
