@@ -10,7 +10,7 @@ void repeatBool (int aNum[], int aRep[], int *repetidos, short numToFind, short 
 main () {
     int i = 0, *repetidos = 0, aRep[TAMA], aNum [TAMA] = {2,5,7,5,2,8,4,0,9,1};
     short userNum = 0, bool = 0;
-    char cadena [TAMS] = "";
+    char cadena [TAMS] = "", b;
 
     for (i = 0; i < TAMA; i++)
         aRep[i] = 0;
@@ -65,13 +65,14 @@ void repeatBool (int aNum[], int aRep[], int *repetidos, short numToFind, short 
                 cont++;
             }
         }
-        //aNum[i] content is more repeated than other num
+        //aNum[i] content is more repeated than other num rewrite array
         if (cont > vecesRep) {
             k=0;*repetidos=0;
             vecesRep = cont;
             aRep[k] = i;
             k++;
             *repetidos= *repetidos + 1;
+        //
         } else if (cont == vecesRep) {
             aRep[k] = i;
             k++;

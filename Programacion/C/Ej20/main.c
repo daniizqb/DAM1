@@ -76,7 +76,6 @@ void myCtype (int *caso, char cad[]) {
     return;
 }
 
-
 short esPalindromo (char cad[]) {
     int i = 0, cont = 0, bool = 0;
     char cad2 [TAMCAD] = "";
