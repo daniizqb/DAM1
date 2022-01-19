@@ -23,7 +23,7 @@
 #define TAMCAD 51
 
 short esPalindromo (char cad);
-int myCtype (int caso, char cad[]);
+void myCtype (int *caso, char cad[]);
 
 int main() {
     int i = 0, cont = 0, caso = 0;
@@ -32,39 +32,30 @@ int main() {
     /*puts("Primera cadena: ");
     gets(cad);*/
 
-    caso++;
+    caso = 1;
     puts("Digitos: ");
-    printf("%d\n", myCtype(caso,cad));
-
-    caso++;
+    myCtype(&caso, cad);
     puts("Minusculas: ");
-    printf("%d\n", myCtype(caso,cad));
-
-    caso++;
+    myCtype(&caso, cad);
     puts("Mayusculas: ");
-    printf("%d\n", myCtype(caso,cad));
-
-    caso++;
+    myCtype(&caso, cad);
     puts("Espacios: ");
-    printf("%d\n", myCtype(caso,cad));
-
-    caso++;
+    myCtype(&caso, cad);
     puts("Simbolos: ");
-    printf("%d\n", myCtype(caso,cad));
-
-    caso++;
+    myCtype(&caso, cad);
     puts("Alfanumericos: ");
-    printf("%d\n", myCtype(caso,cad));
+    myCtype(&caso, cad);
 
     //printf("%s un palindromo", esPalindromo(cad)?"Es":"No es");
 
     return 0;
 }
 
-int myCtype (int caso, char cad[]) {
+void myCtype (int *caso, char cad[]) {
     int i = 0, cont = 0;
+
     do {
-        switch (caso) {
+        switch (*caso) {
             case 1: if (isdigit(cad[i])){cont++;}break;
             case 2: if (islower(cad[i])){cont++;}break;
             case 3: if (isupper(cad[i])){cont++;}break;
@@ -76,13 +67,18 @@ int myCtype (int caso, char cad[]) {
         i++;
     } while (i <= TAMCAD && cad[i] != '\0');
 
-    return cont;
+    printf("%d\n", cont);
+    *caso = *caso + 1;
+
+    return;
 }
 
+/*
 short esPalindromo (char cad) {
+    char cad2 [TAMCAD] = ""
 
     if (stricmp(cad, strrev(cad)))
         return 1;
     else
         return 0;
-}
+}*/
