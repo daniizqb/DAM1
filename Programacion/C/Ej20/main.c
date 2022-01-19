@@ -22,15 +22,15 @@
 
 #define TAMCAD 51
 
-short esPalindromo (char cad);
+short esPalindromo (char cad[]);
 void myCtype (int *caso, char cad[]);
 
 int main() {
     int i = 0, cont = 0, caso = 0;
-    char cad [TAMCAD] = "Hola Buenos d1as :)";
+    char cad [TAMCAD] = "";
 
-    /*puts("Primera cadena: ");
-    gets(cad);*/
+    puts("Primera cadena: ");
+    gets(cad);
 
     caso = 1;
     puts("Digitos: ");
@@ -46,7 +46,10 @@ int main() {
     puts("Alfanumericos: ");
     myCtype(&caso, cad);
 
-    //printf("%s un palindromo", esPalindromo(cad)?"Es":"No es");
+    printf("%s un palindromo", esPalindromo(cad)?"Es":"No es");
+
+    puts("Segunda cadena: ");
+    gets(cad);
 
     return 0;
 }
@@ -73,12 +76,20 @@ void myCtype (int *caso, char cad[]) {
     return;
 }
 
-/*
-short esPalindromo (char cad) {
-    char cad2 [TAMCAD] = ""
 
-    if (stricmp(cad, strrev(cad)))
-        return 1;
-    else
-        return 0;
-}*/
+short esPalindromo (char cad[]) {
+    int i = 0, cont = 0, bool = 0;
+    char cad2 [TAMCAD] = "";
+
+    do {
+        i++;
+        cont++;
+    } while (cad[i] != '\0' && i <= TAMCAD);
+
+    strcpy(cad2,cad);
+    if (stricmp(cad,cad2))
+        bool = 1;
+
+    return bool;
+
+}

@@ -362,7 +362,7 @@ string
 	strncat() concatena la cadena del segundo parametro a la del primero pero solo hasta el numero que indiquemos
 	strncmp() compara dos cadenas hasta el numero que indiquemos
 	stricmp() compara cadenas sin tener en cuenta mayus y minus
-	strincmp() compara hasta un numero que indiquiemos sin tener en cuenta las mayusculas
+	strncmp() compara hasta un numero que indiquiemos sin tener en cuenta las mayusculas
 	memset(str,char,num) rellenar de forma automatica cadenas / rellena la cadena de el caracter seleccionado tantas posiciones como se indique
 	strrev() invierte una cadena
 	strlwr() convierte cadena en minuscula
