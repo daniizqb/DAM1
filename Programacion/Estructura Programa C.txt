@@ -349,8 +349,8 @@ ctype
 	islower() si no es mayus dara true
 	isspace() si es espacio true
 	ispunct() si es signo de puntuacion true
-	toupper()
-	tolower()
+	toupper() convierte char en mayus
+	tolower() convierte char en minus
 
 string
 
@@ -363,3 +363,12 @@ string
 	strncmp() compara dos cadenas hasta el numero que indiquemos
 	stricmp() compara cadenas sin tener en cuenta mayus y minus
 	strincmp() compara hasta un numero que indiquiemos sin tener en cuenta las mayusculas
+	memset(str,char,num) rellenar de forma automatica cadenas / rellena la cadena de el caracter seleccionado tantas posiciones como se indique
+	strrev() invierte una cadena
+	strlwr() convierte cadena en minuscula
+	strupr() convierte cadena en mayuscula
+	strchr() permite buscar caracteres en una cadena y cuando la encuentra devuelve el resto de la cadena a partir de dicho caracter
+	strrchr() permite buscar caracteres en una cadena y cuando la encuentra devuelve el resto de la cadena a partir de dicho caracter de derecha a izq
+	strcspn() busca los caracteres de una cadena en la otra y devuelve el numero de la posicion del caracter menor que encuentre, si no encuetra devuleve strlen
+	strpbrk() busca los caracteres de la primera cadena en la segunda y devuelve la primera cadena a partir del char que encuentra
+	strstr() busca cadena 2 en cadena 1 y devuelve lo que haya a partir de la cadena incluyendo cadena 2
