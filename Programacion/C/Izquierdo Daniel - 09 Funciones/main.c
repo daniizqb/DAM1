@@ -5,10 +5,13 @@
 #define FNUM 9
 
 int strLenght (const char string[]);
+void repeatBool (int aNum[], int aRep[], int *repetidos, short numToFind, short *bool);
+
 main () {
-    int i = 0, numRep = 0, aRep[TAMA], aNum [TAMA] = {2,5,7,5,2,8,4,0,9,1};
+    int i = 0, *repetidos = 0, aRep[TAMA], aNum [TAMA] = {2,5,7,5,2,8,4,0,9,1};
     short userNum = 0, bool = 0;
-    char cadena [TAMS] = "";
+    char cadena [TAMS] = "", b;
+
     for (i = 0; i < TAMA; i++)
         aRep[i] = 0;
 
@@ -24,8 +27,13 @@ main () {
         fflush(stdin);
     } while (userNum < INUM || userNum > FNUM);
 
+    repeatBool(aNum,aRep,&repetidos, userNum,&bool);
 
-    printf("%hd %s",bool, bool?"uno":"cero");
+    printf("\n%hd %s\n",bool, bool?"uno":"cero");
+
+    puts("Digitos: ");
+    for (i = 0; i < repetidos; i++)
+        printf("%d\n",aRep[i]);
 
     return 0;
 }
@@ -42,16 +50,35 @@ int strLenght (const char string[]) {
     return cont;
 }
 
-void repeatBool (int aNum[]) {
-    int i = 0, j = 0, vecesRep = 0, cont = 0, masRep = 0;
+void repeatBool (int aNum[], int aRep[], int *repetidos, short numToFind, short *bool) {
+    int i = 0, j = 0, k = 0, cont = 0, vecesRep = 0;
+    short flag = 0;
 
-    for (i = 0; i < TAMA; i++) {
+    for (i = INUM; i < FNUM; i++) {
+        cont = 0;
         for (j = 0; j < TAMA; j++) {
+            if (aNum[j] == numToFind && !flag) {
+                *bool = 1;
+                flag = 1;
+            }
             if (i == aNum[j]) {
                 cont++;
             }
         }
-        masRep
+        //aNum[i] content is more repeated than other num rewrite array
+        if (cont > vecesRep) {
+            k=0;*repetidos=0;
+            vecesRep = cont;
+            aRep[k] = i;
+            k++;
+            *repetidos= *repetidos + 1;
+        //
+        } else if (cont == vecesRep) {
+            aRep[k] = i;
+            k++;
+            *repetidos= *repetidos + 1;
+        }
     }
+
     return;
 }
