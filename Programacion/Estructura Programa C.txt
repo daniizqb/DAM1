@@ -383,4 +383,5 @@ math
 
 stdlib
 
-	rand()
+	rand() num aleatorio (siempre el mismo)
+	srand() 
