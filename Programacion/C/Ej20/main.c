@@ -23,72 +23,53 @@
 #define TAMCAD 51
 
 short esPalindromo (char cad[]);
-void myCtype (int *caso, char cad[]);
+void subcadena (char cad[], char cad2[]);
 
 int main() {
-    int i = 0, cont = 0, caso = 0;
+    int i = 0, cDig = 0, cMinus = 0, cMayus = 0, cEspac = 0, cSimbl = 0, cAlphn = 0;
     char cad [TAMCAD] = "";
+    char cad2 [TAMCAD] = "";
 
     puts("Primera cadena: ");
     gets(cad);
 
-    caso = 1;
-    puts("Digitos: ");
-    myCtype(&caso, cad);
-    puts("Minusculas: ");
-    myCtype(&caso, cad);
-    puts("Mayusculas: ");
-    myCtype(&caso, cad);
-    puts("Espacios: ");
-    myCtype(&caso, cad);
-    puts("Simbolos: ");
-    myCtype(&caso, cad);
-    puts("Alfanumericos: ");
-    myCtype(&caso, cad);
+    while (i < TAMCAD && cad[i] != '\0') {
+        if (isdigit(cad[i]))
+            cDig++;
+        else if (islower(cad[i]))
+            cMinus++;
+        else if (isupper(cad[i]))
+            cMayus++;
+        else if (isspace(cad[i]))
+            cEspac++;
+        else if (ispunct(cad[i]))
+            cSimbl++;
+        i++;
+    }
 
-    printf("%s un palindromo", esPalindromo(cad)?"Es":"No es");
+    printf("Digitos: %d\nMinusculas: %d\nMayusculas: %d\nEspacios:%d\nSimbolos:%d\nAlfanumericos:%d\n",cDig, cMinus, cMayus, cEspac, cSimbl, cDig+cMayus+cMinus);
+
+    printf("%s un palindromo\n", esPalindromo(cad)?"No es":"Es");
 
     puts("Segunda cadena: ");
-    gets(cad);
+    gets(cad2);
+
+    subcadena(cad,cad2);
 
     return 0;
 }
 
-void myCtype (int *caso, char cad[]) {
-    int i = 0, cont = 0;
-
-    do {
-        switch (*caso) {
-            case 1: if (isdigit(cad[i])){cont++;}break;
-            case 2: if (islower(cad[i])){cont++;}break;
-            case 3: if (isupper(cad[i])){cont++;}break;
-            case 4: if (isspace(cad[i])){cont++;}break;
-            case 5: if (ispunct(cad[i])){cont++;}break;
-            case 6: if (isalnum(cad[i])){cont++;}break;
-            default: printf("Caracter no valido");break;
-        }
-        i++;
-    } while (i <= TAMCAD && cad[i] != '\0');
-
-    printf("%d\n", cont);
-    *caso = *caso + 1;
-
-    return;
-}
-
 short esPalindromo (char cad[]) {
-    int i = 0, cont = 0, bool = 0;
-    char cad2 [TAMCAD] = "";
-
-    do {
-        i++;
-        cont++;
-    } while (cad[i] != '\0' && i <= TAMCAD);
+    char cad2 [TAMCAD];
 
     strcpy(cad2,cad);
-    if (stricmp(cad,cad2))
-        bool = 1;
+    strrev(cad2);
 
-    return bool;
+    return stricmp(cad,cad2);
+}
 
+void subcadena (char cad[], char cad2[]) {
+    printf("La cadena %s %spertenece a la cadena %s",cad2, strstr(cad,cad2)?"":"no ",cad);
+
+    return;
 }
