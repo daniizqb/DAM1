@@ -27,13 +27,15 @@ void subcadena (char cad[], char cad2[]);
 
 int main() {
     int i = 0, cDig = 0, cMinus = 0, cMayus = 0, cEspac = 0, cSimbl = 0, cAlphn = 0;
+    short tam = 0;
     char cad [TAMCAD] = "";
     char cad2 [TAMCAD] = "";
 
     puts("Primera cadena: ");
     gets(cad);
 
-    while (i < TAMCAD && cad[i] != '\0') {
+    tam = strlen(cad);
+    for (i = 0; i < tam; i++) {
         if (isdigit(cad[i]))
             cDig++;
         else if (islower(cad[i]))
@@ -44,7 +46,6 @@ int main() {
             cEspac++;
         else if (ispunct(cad[i]))
             cSimbl++;
-        i++;
     }
 
     printf("Digitos: %d\nMinusculas: %d\nMayusculas: %d\nEspacios:%d\nSimbolos:%d\nAlfanumericos:%d\n",cDig, cMinus, cMayus, cEspac, cSimbl, cDig+cMayus+cMinus);
