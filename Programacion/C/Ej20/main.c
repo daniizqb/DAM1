@@ -107,9 +107,5 @@ int main() {
 }*/
 
 char esPalindromo (char cad) {
-
-    if (stricmp(cad, strrev(cad)))
-        return 1;
-    else
-        return 0;
+    char str []
 }
