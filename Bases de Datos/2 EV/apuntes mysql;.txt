@@ -35,9 +35,9 @@ DDL
 
         ALTER TABLE gato ADD COLUMN edad integer NOT NULL;
         ALTER TABLE gato DROP COLUMN edad;
-	ALTER TABLE pais ADD PRIMARY KEY (pais);
-	ALTER TABLE artista ADD FOREIGN KEY (pais) REFERENCES pais(PAIS);
-	ALTER TABLE ALBUM DROP FOREIGN KEY album_ibfk_2;
+	    ALTER TABLE pais ADD PRIMARY KEY (pais);
+	    ALTER TABLE artista ADD FOREIGN KEY (pais) REFERENCES pais(PAIS);
+	    ALTER TABLE ALBUM DROP FOREIGN KEY album_ibfk_2;
 
     UPDATE
 
@@ -62,10 +62,10 @@ DML
         SELECT max(year) FROM movies;
         select title from movies, movies2actors where movies.movieid=movies2actors.movieid and actorid='511760';
         select pais, sum(numerodiscos) as suma_discos from artista group by pais order by suma_discos desc;
-	SELECT genero, COUNT(*) AS cuenta FROM ALBUM GROUP BY genero ORDER BY cuenta 	DESC;
+	    SELECT genero, COUNT(*) AS cuenta FROM ALBUM GROUP BY genero ORDER BY cuenta DESC;
         select nom_artista,pais,nom_album,fecha from artista join album on nom_artista=artista;
-	SELECT nom_genero, COUNT(genero) FROM genero LEFT JOIN album ON 	nom_genero=genero GROUP BY nom_genero;
+	    SELECT nom_genero, COUNT(genero) FROM genero LEFT JOIN album ON 	nom_genero=genero GROUP BY nom_genero;
         select * from album where fecha < (select fecha from album where nom_album="Moonmadness");
-	SELECT DISTINCT pais FROM ARTISTA;
+	    SELECT DISTINCT pais FROM ARTISTA;
 
 
