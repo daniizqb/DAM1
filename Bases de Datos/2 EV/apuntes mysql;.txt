@@ -11,11 +11,15 @@ DDL
     CREATE TABLE [nombretabla];                                 Crear Tabla.
     CREATE DATABASE [nombrebd];                                 Crear Base de Datos.
 
+	CREATE TABLE PAIS AS SELECT DISTINCT pais FROM ARTISTA;
+
     DROP TABLE IF EXISTS [nombretabla];                         Borrar tablas (hay que borrarlas en orden).
 
     INSERT INTO [TABLA] VALUES                                  Insertar valores a una tabla.
     ([valores]),
     ([valores]);
+
+	INSERT INTO artista VALUES ('Yes', 10, '1970_01_01', 'UK');
 
     ALTER TABLE ALBUM ADD FOREIGN KEY (nombre_artista) REFERENCES ARTISTA (nombre) ON DELETE/UPDATE []];
 
@@ -27,10 +31,27 @@ DDL
 
         RESTRICT
             no permite borrar los registros asociados a la fk
+    ALTER:                                                      Alterar tabla.
+
+        ALTER TABLE gato ADD COLUMN edad integer NOT NULL;
+        ALTER TABLE gato DROP COLUMN edad;
+	ALTER TABLE pais ADD PRIMARY KEY (pais);
+	ALTER TABLE artista ADD FOREIGN KEY (pais) REFERENCES pais(PAIS);
+	ALTER TABLE ALBUM DROP FOREIGN KEY album_ibfk_2;
+
+    UPDATE
+
+        UPDATE ACTORES SET insertor='Carlos Rosique' WHERE insertor='Carlos';
+	UPDATE album SET genero=’Electronica’ WHERE genero=’Orchestrion’;
+
+    DELETE
+
+	DELETE FROM artista WHERE pais='Holanda';
+
 
 DML
 
-    SELECT:                                                     Mostrar datos en base a filtros.
+    	SELECT:                                                     Mostrar datos en base a filtros.
 
         SELECT [columnas, o * para todo] FROM [nombretabla];        
         SELECT [columnas, o * para todo] FROM [nombretabla] WHERE [nombrecolumna='valor'];
@@ -40,16 +61,11 @@ DML
         select * from movies where title like'%godfather%';
         SELECT max(year) FROM movies;
         select title from movies, movies2actors where movies.movieid=movies2actors.movieid and actorid='511760';
-        select contcat(nombre_artista,nombre) from artista where nombre_artista="Pat Metheny" or nombre_artista="Camel";
         select pais, sum(numerodiscos) as suma_discos from artista group by pais order by suma_discos desc;
-        select artista,pais,nom_album,fecha from artista join album on nom_artista=artista;
+	SELECT genero, COUNT(*) AS cuenta FROM ALBUM GROUP BY genero ORDER BY cuenta 	DESC;
+        select nom_artista,pais,nom_album,fecha from artista join album on nom_artista=artista;
+	SELECT nom_genero, COUNT(genero) FROM genero LEFT JOIN album ON 	nom_genero=genero GROUP BY nom_genero;
         select * from album where fecha < (select fecha from album where nom_album="Moonmadness");
+	SELECT DISTINCT pais FROM ARTISTA;
 
-    ALTER:                                                      Alterar tabla.
 
-        ALTER TABLE gato ADD COLUMN edad integer NOT NULL;
-        ALTER TABLE gato DROP COLUMN edad;
-
-    UPDATE
-
-        UPDATE ACTORES SET insertor='Carlos Rosique' WHERE insertor='Carlos';
