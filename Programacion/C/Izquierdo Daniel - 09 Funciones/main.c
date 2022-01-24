@@ -10,13 +10,13 @@ void repeatBool (int aNum[], int aRep[], int *repetidos, short numToFind, short 
 main () {
     int i = 0, *repetidos = 0, aRep[TAMA], aNum [TAMA] = {2,2,7,7,5,8,4,5,9,5};
     short userNum = 0, bool = 0;
-    char cadena [TAMS] = "", b;
+    char cadena [TAMS] = "";
 
     for (i = 0; i < TAMA; i++)
         aRep[i] = 0;
 
-    printf("Introduce Cadena: ");
-    scanf("%s",cadena);
+    puts("Introduce Cadena: ");
+    gets(cadena);
     fflush(stdin);
 
     printf("La cadena contiene %d caracteres\n\n",strLenght(cadena));
@@ -29,11 +29,11 @@ main () {
 
     repeatBool(aNum,aRep,&repetidos, userNum,&bool);
 
-    printf("\n%hd %s\n",bool, bool?"uno":"cero");
-
-    puts("Digitos: ");
+    puts("Digitos mas repetidos: ");
     for (i = 0; i < repetidos; i++)
         printf("%d\n",aRep[i]);
+
+    printf("%hd %s\n",bool, bool?"uno":"cero");
 
     return 0;
 }

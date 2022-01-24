@@ -384,4 +384,22 @@ math
 stdlib
 
 	rand() num aleatorio (siempre el mismo)
-	srand() 
+	srand() establece semilla del random
+	atoi convierte cadena en entero
+	atof convierte cadena en real
+
+
+Una estructura es un tipo de dato que define el usuario, se compone de varios datos
+
+	struct nombre.estructura {
+		tipo.miembro	nombre.miebro;
+	}
+
+	struct cd {
+		char nombreGrupo [25];
+		char nomCD [20];
+		char fecha [11];
+		int num;
+	}
+
+	struct cd cd1= {}
