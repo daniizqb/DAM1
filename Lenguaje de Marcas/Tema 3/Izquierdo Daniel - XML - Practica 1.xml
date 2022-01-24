@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paises>
+    <pais id="1">
+        <nombre>Noruega</nombre>
+        <continente>Europa</continente>
+        <presidente>Jonas Gahr Støre</presidente>
+        <capital>Oslo</capital>
+        <extension>323 802 km3</extension>
+        <idomas>
+            <idioma tipo="nativo">Noruego</idioma>
+            <idioma tipo="dialecto">Bokmål</idioma>
+            <idioma tipo="dialecto">Sami</idioma>
+            <idioma tipo="secundario">Ingles</idioma>
+        </idomas>
+        
+    </pais>
+</paises>

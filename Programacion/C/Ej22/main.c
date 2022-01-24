@@ -7,29 +7,32 @@
 #define NUMMAX 5
 
 int main() {
-    short userChoise = 0, userNum = 0, cpuNum = 0, nones = 0;;
+    short userNum = 0, cpuNum = 0, pares = 0;
+    char userChoise = ' ';
 
     randomize;
 
-    puts("Elige Pares = 1 | Nones = 0");
+    puts("Elige Pares [P] | Nones [N]");
     do {
         scanf("%hd",&userChoise);
-    } while (userChoise > 1 || userChoise < 0);
+        fflush(stdin);
+    } while (userChoise == 'P' || userChoise == 'N');
 
     printf("Elige un numero (0-%d)",NUMMAX);
     do {
         scanf("%hd",&userNum);
+        fflush(stdin);
     } while (userNum > NUMMAX || userNum < 0);
 
     cpuNum = random(NUMMAX + 1);
-    nones = (userNum + cpuNum) % 2;
+    pares = (userNum + cpuNum) % 2;
 
     printf("Usuario: %hd | Maquina %hd\n",userNum,cpuNum);
 
     if (userChoise == 1)
-        printf("Ha ganado %s",nones?"la maquina":"el usuario");
+        printf("Ha ganado %s",pares?"la maquina":"el usuario");
     else
-        printf("Ha ganado %s",!nones?"la maquina":"el usuario");
+        printf("Ha ganado %s",!pares?"la maquina":"el usuario");
 
     return 0;
 }
