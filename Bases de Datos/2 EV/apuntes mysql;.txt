@@ -69,3 +69,8 @@ DML
 	    SELECT DISTINCT pais FROM ARTISTA;
 
 
+EXAMEN
+
+    select title from peliculas join actuaciones join actores on peliculas.movieid=actuaciones.movieid and actuaciones.actorid=actores.actorid where name="Ford, Harrison (I)"
+    update generos set genre='Romance' where genre = 'Sci-Fi' and movieid = (select movieid from peliculas where title like 'Star Wars%');
+    
