@@ -1,17 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <paises>
     <pais id="1">
         <nombre>Noruega</nombre>
         <continente>Europa</continente>
         <presidente>Jonas Gahr Støre</presidente>
         <capital>Oslo</capital>
-        <extension>323 802 km3</extension>
+        <extension>323 802</extension>
         <idomas>
             <idioma tipo="nativo">Noruego</idioma>
             <idioma tipo="dialecto">Bokmål</idioma>
             <idioma tipo="dialecto">Sami</idioma>
             <idioma tipo="secundario">Ingles</idioma>
         </idomas>
-        
+        <habitantes>5 391 369</habitantes>
+        <provincias>
+          <provincia>Agder</provincia>
+          <provincia>Innlandet</provincia>
+        </provincias>
+    </pais>
+    
+    <pais id="2">
+        <nombre>Spain</nombre>
+        <continente>Europa</continente>
+        <presidente>Perro Sanchez</presidente>
+        <capital>Madrid</capital>
+        <extension>505 944</extension>
+        <idomas>
+            <idioma tipo="nativo">Castellano</idioma>
+            <idioma tipo="dialecto">Catalan</idioma>
+            <idioma tipo="dialecto">Andaluz</idioma>
+            <idioma tipo="secundario">Euskera</idioma>
+        </idomas>
+        <habitantes>	47 450 795</habitantes>
+        <provincias>
+          <provincia>Madrid</provincia>
+          <provincia>Valladolid</provincia>
+        </provincias>
+    </pais>
+    
+    <pais id="3">
+        <nombre>Francia</nombre>
+        <continente>Europa</continente>
+        <presidente>Emmanuel Macron</presidente>
+        <capital>Paris</capital>
+        <extension>	675 417 </extension>
+        <idomas>
+            <idioma tipo="nativo">Frances</idioma>
+        </idomas>
+        <habitantes>67 407 241</habitantes>
+        <provincias>
+          <provincia>Normandía</provincia>
+          <provincia>Anjou</provincia>
+        </provincias>
+    </pais>
+    
+    <pais id="4">
+        <nombre>Italia</nombre>
+        <continente>Europa</continente>
+        <presidente>Mario Draghi</presidente>
+        <capital>Roma</capital>
+        <extension>301 340</extension>
+        <idomas>
+            <idioma tipo="nativo">Italiano</idioma>
+        </idomas>
+        <habitantes>	60 542 215</habitantes>
+        <provincias>
+          <provincia>Sicilia</provincia>
+          <provincia>Florencia</provincia>
+        </provincias>
+    </pais>
+    
+    <pais id="5">
+        <nombre>Alemania</nombre>
+        <continente>Europa</continente>
+        <presidente>	Frank-Walter Steinmeier</presidente>
+        <capital>Berlin</capital>
+        <extension>	357 578</extension>
+        <idomas>
+            <idioma tipo="nativo">Aleman</idioma>
+            <idioma tipo="secundario">Ingles</idioma>
+        </idomas>
+        <habitantes>	83 149 300</habitantes>
+        <provincias>
+          <provincia>Stuttgard</provincia>
+          <provincia>Bavaria</provincia>
+        </provincias>
     </pais>
 </paises>

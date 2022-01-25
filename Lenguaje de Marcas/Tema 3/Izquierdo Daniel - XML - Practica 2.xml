@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+  <pedido>
+    <destinatario>
+      <nombre dni="44566623F">Juan Delgado Martinez</nombre>  
+    </destinatario>  
+    <articulo id="A2023">bicicleta</articulo>
+    <direccion piso="tercer" letra="A">Barco 4</direccion>
+    <fecha>19-5-2021</fecha>
+  </pedido>
+  
+  <pedido>
+    <destinatario>
+      <nombre dni="44311624P">Barbara Torres Caro</nombre>  
+    </destinatario>  
+    <articulo id="XV13" marca="Cecotec">Robot de cocina</articulo>
+    <direccion piso="segundo" letra="B">López Silva 4</direccion>
+    <fecha>26-1-2021</fecha>
+  </pedido>
+  
+  <pedido>
+    <destinatario>
+      <nombre dni="72024400J">Juncal Oyarzun Rodriguez</nombre>  
+    </destinatario>  
+    <articulo id="P-1500" marca="Samsung">televisor Smart TV de 52</articulo>
+    <direccion piso="tercer" letra="B">Avenida de Salís 12</direccion>
+    <fecha>24-2-2021</fecha>
+  </pedido>
+</pedidos>
