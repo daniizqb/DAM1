@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE paises [
+	<!ELEMENT paises (pais?)>
+	<!ELEMENT pais (nombre, capital, idiomas)>
+	<!ELEMENT idiomas (idioma+)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT capital (#PCDATA)>
+	<!ELEMENT idioma (#PCDATA)>
+	<!ATTLIST pais id CDATA #REQUIRED>
+	<!ATTLIST pais tipo (pobre | rico) "pobre" >
+	<!ATTLIST idioma id CDATA #IMPLIED>
+]>
+
+<paises>
+	<pais id="+34" tipo="pobre">
+		<nombre>España</nombre>
+		<capital>Madrid</capital>
+		<idiomas>
+			<idioma id="CAS">Castellano</idioma>
+			<idioma>Euskera</idioma>
+		</idiomas>
+	</pais>
+	<pais id="+34" tipo="rico">
+		<nombre>España</nombre>
+		<capital>Madrid</capital>
+		<idiomas>
+			<idioma>Castellano</idioma>
+			<idioma>Euskera</idioma>
+		</idiomas>
+	</pais>
+</paises>

@@ -391,15 +391,37 @@ stdlib
 
 Una estructura es un tipo de dato que define el usuario, se compone de varios datos
 
-	struct nombre.estructura {
-		tipo.miembro	nombre.miebro;
-	}
+	Ejemplo
 
-	struct cd {
-		char nombreGrupo [25];
-		char nomCD [20];
-		char fecha [11];
-		int num;
-	}
+		struct nombre.estructura {
+			tipo.miembro	nombre.miebro;
+		}
 
-	struct cd cd1= {}
+		struct cd {
+			char nombreGrupo [25];
+			char nomCD [20];
+			char fecha [11];
+			int num;
+		}
+
+		struct cd cd1,cd2;
+		struct cd cd1 = {"","","",0}
+
+		nombre.variable.miermbro
+
+		cd1.nombreGrupo = 7;
+
+	Estrucuras anidadas
+
+		stuct nombreCompuesto {
+			char nombre1 [20];
+			char nombre2 [20];
+		}
+
+		struct cd {
+			struct nombreCompuesto nombreGrupo;
+			char nombreGrupo [25];
+			char nomCD [20];
+			char fecha [11];
+			int num;
+		}

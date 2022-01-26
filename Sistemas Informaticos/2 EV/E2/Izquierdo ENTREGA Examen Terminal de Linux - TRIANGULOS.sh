@@ -14,7 +14,10 @@ if [ "$userchoise" = "area" ] || [ "$userchoise" = "perimetro" ]; then
             echo Las medidas de los lados son incorrectas, el programa no se puede realizar
             exit
         fi
-
+        echo El usuario ha seleccionado los siguiente datos:
+        echo - Tipo de triangulo: $triangle
+        echo - Calculo: $userchoise
+        echo Las medidas de los lados son las siguientes:
         echo - Lado A: $s1
         echo - Lado B: $s2
         echo - Lado C: $s3
