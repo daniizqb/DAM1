@@ -1,6 +1,8 @@
 /*
  * nombre, edad, fecha nacimiento (estructura anidada q se componga de year month day
  * pedir por pantalla los datos y mostrarlos
+ *
+ * array de estructuras en el que guardemos 2 empleados
  * */
 
 #include <stdio.h>
@@ -20,7 +22,8 @@ struct empleado {
 };
 
 int main() {
-    struct empleado emp1 = {"",0,0,0};
+    struct empleado aStuct [2];
+    struct empleado emp1 = {"",0,0,{0,0,0}};
 
     setlocale(LC_CTYPE,"Spanish");
 
