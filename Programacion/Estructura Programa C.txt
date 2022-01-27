@@ -425,3 +425,10 @@ Una estructura es un tipo de dato que define el usuario, se compone de varios da
 			char fecha [11];
 			int num;
 		}
+
+Ficheros
+
+	Declarar Ficheros
+
+		FILE *nombrefichero;
+		nombrefichero = fopen (nombrefichexterno,modoapertura);
