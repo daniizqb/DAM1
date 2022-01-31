@@ -8,7 +8,7 @@ int strLenght (const char string[]);
 void repeatBool (int aNum[], int aRep[], int *repetidos, short numToFind, short *bool);
 
 main () {
-    int i = 0, *repetidos = 0, aRep[TAMA], aNum [TAMA] = {2,2,7,7,5,8,4,5,9,5};
+    int i = 0, *repetidos = 0, aRep[TAMA], aNum [TAMA] = {2,1,6,7,5,8,4,0,9,3};
     short userNum = 0, bool = 0;
     char cadena [TAMS] = "";
 
