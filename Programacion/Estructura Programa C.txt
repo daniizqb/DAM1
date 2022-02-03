@@ -432,3 +432,40 @@ Ficheros
 
 		FILE *nombrefichero;
 		nombrefichero = fopen (nombrefichexterno,modoapertura);
+
+	MODOS DE APERTURA("van entre comillas")
+		1."r"----> modo lectura (el fichero debe existir)
+		2."w"----> modo escritura (si existe, machaca el contenido---> empieza a escirbir desde el principio // Si el fichero no existe lo crea)
+		3."a"----> añafir (Si existe el fichero respeta su contenido previo y añade al final // si no existe el fichero lo crea)
+		4."r+"----> modo lectura/escritura (el fichero debe existir // modo a emplear cuando deseamos modificar algun registro)
+		5."w+"----> modo lectura/escritura (de primeras te borra todo el fichero // si no existe el fichero lo crea)
+		6."a+"----> modo lectura/escritura (pero a la hora de escribir lo escribe al final)
+		PARA CERRAR FICHERO
+		fclose(nombre_interno)
+
+	Ejemplo:
+	main(){
+	FILE *fich;
+	fich = fopen("texto.txt","w");
+	fclose(fich);
+	return 0;
+	}
+
+	PROCEDIMIENTO PARA ESCRIBIR EN EL FICHERO
+		fputc(caracter_a_escribir,nombre_fichero_interno)-------------->fputc('x',fich)
+
+		FUNCION PARA LEER UN CARACTER
+		fgetc(nombre_interno)
+
+		fgets(cadena,nCar,nombre_interno)
+
+		feof(nombre_interno) end of file
+
+		rewind(nombre_interno) vuelve al principio del fichero
+
+		fwrite(&estructura,tamano,numero_de_escrituras,nombre_interno)
+				&cd1,sizeof(cd1),1,fich
+
+		fread(&estructura,tamano,numero_de_escrituras,nombre_interno)
+
+		
