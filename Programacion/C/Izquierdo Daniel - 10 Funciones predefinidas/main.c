@@ -21,13 +21,13 @@ main () {
 }
 
 short cadInSubcad (char mainString [], char subString [], char auxString []) {
-    short contCadena=0;
-    short max=0;
+    short contCadena = 0;
+    short max = 0;
 
     strcpy(auxString, mainString);
     max=strlen(subString);
 
-    while(strstr(auxString, subString)!=NULL){
+    while(strstr(auxString, subString) != NULL){
         contCadena++;
         strcpy(auxString, strstr(auxString, subString));
         memset(auxString, ' ', max);
