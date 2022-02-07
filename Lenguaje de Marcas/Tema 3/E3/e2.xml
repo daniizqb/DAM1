@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ies [ 
+<!ELEMENT aula_virtual (profesores,alumnos)>
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT alumnos (alumno*)>
+
+<!ELEMENT profesor (nombre,fecha_nacimiento)>
+<!ELEMENT alumno (nombre,nota_media,grado+,(edad | fecha_nacimiento),domicilio+)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+<!ELEMENT nota_media (#PCDATA)>
+<!ELEMENT grado (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT domicilio (#PCDATA)>
+
+<!ATTLIST profesor cod ID #REQUIRED>
+<!ATTLIST profesor grado CDATA #REQUIRED>
+<!ATTLIST alumno id CDATA #REQUIRED>
+<!ATTLIST alumno cod_al IDREFS #IMPLIED>
+]>
+
+<aula_virtual>
+            <profesores>
+                      <profesor cod="COD-1" grado="Medio">
+                              <nombre>Jon</nombre>
+                              <fecha_nacimiento>1990-10-10</fecha_nacimiento>
+                    </profesor>
+                    <profesor cod="COD-2" grado="Superior">
+                              <nombre>Marta</nombre>
+                              <fecha_nacimiento>1980-04-10</fecha_nacimiento>
+                    </profesor>
+            </profesores>
+          <alumnos>
+                    <alumno id="ID-1" cod_al="COD-1">
+                              <nombre>Tomás</nombre>
+                              <nota_media>8.4</nota_media>
+                              <grado>Medio</grado>
+                              <grado>Superior</grado>
+                              <edad>20</edad>
+                              <domicilio>Madrid</domicilio>
+                              <domicilio>Alcorcon</domicilio>
+                    </alumno>
+                    <alumno id="ID-2" cod_al="COD-2">
+                              <nombre>Fernando</nombre>
+                              <nota_media>9.7</nota_media>
+                              <grado>Superior</grado>
+                              <fecha_nacimiento>2001-08-25</fecha_nacimiento>
+                              <domicilio>Alcorcon</domicilio>
+                    </alumno>
+          </alumnos>
+        
+</aula_virtual>

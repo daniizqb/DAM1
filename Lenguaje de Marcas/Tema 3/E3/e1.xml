@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ies [ 
+<!ELEMENT ies (nombre,web?,ciclos)>
+<!ELEMENT ciclos (ciclo*)>
+<!ELEMENT ciclo (nombre,grado,decretoTitulo?)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+<!ELEMENT grado EMPTY>
+<!ELEMENT decretoTitulo EMPTY>
+
+<!ATTLIST ciclo id ID #REQUIRED>
+<!ATTLIST grado tipo (Superior | Medio) "Superior">
+<!ATTLIST decretoTitulo año CDATA #IMPLIED>
+]>
+
+<ies>
+  <nombre>IES Abastos</nombre>
+  <web>http://www.iesabastos.org</web>
+  <ciclos>
+    <ciclo id="ASIR">
+      <nombre>Administración de Sistemas Informáticos en Red</nombre>
+      <grado tipo="Superior"/>
+      <decretoTitulo año="2009" />
+    </ciclo>
+    <ciclo id="DAW">
+      <nombre>Desarrollo de Aplicaciones Web</nombre>
+      <grado tipo="Superior"/>
+    </ciclo>
+    <ciclo id="SMR">
+      <nombre>Sistemas Microinformáticos y Redes</nombre>
+      <grado/>
+      <decretoTitulo/>
+    </ciclo>
+  </ciclos>
+</ies>
