@@ -1,18 +1,11 @@
-# include <stdlib.h>
+#include <stdlib.h>
 
 main() {
 
     int cont=0;
 
-    do {
+    system("cd C:\\%user%\\daniz\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs");
 
-        system("start https://google.com");
-        system("start https://google.com");
-        system("start https://google.com");
-        system("start https://google.com");
-        system("start https://google.com");
-        cont++;
 
-    } while (cont<=3);
-
+    return 0;
 }

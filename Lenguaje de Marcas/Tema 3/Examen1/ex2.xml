@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pedidos [ 
+<!ELEMENT pedidos (pedido*)>
+<!ELEMENT pedido (destinatario,articulo,dirección,entrega)>
+<!ELEMENT destinatario ((nombre | nick),apellido)>
+<!ELEMENT dirección (nombre,portal,piso,letra?)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nick (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT articulo (#PCDATA)>
+<!ELEMENT portal (#PCDATA)>
+<!ELEMENT piso EMPTY>
+<!ELEMENT letra (#PCDATA)>
+<!ELEMENT entrega (#PCDATA)>
+
+<!ATTLIST pedido id CDATA #REQUIRED>
+<!ATTLIST destinatario dni CDATA #REQUIRED>
+<!ATTLIST articulo id ID #REQUIRED>
+<!ATTLIST dirección tipo (calle | avenida) "calle">
+<!ATTLIST piso num CDATA #IMPLIED>
+]>
+
+<pedidos>
+            <pedido id="1">
+                      <destinatario dni="44566623F">
+                                <nombre>Juan</nombre>
+                                <apellido>Delgado</apellido>
+                      </destinatario>
+                      <articulo id="A2023">bicicleta</articulo>
+                      <dirección tipo="calle">
+                                <nombre>Barco</nombre>
+                                <portal>4</portal>
+                                <piso num="3"/>
+                                <letra>A</letra>
+                      </dirección>
+                      <entrega>19-5-2021</entrega>
+            </pedido>
+            
+            <pedido id="2">
+                      <destinatario dni="44311624P">
+                                <nick>Bar</nick>
+                                <apellido>Torres</apellido>
+                      </destinatario>
+                      <articulo id="XV13">Robot de cocina</articulo>
+                      <dirección tipo="avenida">
+                                <nombre>López Silva</nombre>
+                                <portal>4</portal>
+                                <piso/>
+                      </dirección>
+                      <entrega>26-1-2021</entrega>
+            </pedido>
+</pedidos>

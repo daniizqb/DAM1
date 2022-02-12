@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Paises [ 
+<!ELEMENT Paises (Pais+)>
+<!ELEMENT Pais (Presidente,Capital*,Extensión*,Idiomas,Habitantes)>
+<!ELEMENT Idiomas (Idioma*)>
+
+<!ELEMENT Presidente (#PCDATA)>
+<!ELEMENT Capital (#PCDATA)>
+<!ELEMENT Idioma (#PCDATA)>
+<!ELEMENT Extensión (#PCDATA)>
+<!ELEMENT Habitantes (#PCDATA)>
+
+<!ATTLIST Pais idpais CDATA #REQUIRED>
+<!ATTLIST Idioma Tipo CDATA #IMPLIED>
+]>
+
+<Paises>
+            <Pais idpais="Colombia">
+                        <Presidente>Iván Duque</Presidente>
+                        <Capital>Bogotá</Capital>
+                        <Idiomas>
+                       	 <Idioma> Español</Idioma>
+                       	 <Idioma Tipo="Secundario">Arawak</Idioma>
+                       	 <Idioma Tipo="Secundario">Chocó</Idioma>
+                        </Idiomas>
+                        <Habitantes>51 049 498 (2021)</Habitantes>
+            </Pais>
+            
+            <Pais idpais="Argentina">
+                        <Presidente>Alberto Fernandez</Presidente>
+                        <Capital>Buenos Aires</Capital>
+                        <Extensión>2 780 400 km²</Extensión>
+                        <Idiomas>
+                                <Idioma> Español</Idioma>
+                                <Idioma Tipo="Secundario">Ava-guaraní</Idioma>
+                                <Idioma Tipo="Secundario">Chorote</Idioma>
+                        </Idiomas>
+                        <Habitantes>45 195 777 hab</Habitantes>
+            </Pais>
+</Paises>

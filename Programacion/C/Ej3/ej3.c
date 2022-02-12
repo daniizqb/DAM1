@@ -8,10 +8,13 @@ main() {
     printf("Base:");
     scanf("%d",&base);
     fflush(stdin);
+    
     printf("Altura:");
     scanf("%d",&altura);
     fflush(stdin);
-    printf("El área del triángulo de base %f y altura %f es %f",base,altura,base*altura/2);
-
+    
+    printf("El Area del triangulo de base %f y altura %f es %f",base,altura,base*altura/2);
+    
+    return 0;
 }
 

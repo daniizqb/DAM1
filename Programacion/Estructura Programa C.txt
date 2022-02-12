@@ -454,7 +454,7 @@ Ficheros
 	PROCEDIMIENTO PARA ESCRIBIR EN EL FICHERO
 		fputc(caracter_a_escribir,nombre_fichero_interno)-------------->fputc('x',fich)
 
-		FUNCION PARA LEER UN CARACTER
+	FUNCIONES FICHEROS
 		fgetc(nombre_interno)
 
 		fgets(cadena,nCar,nombre_interno)
@@ -467,5 +467,11 @@ Ficheros
 				&cd1,sizeof(cd1),1,fich
 
 		fread(&estructura,tamano,numero_de_escrituras,nombre_interno)
+
+		fseek(nombre_interno,desplazamiento(ha de ser un long),origen)
+
+			SEEK_SET 0
+			SEEK_CUR 1
+			SEEK_END 2
 
 		
