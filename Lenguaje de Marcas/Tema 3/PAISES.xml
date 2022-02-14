@@ -1,32 +1,44 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<pedidos>
+            <pedido id="1">
+                      <destinatario dni="44566623F">
+                                <nombre>Juan</nombre>
+                                <apellido>Delgado</apellido>
+                      </destinatario>
+                      <articulo id="A2023">bicicleta</articulo>
+                      <dirección tipo="calle">
+                                <nombre>Barco</nombre>
+                                <portal>4</portal>
+                                <piso num="3"/>
+                                <letra>A</letra>
+                      </dirección>
+                      <entrega>19-5-2021</entrega>
+            </pedido>
+            
+            <pedido id="2">
+                      <destinatario dni="44311624P">
+                                <nick>Bar</nick>
+                                <apellido>Torres</apellido>
+                      </destinatario>
+                      <articulo id="XV13">Robot de cocina</articulo>
+                      <dirección tipo="avenida">
+                                <nombre>López Silva</nombre>
+                                <portal>4</portal>
+                                <piso/>
+                      </dirección>
+                      <entrega>26-1-2021</entrega>
+            </pedido>
+            <pedido id="3">
+                      <destinatario dni="442321624P">
+                                <nombre>Juan</nombre>
+                                <apellido>Luna</apellido>
+                      </destinatario>
+                      <articulo id="WWE">camiseta de Goku</articulo>
+                      <dirección tipo="calle">
+                                <nombre>Toledo</nombre>
+                                <portal>6</portal>
+                                <piso/>
+                      </dirección>
+                      <entrega>22-11-2021</entrega>
+            </pedido>
 
-<!DOCTYPE paises [
-	<!ELEMENT paises (pais?)>
-	<!ELEMENT pais (nombre, capital, idiomas)>
-	<!ELEMENT idiomas (idioma+)>
-	<!ELEMENT nombre (#PCDATA)>
-	<!ELEMENT capital (#PCDATA)>
-	<!ELEMENT idioma (#PCDATA)>
-	<!ATTLIST pais id CDATA #REQUIRED>
-	<!ATTLIST pais tipo (pobre | rico) "pobre" >
-	<!ATTLIST idioma id CDATA #IMPLIED>
-]>
-
-<paises>
-	<pais id="+34" tipo="pobre">
-		<nombre>España</nombre>
-		<capital>Madrid</capital>
-		<idiomas>
-			<idioma id="CAS">Castellano</idioma>
-			<idioma>Euskera</idioma>
-		</idiomas>
-	</pais>
-	<pais id="+34" tipo="rico">
-		<nombre>España</nombre>
-		<capital>Madrid</capital>
-		<idiomas>
-			<idioma>Castellano</idioma>
-			<idioma>Euskera</idioma>
-		</idiomas>
-	</pais>
-</paises>
+</pedidos>

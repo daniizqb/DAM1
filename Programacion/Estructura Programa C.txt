@@ -474,4 +474,27 @@ Ficheros
 			SEEK_CUR 1
 			SEEK_END 2
 
+time.h
+
+	struct tm {
+		int tm_sec; 0 - 59
+		int tm_min;	0 - 59
+		int tm_hour; 0 - 23
+		int tm_mday; 1 - 31	dia del mes
+		int tm_mon; 0 - 11 numero del mes
+		int tm_year; -1900
+		int tm_wday; 0 - 6
+		int tm_yday; 0 - 365
+		int tm_isdst; 0
+	}
+
+	time_t	tipo definido para las fechas (long)
+
+	time(arg) 
+
+		main {
+			time_t fecha = 0;
+			time(&fecha);
+		}
 		
+	printf("%s",ctime(&fecha))
