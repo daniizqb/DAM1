@@ -72,7 +72,7 @@ DML
 EXAMEN
 
     select title from peliculas join actuaciones join actores on peliculas.movieid=actuaciones.movieid and actuaciones.actorid=actores.actorid where name="Ford, Harrison (I)"
-    update generos set genre='Romance' where genre = 'Sci-Fi' and movieid = (select movieid from peliculas where title like 'Star Wars%');
+    update generos set genre = 'Romance' where genre = 'Sci-Fi' and movieid = (select movieid from peliculas where title like 'Star Wars%');
     
 SELECT TABLE_NAME,COUNT(*) FROM COLUMNS WHERE TABLE_SCHEMA = 'IMDB_MINIMA' GROUP BY TABLE_NAME;
 SELECT B.NAME,A.TITLE FROM CINE AS A JOIN CINE AS B ON A TITLE = B TITLE WHERE A..NAME LIKE 'FORD,HARRISON%';
