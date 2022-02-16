@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ej4.xsd">
+  <vehiculo>
+    <nombre></nombre>  
+    <modelo></modelo>
+    <fabricacion>
+      <inicio>
+        <dia></dia>
+        <mes></mes>
+        <anyo></anyo>
+      </inicio>
+      <fin>
+        <dia></dia>
+        <mes></mes>
+        <anyo></anyo>
+      </fin>
+    </fabricacion>
+    <modificaciones>
+      <modificacion></modificacion>
+    </modificaciones>
+  </vehiculo>
+</vehiculos>

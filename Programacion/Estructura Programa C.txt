@@ -490,7 +490,7 @@ time.h
 
 	time_t	tipo definido para las fechas (long)
 
-	time(arg) 
+	time(&arg) | time_t
 
 		main {
 			time_t fecha = 0;
@@ -499,4 +499,11 @@ time.h
 		
 	printf("%s",ctime(&fecha))
 
-	localtime(&fecha) devuelve estructura tipo puntero | struct * tm
+	localtime(&fecha) transforma tipo time_t a struct * tm | time_t
+
+		struct tm*fechaS
+		fechaS = localtime(&fecha)
+
+	ctime(&arg) obtiene cadena de la fecha | time_t
+
+	asctime(&arg) obtiene cadena de la fecha | struct * tm
