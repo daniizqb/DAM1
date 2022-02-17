@@ -490,20 +490,28 @@ time.h
 
 	time_t	tipo definido para las fechas (long)
 
-	time(&arg) | time_t
+	time(&arg) devuelve la fecha actual en segundos | time_t
 
 		main {
 			time_t fecha = 0;
 			time(&fecha);
 		}
 		
-	printf("%s",ctime(&fecha))
+	ctime(&arg) obtiene cadena de la fecha | time_t
+		
+		printf("%s",ctime(&fecha))
 
 	localtime(&fecha) transforma tipo time_t a struct * tm | time_t
 
 		struct tm*fechaS
 		fechaS = localtime(&fecha)
 
-	ctime(&arg) obtiene cadena de la fecha | time_t
-
 	asctime(&arg) obtiene cadena de la fecha | struct * tm
+
+	mktime(&arg) devuelve los segundo de una fecha
+
+	strftime(buffer, longitud_buffer, cadenaControl, fecha(struct tm*))
+
+		char buffer [6];
+		strftime(buffer , 6, "%H:%M", localtime(&fecha));
+		puts(buffer);

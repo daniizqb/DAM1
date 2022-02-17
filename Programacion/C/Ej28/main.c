@@ -1,29 +1,31 @@
+/*
+ * Dias futuros: 227
+ * Dentro de 227 dias la fecha sera: 14-7-2023
+ * */
+
 #include <stdio.h>
 #include <time.h>
 
+#define YEARSEC 31536000
+#define MONTHSEC 2592000
+#define DAYSEC 86400
+#define TAM 50
+
+
 int main() {
     struct tm fecha1;
-    struct tm fecha2;
-    time_t fechaUsuario = 0, fechaSem = 0, dif = 0;
+    time_t fechaUsuario = 0, fechaActual = 0;
+    long resultado = 0;
+    int day = 0;
+    char buffer[TAM]="";
 
-    fecha1.tm_mday = 1;
+    fecha1.tm_mday = 0;
     fecha1.tm_mon = 0;
     fecha1.tm_year = 0;
 
     fecha1.tm_hour = 0;
     fecha1.tm_min = 0;
     fecha1.tm_sec = 0;
-    fecha1.tm_isdst = 1;
-
-
-    fecha2.tm_mday = 15;
-    fecha2.tm_mon = 3-1;
-    fecha2.tm_year = 2022-1900;
-
-    fecha2.tm_hour = 0;
-    fecha2.tm_min = 0;
-    fecha2.tm_sec = 0;
-    fecha2.tm_isdst = 1;
 
     puts("Introduce una dia - mes - anyo");
     scanf("%d",&fecha1.tm_mday);
@@ -37,19 +39,26 @@ int main() {
     fflush(stdin);
     fecha1.tm_year = fecha1.tm_year - 1900;
 
+    time(&fechaActual);
     fechaUsuario = mktime(&fecha1);
-    fechaSem = mktime(&fecha2);
 
-    printf("La fecha es %s\n",ctime(&fechaUsuario));
+    resultado = (long) (fechaActual - fechaUsuario);
 
-    dif = time(&fechaSem) - time(&fechaUsuario);
-    dif = fechaSem - fechaUsuario;
+    day = resultado / DAYSEC;
 
-    printf("Quedan %lldl dias hasta semana santa\n", dif);
+    printf("La diferencia de dias es de %d\n",day);
 
-/*    printf("%s",ctime(&fecha));
-    printf("%s", asctime(localtime(&fecha)));
-    printf("%d - %d",fecha1.tm_wday ,fecha1.tm_yday);*/
+    puts("Dias futuros:");
+    scanf("%d",&day);
+    fflush(stdin);
+
+    resultado = (long) day * DAYSEC;
+    fechaActual += resultado;
+
+    printf("Dentro de %d dias la fecha sera %s\n",day, ctime(&fechaActual));
+
+    strftime(buffer,TAM,"%x %H:%M", localtime(&fechaActual));
+    printf("%s\n",buffer);
 
     return 0;
 }
