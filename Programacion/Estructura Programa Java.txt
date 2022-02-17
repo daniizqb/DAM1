@@ -1,0 +1,64 @@
+Estructura Programa Java
+
+Identificadores
+
+	letra
+	$
+	_
+	no se pueden usar palabras reservadas
+
+Variables
+
+	en minuscula
+
+Constantes
+
+	en mayuscula o con final antes de la variable
+
+Clases
+
+	primera letra en mayuscula
+
+Meotodos
+
+	en minuscula
+
+Tipos de datos
+
+	enteros
+
+		byte numeros muy pequenios
+		short
+		int
+		long
+
+	reales
+
+		float
+		double
+
+	caracteres
+
+		char
+
+	booleanos
+
+		true
+		false
+
+Tipos de dato por referencia
+
+	cadenas
+
+		String
+
+			String cadena = "";
+
+Operadores
+
+	+ - * / (trunca la division) %
+
+	++ --
+
+	+= -= *= /= %=
+
