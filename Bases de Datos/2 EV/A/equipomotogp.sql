@@ -48,6 +48,8 @@ CREATE TABLE IF NOT EXISTS mecanico_moto(
 ALTER TABLE piloto ADD FOREIGN KEY (id_equipo) REFERENCES equipo(id_equipo) ON DELETE RESTRICT;
 ALTER TABLE moto ADD FOREIGN KEY (id_equipo) REFERENCES equipo(id_equipo) ON DELETE RESTRICT;
 ALTER TABLE mecanico ADD FOREIGN KEY (sector) REFERENCES sector(nom_sector) ON DELETE RESTRICT;
+ALTER TABLE mecanico_moto ADD FOREIGN KEY (dni_mecanico) REFERENCES mecanico(dni_mecanico) ON DELETE RESTRICT;
+ALTER TABLE mecanico_moto ADD FOREIGN KEY (bastidor_moto) REFERENCES moto(bastidor_moto) ON DELETE RESTRICT;
 
 INSERT INTO BOXX VALUES
 ('4141','23'),

@@ -1,0 +1,12 @@
+EQUIPO (id_equipo,num_mecanicos,anyo_fundado,nombre)
+BOX (id_box,tamanyo)
+PILOTO (dni_piloto,altura,primera_temporada,id_equipo)
+id_equipo es FK referenciada de EQUIPO NOT NULL
+MOTO (bastidor_moto,cilindrada, id_equipo)
+id_equipo es FK referenciada de EQUIPO NOT NULL
+MECANICO_MOTO (dni_mecanico,bastidor_moto)
+dni_mecanico es FK referenciada de MECANICO NOT NULL
+bastidor_moto es FK referenciada de MOTO NOT NULL
+MECANICO (dni_mecanico,nombre,edad,sector)
+sector es FK referenciada de SECTOR NOT NULL
+SECTOR (nom_sector)
