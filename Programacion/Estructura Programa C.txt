@@ -474,6 +474,10 @@ Ficheros
 			SEEK_CUR 1
 			SEEK_END 2
 
+		rename(cadena.txt,fichCadena.txt)
+
+		remove("cadena.txt")
+
 time.h
 
 	struct tm {
