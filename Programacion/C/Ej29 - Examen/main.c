@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <locale.h>
 
 #define TAM 11
 
@@ -16,6 +17,8 @@ int main() {
 
     char cadena [TAM] = "";
     short cont = 0;
+
+    setlocale(LC_CTYPE,"Spanish");
 
     strcpy(f1.cad1,"Caracola");
     strcpy(f1.cad2,"Gominola");
@@ -45,7 +48,10 @@ int main() {
 
     fclose(fich);
 
-    printf("La cadena %s se ha encontrado %hd veces\n",cadena,cont);
+    if (!strcmp(cadena,""))
+        puts("Cadena introducida está vacía");
+    else
+        printf("La cadena %s se ha encontrado %hd veces\n",cadena,cont);
 
     return 0;
 }
