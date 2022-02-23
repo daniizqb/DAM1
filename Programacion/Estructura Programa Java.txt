@@ -52,7 +52,8 @@ Tipos de dato por referencia
 
 		String
 
-			String cadena = "";
+			String cadena = "Hola";
+			System.out.println(cadena + 123);
 
 Operadores
 
@@ -62,3 +63,38 @@ Operadores
 
 	+= -= *= /= %=
 
+	== > < >= <= !=
+
+	&& || !
+
+Clases Envolventes
+
+	integer.parseInt (cadena)
+	short.parseShort (cadena)
+	byte.parseByte (cadena)
+	float.parseFloat (cadena)
+	double.parseDouble (cadena)
+
+Clase String
+
+	String.valueOf () | transforma argumento a cadena
+
+	.toUpperCase()); | devuelve el objeto a mayuscula
+	
+	.toLowerCase(); | devuelve el objeto a minuscula
+
+	.charAt(n) | devuelve la posicion introducida del objeto
+
+	.equals(cadena a comparar) | devuelve true o false
+
+	.equalsIgnoreCase() | compara ignorando mayusculas
+
+	.length() | tamanyo cadena
+
+	.indexOf(caracter|cadena,pos) | devuelve la posicion en la que aparece por primera vez el caracter, si no encuentra caracter devuelve numero negativo
+
+	.lastIndexOf() | devuelve la posicion en la que aparece por primera vez el caracter desde el final, si no encuentra caracter devuelve numero negativo
+
+	.concat() | devuelve las cadenas concatenadas
+
+Metodos estaticos (sale directamente de la clase)
