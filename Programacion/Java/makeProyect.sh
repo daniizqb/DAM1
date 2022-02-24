@@ -1,4 +1,4 @@
 mkdir Ej
 cd ./Ej
-echo "cmake-build-debug" >> .gitignore
+echo "*.iml" >> .gitignore
 echo ".idea" >> .gitignore

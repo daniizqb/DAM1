@@ -12,7 +12,7 @@ Estructura Programa C
 		#define NREAL 7.8
 	
 	-Definicion de tipos
-	
+
 	-Declaracion de prototipos (Cabeceras de funciones)
 	
 	-Declaracion de variables globales (!!!DANGER!!!)
@@ -33,7 +33,7 @@ Comentarios
 	
 	-Comentario en bloque: /*Contenido*/
 	
-Tipos de datos
+Tipos de datos (se puede cambiar con typedef short numCorto)
 
 	-char: char car;
 	
@@ -372,6 +372,8 @@ string
 	strcspn() busca los caracteres de una cadena en la otra y devuelve el numero de la posicion del caracter menor que encuentre, si no encuetra devuleve strlen
 	strpbrk() busca los caracteres de la primera cadena en la segunda y devuelve la primera cadena a partir del char que encuentra
 	strstr() busca cadena 2 en cadena 1 y devuelve lo que haya a partir de la cadena incluyendo cadena 2
+
+	strcpy(cadena,strstr(cadena,subcadena)+strlen(cadena))
 
 math
 
