@@ -1,0 +1,15 @@
+<usuario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="usuario.xsd" dni = "R1">
+    <id>XD1</id>
+    <datos>
+        <datos_familiares>
+            <nombre_padre></nombre_padre>
+            <nombre_madre></nombre_madre>
+            <hijos>false</hijos>
+        </datos_familiares>
+        <nombre></nombre>
+        <edad>18</edad>
+        <fecha_nacimiento>2003-05-14</fecha_nacimiento>
+    </datos>
+    <telefono></telefono>
+</usuario>

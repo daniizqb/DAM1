@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+  <codigo id="1">1263</codigo>
+  <nombre>Jon</nombre>  
+  <direccion>Calle de Lopez Silva, 7</direccion>
+  <telefono tipo="fijo">91620443</telefono>
+  <propietario>
+    <nombre sexo="F">Nuria</nombre>
+    <direccion>Plaza Santa Ana, 14</direccion>
+    <telefono tipo="móvil">656222000</telefono>
+  </propietario>
+  <propietario>
+    <nombre sexo="M">Miguel</nombre>
+    <telefono tipo="fijo">91620334</telefono>
+  </propietario>
+  <propietario>
+    <nombre sexo="M">Kayzer</nombre>
+    <telefono tipo="móvil">656222333</telefono>
+  </propietario>
+  <libro>
+    <titulo>Cien años de soledad</titulo>
+    <autor>Gabriel García Márquez</autor>
+    <formato>Rústica</formato>
+    <publicacion>1967</publicacion>
+    <precio>23.5</precio>
+  </libro>
+    <libro>
+    <titulo>Las reliquias de la muerte</titulo>
+    <autor>Fernando Fernan Gomez</autor>
+    <formato>Clásico</formato>
+    <publicacion>2014</publicacion>
+    <precio>32.5</precio>
+  </libro>
+   <libro>
+    <titulo>El señor de los anillos</titulo>
+    <autor>Kayzer</autor>
+    <formato>Moderno</formato>
+    <publicacion>2004</publicacion>
+    <precio>12</precio>
+  </libro>
+</libreria>
+

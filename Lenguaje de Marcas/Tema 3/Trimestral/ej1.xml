@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libro>
+        <titulo>La vida esta en otra parte</titulo>
+        <autor>Milan Kundera</autor>
+        <fechaPublicacion anio = "1973"/>
+    </libro>
+
+    <libro>
+        <titulo>Pantaleon y las visitadoras</titulo>
+        <autor fechaNacimiento = "28/03/1936">Mario Vargas Llosa</autor>
+        <fechaPublicacion anio = "1973"/>
+    </libro>
+
+    <libro>
+        <titulo>Conversacion en la catedral</titulo>
+        <autor fechaNacimiento = "28/03/1936">Mario Vargas Llosa</autor>
+        <fechaPublicacion anio = "1969"/>
+    </libro>
+
+    <libro>
+        <titulo>El Hobbit</titulo>
+        <autor fechaNacimiento = "28/03/1892">J.R.R Tolkien</autor>
+        <fechaPublicacion anio = "1932"/>
+    </libro>
+</biblioteca>

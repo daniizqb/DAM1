@@ -1,0 +1,27 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+<xs:element name="herramientas">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="caja" maxOccurs="unbounded" minOccurs="2">
+<xs:complexType>
+<xs:sequence>
+<xs:element type="xs:string" name="nombre" minOccurs="1"/>
+<xs:element name="características">
+<xs:complexType>
+<xs:sequence>
+<xs:choice>
+    <xs:element type="xs:string" name="color"/>
+    <xs:element type="xs:string" name="peso"/>
+</xs:choice>
+<xs:element type="xs:date" name="fecha_fab" minOccurs="1"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element type="xs:byte" name="precio" minOccurs="1"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<herramientas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej6.xsd">
+   <caja>
+      <nombre>martillo</nombre>
+      <características>
+          <color>rojo</color> 
+          <fecha_fab>2010-12-12</fecha_fab>      
+      </características>
+      <precio>15</precio>
+   </caja>
+   <caja>
+      <nombre>W3C</nombre>
+      <características>
+          <peso>1 kilo</peso> 
+          <fecha_fab>2010-12-12</fecha_fab>           
+      </características>
+      <precio>13</precio>
+   </caja>
+</herramientas>

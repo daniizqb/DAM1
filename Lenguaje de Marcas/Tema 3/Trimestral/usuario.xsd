@@ -1,0 +1,30 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="usuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id" type="xs:string"/>
+        <xs:element name="datos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="datos_familiares"/>
+               <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="edad" type="xs:integer"/>
+              <xs:element name="fecha_nacimiento" type="xs:date"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+         <xs:element name="telefono" type="xs:string"/>
+       </xs:sequence>
+      <xs:attribute name="dni" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="datos_familiares">
+  <xs:complexType>
+     <xs:sequence>
+      <xs:element name="nombre_padre" type="xs:string"/>
+      <xs:element name="nombre_madre" type="xs:string"/>
+      <xs:element name="hijos" type="xs:boolean"/>
+     </xs:sequence>
+   </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE alumnos [
+  <!ELEMENT alumnos (alumno+)>
+  <!ELEMENT alumno (nombre, edad, fecha_nacimiento?, hijo)>
+  <!ATTLIST alumno lugar CDATA "Afuera">  
+
+  <!ELEMENT nombre (#PCDATA)>
+  <!ATTLIST nombre dni ID #REQUIRED>
+  
+  <!ELEMENT edad (#PCDATA)>
+  <!ELEMENT fecha_nacimiento (#PCDATA)>
+  <!ELEMENT hijo (#PCDATA)>
+]>
+
+<alumnos>
+  <alumno lugar="Afuera">
+    <nombre dni="R44566820">tablero</nombre>
+    <edad>14</edad>
+    <fecha_nacimiento>1990-10-10</fecha_nacimiento>
+    <hijo>Raul</hijo>
+  </alumno>
+</alumnos>

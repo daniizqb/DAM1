@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaDeFutbol [
+  <!ELEMENT ligaDeFutbol (partido+)>
+  <!ELEMENT partido (local, visitante)>
+  <!ATTLIST partido id ID #REQUIRED>    
+  <!ELEMENT local (nombre, goles+)>
+  <!ELEMENT visitante (nombre, goles)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT goles (#PCDATA)>
+]>
+
+<ligaDeFutbol>
+  <partido id="LF1">
+    <local>
+      <nombre>Manchester City</nombre>
+      <goles>0</goles>
+    </local>
+    <visitante>
+      <nombre>Inter de Milán</nombre>
+      <goles>1</goles>
+    </visitante>
+  </partido>
+  <partido id="LA1">
+    <local>
+      <nombre>Barcelona</nombre>
+      <goles>3</goles>
+    </local>
+    <visitante>
+      <nombre>Rayo Vallecano</nombre>
+      <goles>4</goles>
+    </visitante>
+  </partido>
+  <partido id="LF2">
+    <local>
+      <nombre>Bayer de Múnich</nombre>
+      <goles>4</goles>
+    </local>
+    <visitante>
+      <nombre>Real Sociedad</nombre>
+      <goles>2</goles>
+    </visitante>
+  </partido>
+</ligaDeFutbol>

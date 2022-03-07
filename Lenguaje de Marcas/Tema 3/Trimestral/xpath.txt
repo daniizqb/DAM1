@@ -1,0 +1,4 @@
+﻿/libreria/propietario[telefono/@tipo = "móvil"]
+/libreria/propietario[telefono/@tipo = "móvil" and  nombre/@sexo = "F"]/nombre/text()
+/libreria/propietario[nombre = /libreria/libro/autor and /libreria/libro/titulo = "El seÃ±or de los anillos" ]/telefono/text()
+/libreria/libro[publicacion > 2000]/titulo
