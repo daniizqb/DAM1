@@ -97,4 +97,20 @@ Clase String
 
 	.concat() | devuelve las cadenas concatenadas
 
+	.substring(posI,posF) | solo coje unos menos que la posF, si solo se pone un argumento cojera desde el argumento hasta el final de la cadena
+
+	.compareTo(cadena) | igual que strcmp (0 si son iguales >0 si cad1 es mayor que cad2 y <0 si cad2 es mayor que cad1)
+
+	.compareToIgnoreCase | no tiene en cuenta mayusculas y minusculas
+
+	.trim() | devuelve cadena sin espacios no significativos
+
+	.isEmpty() | devuelve true o false si la cadena esta vacia
+
+	.replace(c1,c2) | cambia todos los caracteres o cadenas de una cadena
+
+	.startsWith() | devuelve true o flase si la cadena empieza por la cadena indicada
+
+	.endsWith() | devuelve true o flase si la cadena acaba por la cadena indicada
+
 Metodos estaticos (sale directamente de la clase)
