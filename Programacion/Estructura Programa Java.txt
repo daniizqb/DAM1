@@ -53,7 +53,7 @@ Tipos de dato por referencia
 		String
 
 			String cadena = "Hola";
-			System.out.println(cadena + 123);
+			
 
 Operadores
 
@@ -114,3 +114,32 @@ Clase String
 	.endsWith() | devuelve true o flase si la cadena acaba por la cadena indicada
 
 Metodos estaticos (sale directamente de la clase)
+
+Salida de datos
+
+	System.out.println(cadena + 123);
+	System.out.print() lo mismo pero sin salto de linea
+	System.out.prinf(%[indice][identificadores][ancho][num.decimales]tipo.mascarilla)
+
+		System.out.printf("Nombre: %S \n",nombre)
+
+		tipo.mascarilla
+
+			c C caracter mayus o minuscula
+			b B booleanos
+			d   digitos
+			f   reales
+			s S cadena
+
+Entrada de datos (import java.io.*)
+
+	ImputStreamReader flujo;
+	BufferedReader teclado;
+
+	flujo = new ImputStreamReader(System.in);
+	teclado = new BufferedReader(flujo);
+
+	BufferedReader teclado = new BufferedReader(new ImputStreamReader(System.in));
+
+	nombre = teclado.readLine();
+	num = Integer.parseInt(teclado.readLine());
