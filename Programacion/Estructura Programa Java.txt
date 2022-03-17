@@ -139,7 +139,72 @@ Entrada de datos (import java.io.*)
 	flujo = new ImputStreamReader(System.in);
 	teclado = new BufferedReader(flujo);
 
+
 	BufferedReader teclado = new BufferedReader(new ImputStreamReader(System.in));
 
 	nombre = teclado.readLine();
 	num = Integer.parseInt(teclado.readLine());
+
+Entrada de datos (import java.util.Scanner*)
+
+	Scanner sc = new Scanner(System.in);
+	sc.nextInt()
+	sc.nextFloat()
+	sc.nextLine() coje todo
+	sc.next() corta en el espacio
+
+
+Bucles
+
+	while
+
+		while (condicion)
+			instruccion;
+
+		while (condicion){
+			instrucciones;
+		}
+
+	do (mientras la condicion se cumpla)
+
+		do {
+			instrucciones
+		}while (condicion);
+
+	for (mientras no supere valor final)
+
+		for (inicializacion; condicion; incremento)
+			instruccion;
+
+		for (inicializacion; condicion; incremento) {
+			instrucciones;
+		}
+
+		Ejemplo:
+
+			for (i=1;i<=10;[i=i+1,++i,i++])
+
+
+Arrays
+
+	tipo [] nombre | aNum = new int [TAM]
+	tipo nombre []
+	int [] aNum = {3,2,1}
+	int [] aNum = new int [TAM]
+	int [] aNum = new int [TAM] {1,2,3}
+
+	Los arrays de tipo string se inicializan a null
+
+Matrizes
+
+	tipo [][] nombre = new tipo [TAMF][TAMC];
+	tipo [][] nombre = { {1,2,3}, {101,102,103} };
+	tipo [][] nombre = new tipo [TAMF][]; | matriz irregular
+
+		int [][] mNum = new int [3][]
+		int [0] mNum = new int [3]
+		int [1] mNum = new int [1]
+		int [2] mNum = new int [2]
+	
+	matriz.length | numero de elementos de la matriz
+	matriz[0].length | numero de elementos de una fila

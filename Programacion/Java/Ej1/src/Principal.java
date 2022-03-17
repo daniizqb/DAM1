@@ -10,16 +10,13 @@ public class Principal {
         pos = numero.lastIndexOf('.');
         System.out.println("Parte entera:" + numero.substring(0,pos) + "\nParte real:" + numero.substring(pos + 1));*/
 
-        int capital = 0;
-        float interes = 0;
-
         BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in,"UTF-8"));
 
         System.out.println("Capital:");
-        capital = Integer.parseInt(teclado.readLine());
+        int capital = Integer.parseInt(teclado.readLine());
 
         System.out.println("Interes:");
-        interes = Float.parseFloat(teclado.readLine());
+        float interes = Float.parseFloat(teclado.readLine());
 
         interes = capital/interes;
         System.out.println("Intereses:" + interes);
