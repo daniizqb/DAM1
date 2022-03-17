@@ -1,3 +1,0 @@
-D:/Documents/DAM1/Programacion/C/Ej26/cmake-build-debug/CMakeFiles/Ej26.dir
-D:/Documents/DAM1/Programacion/C/Ej26/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Documents/DAM1/Programacion/C/Ej26/cmake-build-debug/CMakeFiles/rebuild_cache.dir
