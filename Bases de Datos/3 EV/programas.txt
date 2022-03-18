@@ -1,0 +1,53 @@
+1 - 
+SET SERVEROUTPUT ON
+DECLARE
+nombre VARCHAR2(20);
+numero INTEGER;
+BEGIN
+SELECT region_name, region_id into nombre, numero from regions where region_ID = 3;
+DBMS_OUTPUT.PUT_LINE('La region se llama ' ||nombre||' y su numero es '||numero);
+END;
+
+2 - 
+SET SERVEROUTPUT ON
+
+BEGIN
+
+INSERT INTO REGIONS VALUES (666,'Narnia');
+
+END;
+
+3 - 
+SET SERVEROUTPUT ON
+DECLARE
+nombre regions.region_name%TYPE;
+numero INTEGER;
+BEGIN
+SELECT region_name, region_id into nombre, numero from regions where region_ID = 3;
+DBMS_OUTPUT.PUT_LINE('La region se llama ' ||nombre||' y su numero es '||numero);
+END;
+
+4 -
+SET SERVEROUTPUT ON
+DECLARE
+num_emp INTEGER;
+BEGIN
+SELECT COUNT(*) into num_emp from employees;
+DBMS_OUTPUT.PUT_LINE(num_emp);
+END;
+
+5 -
+SET SERVEROUTPUT ON
+
+DECLARE 
+numero INTEGER;
+
+BEGIN
+numero := &introduzca_numero;
+if MOD(numero,2) = 0 then
+DBMS_OUTPUT.PUT_LINE(numero||'es par');
+else
+DBMS_OUTPUT.PUT_LINE(numero||' es inpar');
+end if;
+
+END;
