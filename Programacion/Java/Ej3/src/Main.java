@@ -9,21 +9,23 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        short i = 0, num = 0;
+        final byte NUMCOMP = 7;
+
+        short i = 0;
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Num de elementos del array:");
         final short TAM = Short.parseShort(sc.nextLine());
         short aNum [] = new short [TAM];
 
-        do {
+        while (i < TAM) {
             System.out.println("Numero:");
-            num = Short.parseShort(sc.nextLine());
-            if (num % 7 == 0) {
+            short num = Short.parseShort(sc.nextLine());
+            if (num % NUMCOMP == 0) {
                 aNum[i] = num;
                 i++;
             }
-        } while (i < TAM);
+        }
 
         for (i = 0;i < TAM;i++) {
             System.out.println(i + " " + aNum[i]);

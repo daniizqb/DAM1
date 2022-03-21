@@ -208,3 +208,7 @@ Matrizes
 	
 	matriz.length | numero de elementos de la matriz
 	matriz[0].length | numero de elementos de una fila
+
+Clase Arrays (java.utils.Arrays)
+
+	System.arraycopy(aOriginal,posOriginal,aDestino,posDestino,numElementos);
