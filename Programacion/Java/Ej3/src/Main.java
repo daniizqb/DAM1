@@ -9,9 +9,12 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        short [] aNum = new short [15];
         short i = 0, num = 0;
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("Num de elementos del array:");
+        final short TAM = Short.parseShort(sc.nextLine());
+        short aNum [] = new short [TAM];
 
         do {
             System.out.println("Numero:");
@@ -20,9 +23,9 @@ public class Main {
                 aNum[i] = num;
                 i++;
             }
-        } while (i < 15);
+        } while (i < TAM);
 
-        for (i = 0;i < 15;i++) {
+        for (i = 0;i < TAM;i++) {
             System.out.println(i + " " + aNum[i]);
         }
     }
