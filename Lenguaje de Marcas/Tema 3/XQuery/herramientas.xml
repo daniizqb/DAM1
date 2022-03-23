@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<herramientas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ejemplo.xsd">
+   <caja>
+      <nombre>martillo</nombre>
+      <características>
+          <color>rojo</color> 
+          <fecha_fab>2010-12-12</fecha_fab>      
+      </características>
+      <precio>15</precio>
+   </caja>
+   <caja>
+      <nombre>W3C</nombre>
+      <características>
+          <peso>1 kilo</peso> 
+          <fecha_fab>2000-10-10</fecha_fab>           
+      </características>
+      <precio>13</precio>
+   </caja>
+     <caja>
+      <nombre>alicate</nombre>
+      <características>
+          <peso>0.5 kilos</peso> 
+          <fecha_fab>1965-02-02</fecha_fab>           
+      </características>
+      <precio>9</precio>
+   </caja>
+    <caja>
+      <nombre>destornillador</nombre>
+      <características>
+          <color>negro</color> 
+          <fecha_fab>1990-09-17</fecha_fab>      
+      </características>
+      <precio>34</precio>
+   </caja>
+</herramientas>
