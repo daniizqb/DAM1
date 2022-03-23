@@ -212,3 +212,37 @@ Matrizes
 Clase Arrays (java.utils.Arrays)
 
 	System.arraycopy(aOriginal,posOriginal,aDestino,posDestino,numElementos);
+
+Metodos
+
+	getter y setter
+
+	batalla
+
+		public class Persona {
+			String nif;
+			String nombre;
+			short edad;
+			/*
+			Constructor
+			Persona (String n, String nom, short ed) {
+				nif = n;
+				nom = nom;
+				edad = ed;
+			*/
+			}
+		}
+
+		public class Persona {
+			public static void main() {
+				Persona pers = null
+				pers = new Persona("1111111Q","Juan",10);
+			}
+		}
+
+		public class Persona {
+			public static void main() {
+				Persona pers = null
+				pers = new Persona();
+			}
+		}
