@@ -75,6 +75,67 @@ Clases Envolventes
 	float.parseFloat (cadena)
 	double.parseDouble (cadena)
 
+Definir Clases
+
+	public class Persona {
+		String nif;
+		String nombre;
+		short edad;
+		/*
+		Constructor
+		Persona (String n, String nombre, short edad) {
+			this.nif=nif;
+			this.nombre=nombre;
+			this.edad=edad;
+		*/
+		}
+	}
+
+	public class Persona {
+		public static void main() {
+			Persona pers = null
+			pers = new Persona("1111111Q","Juan",10);
+		}
+	}
+
+	public class Persona {
+		public static void main() {
+			Persona pers = null
+			pers = new Persona();
+		}
+	}
+
+	nada: cualquiera que forme parte del paquete podra acceder
+	public: acceso de cualquier paquete
+	protected: solo acceden las calses que heredan
+	private: solo puede acceder la propia clase
+
+Metodos
+
+	getter y setter
+
+		get: suelen ser publicos, sirve para obtener algo
+
+			public String getNif() {
+				return nif;
+			}
+
+		set: tipo void modifica algo
+
+			public void setNif(String nif) {
+				this.nif = nif;
+			}
+
+	batalla
+
+		toString() comprobar los datos que tiene un objeto | permite que al hacer el print solo del objeto haga el toString
+
+			public String toString() {
+				return nif + "" + nombre + "" + edad;
+			}
+
+			sout(pers); (hace el pers.toString)
+
 Clase String
 
 	String.valueOf () | transforma argumento a cadena
@@ -183,6 +244,9 @@ Bucles
 		Ejemplo:
 
 			for (i=1;i<=10;[i=i+1,++i,i++])
+	
+	fo (int var:numEnt)
+		sout(var);
 
 
 Arrays
@@ -212,57 +276,10 @@ Matrizes
 Clase Arrays (java.utils.Arrays)
 
 	System.arraycopy(aOriginal,posOriginal,aDestino,posDestino,numElementos);
-
-Definir Clases
-
-	public class Persona {
-		String nif;
-		String nombre;
-		short edad;
-		/*
-		Constructor
-		Persona (String n, String nombre, short edad) {
-			this.nif=nif;
-			this.nombre=nombre;
-			this.edad=edad;
-		*/
-		}
-	}
-
-	public class Persona {
-		public static void main() {
-			Persona pers = null
-			pers = new Persona("1111111Q","Juan",10);
-		}
-	}
-
-	public class Persona {
-		public static void main() {
-			Persona pers = null
-			pers = new Persona();
-		}
-	}
-
-	nada: cualquiera que forme parte del paquete podra acceder
-	public: acceso de cualquier paquete
-	protected: solo acceden las calses que heredan
-	private: solo puede acceder la propia clase
-
-Metodos
-
-	getter y setter
-
-		get: suelen ser publicos, sirve para obtener algo
-
-			public String getNif() {
-				return nif;
-			}
-
-		set: tipo void modifica algo
-
-			public void setNif(String nif) {
-				this.nif = nif;
-			}
-
-	batalla
-
+	Arrays.sort(array[,pos,elemento(-1)]); (va desde la posicion indicada)
+	Arrays.sort(array,Collections.reverseOrder());
+	Arrays.binarySearch(array,[posI,elementoF],dato); (si no lo encuentra valor negativo, si lo encuentra devuelve posicion)
+	Arrays.equals(a1,a2);
+	Arrays.deepEquals(m1,m2);
+	Arrays.fill(array,dato);
+	Arrays.toString(array);

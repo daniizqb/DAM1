@@ -32,4 +32,9 @@ public class Persona {
     public void setEdad(short edad) {
         this.edad = edad;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nif='" + nif + '\'' + ", nombre='" + nombre + '\'' + ", edad=" + edad + '}';
+    }
 }
