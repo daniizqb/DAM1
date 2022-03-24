@@ -213,36 +213,56 @@ Clase Arrays (java.utils.Arrays)
 
 	System.arraycopy(aOriginal,posOriginal,aDestino,posDestino,numElementos);
 
+Definir Clases
+
+	public class Persona {
+		String nif;
+		String nombre;
+		short edad;
+		/*
+		Constructor
+		Persona (String n, String nombre, short edad) {
+			this.nif=nif;
+			this.nombre=nombre;
+			this.edad=edad;
+		*/
+		}
+	}
+
+	public class Persona {
+		public static void main() {
+			Persona pers = null
+			pers = new Persona("1111111Q","Juan",10);
+		}
+	}
+
+	public class Persona {
+		public static void main() {
+			Persona pers = null
+			pers = new Persona();
+		}
+	}
+
+	nada: cualquiera que forme parte del paquete podra acceder
+	public: acceso de cualquier paquete
+	protected: solo acceden las calses que heredan
+	private: solo puede acceder la propia clase
+
 Metodos
 
 	getter y setter
 
+		get: suelen ser publicos, sirve para obtener algo
+
+			public String getNif() {
+				return nif;
+			}
+
+		set: tipo void modifica algo
+
+			public void setNif(String nif) {
+				this.nif = nif;
+			}
+
 	batalla
 
-		public class Persona {
-			String nif;
-			String nombre;
-			short edad;
-			/*
-			Constructor
-			Persona (String n, String nom, short ed) {
-				nif = n;
-				nom = nom;
-				edad = ed;
-			*/
-			}
-		}
-
-		public class Persona {
-			public static void main() {
-				Persona pers = null
-				pers = new Persona("1111111Q","Juan",10);
-			}
-		}
-
-		public class Persona {
-			public static void main() {
-				Persona pers = null
-				pers = new Persona();
-			}
-		}
