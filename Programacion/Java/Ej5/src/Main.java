@@ -15,7 +15,7 @@ public class Main {
         pers.setEdad(Short.parseShort(sc.nextLine()));
         sc.close();*/
 
-        System.out.printf("NIF: %s Nombre: %s Edad: %hd",pers.getNif(),pers.getNombre(),pers.getEdad());
+        System.out.printf("NIF: %s Nombre: %s Edad: %hd\n",pers.getNif(),pers.getNombre(),pers.getEdad());
         System.out.println(pers);
 
         int aNum [] = {1,2,3,4};

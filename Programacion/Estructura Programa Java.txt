@@ -191,6 +191,7 @@ Salida de datos
 			d   digitos
 			f   reales
 			s S cadena
+			tc	fecha
 
 Entrada de datos (import java.io.*)
 
@@ -283,3 +284,19 @@ Clase Arrays (java.utils.Arrays)
 	Arrays.deepEquals(m1,m2);
 	Arrays.fill(array,dato);
 	Arrays.toString(array);
+
+Clase GregorianCalendar (java.utils)
+
+	GregorianCalendar gc = new GregorianCalendar();
+	sout(gc.getTime());
+	Date dt = gc.getTime();
+
+Clase Date (java.utils)
+
+	Date hoy = new Date();
+
+	java.text.DateFormat
+		DateFormat formato = DateFormat.getDateInstance(DateFormat.Short,Locale.UK,Medium,Long,Full);
+		sout(formato.format(hoy));
+		Locale fCast = new Locale("es","ES","Traditional.Win");
+		DateFormat formato = DateFormat.getDateInstance(DateFormat.SHORT,fcast);

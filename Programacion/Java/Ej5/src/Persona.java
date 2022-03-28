@@ -33,7 +33,6 @@ public class Persona {
         this.edad = edad;
     }
 
-    @Override
     public String toString() {
         return "Persona{" + "nif='" + nif + '\'' + ", nombre='" + nombre + '\'' + ", edad=" + edad + '}';
     }
