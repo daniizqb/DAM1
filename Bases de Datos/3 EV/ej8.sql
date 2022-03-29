@@ -27,11 +27,11 @@ DECLARE
     pragma exception_init (invalid_number,-6502);
 BEGIN
     v_id := &id_empleado; 
-    v_ape := &apellido;
-    v_nom := &nombre;
-    v_mail := &email;
+    v_ape := '&apellido';
+    v_nom := '&nombre';
+    v_mail := '&email';
     v_hd := &hire_date;
-    v_job := &jobid;
+    v_job := '&jobid';
     v_sueldo := &salario;
     v_manag := &id_manager;
     v_dep := &id_departamento;
@@ -43,25 +43,32 @@ BEGIN
     
     if cuenta = 0 then
         raise no_dep;
-    end if;    
+    end if; 
+    
     if cuenta2 = 0 then
         raise no_manag;
     end if;
+    
     if cuenta3 >= 1 then
         raise empnum_dup;
     end if;
+    
     if v_sueldo is null then
         raise_aplication_error(-27344,'Salario invalido');
     end if;
+    
     if instr(v_nom,' ') != 0 or instr(v_ape,' ') != 0 then
         raise contiene_espacio;
     end if;
+    
     if instr(v_mail,'@') = 0 or instr(v_mail,'.') = 0 or length(v_mail) < 10 then
         raise invalid_mail;
     end if;
+    
     if extract(year from v_hd) < 2000 or extract(year from v_hd) > sysdate then
         raise invalid_date;
     end if;
+    
     select avg(salary) into average from employees;
     if v_sueldo > (average * (2/3)) then
         raise invalid_salary;
