@@ -246,7 +246,7 @@ Bucles
 
 			for (i=1;i<=10;[i=i+1,++i,i++])
 	
-	fo (int var:numEnt)
+	for (int var:numEnt)
 		sout(var);
 
 
@@ -282,18 +282,31 @@ Clase Arrays (java.utils.Arrays)
 	Arrays.binarySearch(array,[posI,elementoF],dato); (si no lo encuentra valor negativo, si lo encuentra devuelve posicion)
 	Arrays.equals(a1,a2);
 	Arrays.deepEquals(m1,m2);
-	Arrays.fill(array,dato);
+	Arrays.fill(array,dato);	Rellenar todo el array con un mismo dato
 	Arrays.toString(array);
 
 Clase GregorianCalendar (java.utils)
 
-	GregorianCalendar gc = new GregorianCalendar();
-	sout(gc.getTime());
+	GregorianCalendar gc = new GregorianCalendar() | (anyo, mes, dia) | (anyo,mes,dia,hh,mm,ss) | (anyo,mes,dia,hh,mm);
+	sout(gc.getTime()); 	Obtiene la fecha y hora de hoy en formato date
 	Date dt = gc.getTime();
+	gc.get(Calendar.[]);
+		DAY_OF_WEEK
+		DAY_OF_YEAR
+		DAY_OF_WEEK_IN_MONTH
+		WEEK_OF_YEAR
+		WEEK_OF_MONTH
+		MONTH
+		YEAR
+		AM_PM | 0 si es AM 1 si es AM_PM
+		HOUR | 0 a 11
+		HOUR_OF_DAY | 0 a 23
+		MINUTE
+		SECOND
 
 Clase Date (java.utils)
 
-	Date hoy = new Date();
+	Date hoy = new Date();	Obtiene la fecha de hoy
 
 	java.text.DateFormat
 		DateFormat formato = DateFormat.getDateInstance(DateFormat.Short,Locale.UK,Medium,Long,Full);
