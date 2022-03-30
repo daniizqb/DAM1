@@ -3,7 +3,6 @@ import java.util.GregorianCalendar;
 
 public class Main {
     public static void main(String[] args) {
-        /*Pedir Mes y dia y calcular dias que han pasado desde principio de anyo y cuantos maltan hasta final de anyo*/
         int dia = Integer.parseInt(args[0]);
         int mes = Integer.parseInt(args[1]) - 1;
 
