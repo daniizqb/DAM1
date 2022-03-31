@@ -314,3 +314,29 @@ Clase Date (java.utils)
 		sout(formato.format(hoy));
 		Locale fCast = new Locale("es","ES","Traditional.Win");
 		DateFormat formato = DateFormat.getDateInstance(DateFormat.SHORT,fcast);
+
+Clase StringTokenizer
+
+	StringTokenizer = new StringTokenizer(cadena) | separa la cadena en tokens en base a la separacion por espacios
+
+		.countTokens() 		| devuleve el numero de tokens que tiene
+		.hasMoreTokens() 	| devuelve true o false si tiene mas tokens
+		.nextToken()		| obtiene el proximo token
+		
+Clase Math
+
+	Math.abs(n) 	| valor absoluto de un numero
+		.ceil(n)	| redondea a la alza
+		.floor(n)	| trunca
+		.round		| redondea
+		.max(n,m)	| devuelve max
+		.min(n,m)	| devuelve min
+		.pow(n,m)	| eleva numero a n
+		.sqrt(n)	| devuelve raiz
+		.random		| devuelve numer entre 0 y 0.99
+		.PI			| devuelve num PI
+
+Clase Random
+
+	Random rd = new Random();
+	sout(random.nextInt(n))
