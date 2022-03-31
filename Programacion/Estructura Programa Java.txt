@@ -303,6 +303,7 @@ Clase GregorianCalendar (java.utils)
 		HOUR_OF_DAY | 0 a 23
 		MINUTE
 		SECOND
+	gc.getTimeInMilis()
 
 Clase Date (java.utils)
 

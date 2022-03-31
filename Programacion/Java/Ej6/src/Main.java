@@ -12,4 +12,7 @@ public class Main {
         System.out.println("Dias transcurridos desde el inico del anyo: " + gc.get(Calendar.DAY_OF_YEAR));
         System.out.println("Dias restantes hasta final del anyo: " + (365 - gc.get(Calendar.DAY_OF_YEAR)));
     }
+
+
+    
 }

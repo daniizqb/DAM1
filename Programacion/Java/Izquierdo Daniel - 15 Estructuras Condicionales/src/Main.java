@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        String str = args[0];
-        char car = str.charAt(0);
+        char car = args[0].charAt(0);
 
         if (car == 'a' || car == 'e' || car == 'i' || car == 'o' || car == 'u')
             System.out.println("El caracter es la vocal minuscula " + car);
         else if (car == 'A' || car == 'E' || car == 'I' || car == 'O' || car == 'U')
             System.out.println("El caracter es una vocal mayuscula");
-        else if (car >= '1' && car <= '9')
+        else
             switch (car) {
                 case '1':
                     System.out.println("El caracter es el numero uno");
@@ -36,12 +35,11 @@ public class Main {
                 case '9':
                     System.out.println("El caracter es el numero nueve");
                     break;
+                default:
+                    System.out.println("Caracter no contemplado");
+                    break;
             }
-        else
-            System.out.println("Caracter no contemplado");
-
-        str = str.toUpperCase();
-        car = str.charAt(0);
+        car = String.valueOf(car).toUpperCase().charAt(0);
         if (car >= 'A' && car <= 'J')
             System.out.println("Se encuentra en el rango A-J");
         else if (car >= 'K' && car <= 'R')
