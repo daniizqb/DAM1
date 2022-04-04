@@ -318,6 +318,7 @@ Clase Date (java.utils)
 Clase StringTokenizer
 
 	StringTokenizer = new StringTokenizer(cadena) | separa la cadena en tokens en base a la separacion por espacios
+					  new StringTokenizer(cadena," ,?,(") | separa tokens en funcion de lo q introduzcamos
 
 		.countTokens() 		| devuleve el numero de tokens que tiene
 		.hasMoreTokens() 	| devuelve true o false si tiene mas tokens
@@ -340,3 +341,17 @@ Clase Random
 
 	Random rd = new Random();
 	sout(random.nextInt(n))
+
+Clase Character 
+
+	.isDigit(car)
+	.isLowerCase(car)
+	.isUpperCase(car)
+	.isLetter(car)
+	.isLetterOrDigit(car)
+	.isAlphabetic(car)
+	.isSpaceChar(car)
+	.isWhiteSpace(car)
+	.toUpperCase(car)
+	.toLowerCase(car)
+	
