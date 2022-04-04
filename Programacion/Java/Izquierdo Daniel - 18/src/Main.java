@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -10,17 +11,15 @@ public class Main {
         short i = 0;
         final byte TAM = 100;
         float[] aInteres = new float[TAM];
-        float interes;
+        float interes = 0;
 
         do {
             System.out.println("Tipo de interes: (-1 para terminar)");
             interes = Float.parseFloat(sc.nextLine());
             //Recorrer el array entero para comprobar que el interes no esta repetido
-            for (float inte:aInteres) {
-                if (inte == interes) {
+            if (Arrays.binarySearch(aInteres,(TAM-(i+1)),TAM,interes) >= 0) {
                     System.out.println("Interes repetido");
                     i--;
-                }
             }
             aInteres[i] = interes;
             i++;
