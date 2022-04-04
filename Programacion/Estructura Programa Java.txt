@@ -354,4 +354,4 @@ Clase Character
 	.isWhiteSpace(car)
 	.toUpperCase(car)
 	.toLowerCase(car)
-	
+	.toString(car)
