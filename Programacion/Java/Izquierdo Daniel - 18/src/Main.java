@@ -7,37 +7,55 @@ public class Main {
         System.out.println("Capita Inicial:");
         short capital = Short.parseShort(sc.nextLine());
 
-        System.out.println("Numero de intereses que desea calcular");
-        byte tamc = Byte.parseByte(sc.nextLine());
+        short i = 0;
+        final byte TAM = 100;
+        float[] aInteres = new float[TAM];
+        float interes;
+
+        do {
+            System.out.println("Tipo de interes: (-1 para terminar)");
+            interes = Float.parseFloat(sc.nextLine());
+            //Recorrer el array entero para comprobar que el interes no esta repetido
+            for (float inte:aInteres) {
+                if (inte == interes) {
+                    System.out.println("Interes repetido");
+                    i--;
+                }
+            }
+            aInteres[i] = interes;
+            i++;
+        } while (i < TAM && interes != -1);
 
         System.out.println("Plazo de la inversion");
         byte plazo = Byte.parseByte(sc.nextLine());
 
         short tamf = (short) (plazo+2);
+        byte tamc = (byte) (i-1);
         float[][] mInteres = new float[tamf][tamc];
 
-        for (int i = 0;i < tamc; i++){
-            System.out.println("Tipo de interes:");
-            float interes = Float.parseFloat(sc.nextLine());
-            mInteres[0][i] = interes;
+        //Asignar a las dos primeras columnas los intereses y el capital
+        for (i = 0; i < tamc; i++) {
+            mInteres[0][i] = aInteres[i];
             mInteres[1][i] = capital;
         }
-
-        for (int i = 2; i < tamf; i++) {
-            for (int j = 0; j < tamc; j++) {
+        //Calcular Beneficios por anyo
+        for (i = 2; i < tamf; i++) {
+            for (short j = 0; j < tamc; j++) {
                 mInteres[i][j] = mInteres[i-1][j] + (mInteres[i-1][j] * mInteres[0][j] / 100);
             }
         }
-
-        for (int i = 0; i < tamf; i++) {
-            for (int j = 0; j < tamc; j++) {
-                System.out.printf("%.2f \t",mInteres[i][j]);
+        //Imprimir matriz con el formato correspondiente
+        for (i = 0; i < tamf; i++) {
+            for (short j = 0; j < tamc; j++) {
+                if (i == 0)
+                    System.out.printf("\t %.0f%%\t",mInteres[i][j]);
+                else
+                    System.out.printf("%.2f \t",mInteres[i][j]);
             }
-            //System.out.println("Fila" + i);
-            System.out.print("\n");
+            if (i == tamf - 1)
+                System.out.print("-- Monto final");
+            else
+                System.out.println();
         }
-
-        System.out.print("-- Monto final");
-
     }
 }

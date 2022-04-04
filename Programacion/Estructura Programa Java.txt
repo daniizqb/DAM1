@@ -279,7 +279,7 @@ Clase Arrays (java.utils.Arrays)
 	System.arraycopy(aOriginal,posOriginal,aDestino,posDestino,numElementos);
 	Arrays.sort(array[,pos,elemento(-1)]); (va desde la posicion indicada)
 	Arrays.sort(array,Collections.reverseOrder());
-	Arrays.binarySearch(array,[posI,elementoF],dato); (si no lo encuentra valor negativo, si lo encuentra devuelve posicion)
+	Arrays.binarySearch(array,[posI,elementoF],dato); (si no lo encuentra valor negativo, si lo encuentra devuelve posicion) | el array debe estar ordenado
 	Arrays.equals(a1,a2);
 	Arrays.deepEquals(m1,m2);
 	Arrays.fill(array,dato);	Rellenar todo el array con un mismo dato

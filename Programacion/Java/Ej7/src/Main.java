@@ -21,5 +21,7 @@ public class Main {
 
         ww3.set(Calendar.DAY_OF_YEAR,ww3.get(Calendar.DAY_OF_YEAR) + 2250);
         System.out.println("Putin invade Espana el " + ww3.get(Calendar.DAY_OF_MONTH) + "-" + (ww3.get(Calendar.MONTH)+1) + "-" + ww3.get(Calendar.YEAR));
+
+        System.out.println(ww3.getTime());
     }
 }
