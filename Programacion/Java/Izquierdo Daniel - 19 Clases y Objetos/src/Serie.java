@@ -31,7 +31,12 @@ public class Serie {
         if (Arrays.binarySearch(genres,genre) >= 0)
             this.genre = genre;
         this.guionista = guionista;
+        for (int i = 0; i < actores.length; i++) {
+            if (actores[i] == null)
+                actores[i] = "";
+        }
         this.actores = actores;
+
         this.precio = precio;
     }
 
