@@ -5,7 +5,7 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
         Serie s1 = new Serie();
         Serie s2 = new Serie("","");
-        Serie s3 = new Serie("",Serie.DEFAULTNUMCAP,Serie.DEFAULTGENRE,"", new String[Serie.MAXACTORS], 0.0f);
+        Serie s3 = new Serie("",Serie.DEFAULTNUMCAP,Serie.DEFAULTGENRE,"",new String[Serie.MAXACTORS],0.0f);
         byte i = 0;
         String retorno = "";
 
