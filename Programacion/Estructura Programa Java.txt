@@ -112,6 +112,24 @@ Definir Clases
 
 Metodos
 
+	Estructura
+
+		[especificaroes][tipo.devuelto]nombre.metodo([lista.parametros]) [throw excepciones]
+
+		Ejemplo
+
+				public static void main (String[] args) throws Exception
+
+		Tipos
+
+			Tarea : void
+			Obtener valor
+
+		Entrada:
+
+			Interna
+			Externa: parametros
+
 	getter y setter
 
 		get: suelen ser publicos, sirve para obtener algo
@@ -135,6 +153,7 @@ Metodos
 			}
 
 			sout(pers); (hace el pers.toString)
+
 
 Clase String
 

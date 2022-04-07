@@ -4,9 +4,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        short capital = 0;
 
-        System.out.println("Capita Inicial:");
-        short capital = Short.parseShort(sc.nextLine());
+        do {
+            System.out.println("Capita Inicial:");
+            capital = Short.parseShort(sc.nextLine());
+        } while (capital <= 0);
 
         short i = 0;
         final byte TAM = 100;
