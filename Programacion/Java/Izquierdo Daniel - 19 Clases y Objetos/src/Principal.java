@@ -34,6 +34,7 @@ public class Principal {
         System.out.println("Guionista");
         s2.setGuionista(sc.nextLine());
 
+
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s3);
