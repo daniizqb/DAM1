@@ -25,7 +25,7 @@ public class ArrayNumeros {
                 if (numeros[i] == numeros[j])
                     cont++;
             }
-            if (numeros[i+1] != numeros[i])
+            if (i+1 < 10 && numeros[i+1] != numeros[i])
                 System.out.println(numeros[i] + " - " + cont);
         }
     }
