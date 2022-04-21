@@ -15,10 +15,4 @@ public class Metodos2 {
 
         return cont < 2;
     }
-
-    public Metodos2 clone() {
-        Metodos2 m = new Metodos2();
-        m.numero = this.numero;
-        return m;
-    }
 }

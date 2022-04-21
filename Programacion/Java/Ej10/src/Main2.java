@@ -4,8 +4,7 @@ public class Main2 {
     public static void main(String[] args) {
         Metodos2 m = new Metodos2();
         Scanner sc = new Scanner(System.in);
-        Metodos2 m2 = m.clone();
-        short opt = 0, num = 0;
+        short opt, num;
 
         do {
             System.out.println("1- Simetrico");

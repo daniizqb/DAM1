@@ -13,6 +13,8 @@ public class Main {
         GregorianCalendar p2 = new GregorianCalendar(2025, Calendar.MARCH,23);
         GregorianCalendar ww3 = new GregorianCalendar();
 
+        System.out.println(gc.getTime());
+
         long l1 = p2.getTimeInMillis() - gc.getTimeInMillis();
         System.out.println("Quedan " + (l1 / (1000 * 3600 * 24)) + " hasta el " + p2.get(Calendar.DAY_OF_MONTH) + "-" + (p2.get(Calendar.MONTH)+1) + "-" + p2.get(Calendar.YEAR));
 
@@ -21,7 +23,5 @@ public class Main {
 
         ww3.set(Calendar.DAY_OF_YEAR,ww3.get(Calendar.DAY_OF_YEAR) + 2250);
         System.out.println("Putin invade Espana el " + ww3.get(Calendar.DAY_OF_MONTH) + "-" + (ww3.get(Calendar.MONTH)+1) + "-" + ww3.get(Calendar.YEAR));
-
-        System.out.println(ww3.getTime());
     }
 }
