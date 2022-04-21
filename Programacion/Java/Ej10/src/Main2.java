@@ -4,6 +4,7 @@ public class Main2 {
     public static void main(String[] args) {
         Metodos2 m = new Metodos2();
         Scanner sc = new Scanner(System.in);
+        Metodos2 m2 = m.clone();
         short opt = 0, num = 0;
 
         do {
@@ -30,9 +31,14 @@ public class Main2 {
                     num = Short.parseShort(sc.nextLine());
                     System.out.printf("El numero %d es %s\n",num,Metodos2.par(num) ? "par":"impar");
                     break;
+                case 4:
+                    System.out.println("FIN");
+                    break;
+                default:
+                    System.out.println("Opccion invalida");
             }
         } while (opt != 4);
-        System.out.println("FIN");
+
     }
 
     public static boolean palindromo(String str) {
