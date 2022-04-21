@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        short capital = 0;
+        short capital;
 
         do {
             System.out.println("Capita Inicial:");
@@ -12,14 +12,13 @@ public class Main {
         } while (capital <= 0);
 
         short i = 0;
-        final byte TAM = 100;
         float[] aInteres = new float[1];
-        float interes = 0;
+        float interes;
 
         do {
             System.out.println("Tipo de interes: (-1 para terminar)");
             interes = Float.parseFloat(sc.nextLine());
-            //Recorrer el array entero para comprobar que el interes no esta repetido
+            //Comprobar que el interes no esta repetido
             while (Arrays.binarySearch(aInteres, 0, i, interes) >= 0) {
                 System.out.println("Interes repetido");
                 interes = Float.parseFloat(sc.nextLine());
