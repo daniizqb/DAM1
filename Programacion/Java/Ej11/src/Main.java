@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Metodos m1 = new Metodos();
-        Metodos m2 = m1.clone();
+        Empleado e1 = new Empleado("Daniel", "51412313Q","14141441");
+        Comercial c1 = new Comercial("Daniel", "51412313Q","14141441",14);
 
-        System.out.println("Obj 1:");
-        System.out.println(m1);
-        System.out.println("Obj 2:");
-        System.out.println(m2);
+        System.out.println(e1);
+        System.out.println(c1);
     }
 }
