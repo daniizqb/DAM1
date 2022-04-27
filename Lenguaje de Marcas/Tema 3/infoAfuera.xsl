@@ -2,20 +2,22 @@
   <xsl:template match="/">
   <html>
   <body>
-  <list>
-  <ol>
-  <xsl:apply-templates/>  
-  </ol>  
-  </list>
+  <table>
+  <xsl:attribute name="border">1px solid black  </xsl:attribute>
+  <tr>
+    <th>Nombre</th>
+    <th>Grado</th>
+  </tr>
+  <xsl:apply-templates/>
+</table>
   </body>
   </html>
   </xsl:template>
 
-  <xsl:template match="ciclos">
-  <xsl:apply-templates select="ciclo"><xsl:sort select="nombre" order="descending"/></xsl:apply-templates>
-  </xsl:template>
-
   <xsl:template match="ciclo">
-  <li><xsl:value-of select="nombre"/>(<xsl:value-of select="grado"/>)</li>
+  <tr>
+  <td><xsl:value-of select="nombre"/></td>
+  <td><xsl:value-of select="grado"/></td>
+  </tr>
   </xsl:template>
 </xsl:stylesheet>

@@ -374,3 +374,12 @@ Clase Character
 	.toUpperCase(car)
 	.toLowerCase(car)
 	.toString(car)
+
+
+Clases Abstractas
+
+	-Al menos un metodo abstracto
+	-Metodos abstracto unicamente en clase abstracta
+	-Los metodos abstractos no tienene cuerpo
+	-Pueden contener metodos no abstractos
+	-Una clase abstracta no se puede instanciar
