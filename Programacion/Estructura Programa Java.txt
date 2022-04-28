@@ -388,6 +388,6 @@ Clases Interface
 
 	-Todos los metodos son abstracto
 	-No se puede instanciar
-	-No adminten atributos | seran constantes
+	-No adminten atributos sera public static final por defecto
 	-Se usa con implements en vez de con extends
 	-Se puede implementar mas de una clase
