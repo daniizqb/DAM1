@@ -383,3 +383,11 @@ Clases Abstractas
 	-Los metodos abstractos no tienene cuerpo
 	-Pueden contener metodos no abstractos
 	-Una clase abstracta no se puede instanciar
+
+Clases Interface
+
+	-Todos los metodos son abstracto
+	-No se puede instanciar
+	-No adminten atributos | seran constantes
+	-Se usa con implements en vez de con extends
+	-Se puede implementar mas de una clase

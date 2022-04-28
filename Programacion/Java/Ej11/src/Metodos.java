@@ -1,5 +1,5 @@
 public class Metodos {
-    private int numero = 0;
+    private int numero = 4;
 
     public Metodos() {
     }
