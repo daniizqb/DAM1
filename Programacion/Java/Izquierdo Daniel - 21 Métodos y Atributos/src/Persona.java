@@ -48,7 +48,9 @@ public class Persona {
 
     public boolean esMayorDeEdad() {
         GregorianCalendar gc = new GregorianCalendar();
-        return gc.get(Calendar.YEAR) - fecha_nacimiento.get(Calendar.YEAR) >= 18;
+        long l = gc.getTimeInMillis()-fecha_nacimiento.getTimeInMillis();
+        l = l/(1000 * 3600 * 24);
+        return l/365 >= 18;
     }
 
     public int generarIdenticador() {
