@@ -1,11 +1,8 @@
-import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Random;
 
 public class Persona {
     private final char DEFAULTSEX = 'M';
-    private final int MAXID = 999999;
-    private final int MINID = 100000;
     private final int identificador = generarIdenticador();
     private String nombre;
     private GregorianCalendar fecha_nacimiento;
@@ -30,18 +27,6 @@ public class Persona {
         this.peso = peso;
         this.altura = altura;
         this.aficiones = aficiones;
-    }
-
-    public char getDEFAULTSEX() {
-        return DEFAULTSEX;
-    }
-
-    public int getMAXID() {
-        return MAXID;
-    }
-
-    public int getMINID() {
-        return MINID;
     }
 
     public int getIdentificador() {
@@ -130,6 +115,8 @@ public class Persona {
 
     public int generarIdenticador() {
         Random rd = new Random();
+        int MAXID = 999999;
+        int MINID = 100000;
         return rd.nextInt(MAXID - MINID + 1) + MINID;
     }
 }

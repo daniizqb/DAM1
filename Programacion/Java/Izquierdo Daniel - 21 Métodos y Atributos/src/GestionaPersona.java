@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class GestionaPersona {
     public static void main(String[] args) {
-        //TODO Controlar valores validos en fecha y acabar el metodo mensajeInformacion
         Scanner sc = new Scanner(System.in);
 
         //Introducir datos por pantalla
@@ -12,12 +11,24 @@ public class GestionaPersona {
         String nombre = sc.nextLine();
 
         System.out.println("Fecha de nacimiento");
-        System.out.println("Dia");
-        byte dia = Byte.parseByte(sc.nextLine());
-        System.out.println("Mes");
-        byte mes = Byte.parseByte(sc.nextLine());
-        System.out.println("Anyo");
-        byte anyo = Byte.parseByte(sc.nextLine());
+        byte dia,mes;
+        short anyo;
+        do {
+            System.out.println("Dia");
+            dia = Byte.parseByte(sc.nextLine());
+        } while (dia >= 31 || dia <=0);
+
+        do {
+            System.out.println("Mes");
+            mes = Byte.parseByte(sc.nextLine());
+        } while (mes >= 12 || mes <=0);
+
+        GregorianCalendar gc = new GregorianCalendar();
+        do {
+            System.out.println("Anyo");
+            anyo = Short.parseShort(sc.nextLine());
+        } while (anyo > gc.get(Calendar.YEAR) || anyo < 1900);
+
         GregorianCalendar fc = new GregorianCalendar(anyo,mes-1,dia);
 
         System.out.println("Sexo");
@@ -65,9 +76,14 @@ public class GestionaPersona {
         ne.mensajeEdad(p2);
         System.out.println("Persona 3:");
         ne.mensajeEdad(p3);
+
+        mensajeInformacion(p1);
+        mensajeInformacion(p2);
+        mensajeInformacion(p3);
+
     }
 
     static void mensajeInformacion(Persona p) {
-        System.out.println("ID:" + p.getIdentificador() + " Nombre:" + p.getNombre() + " Fecha Nacimiento:" + p.getFecha_nacimiento());
+        System.out.println("ID:" + p.getIdentificador() + " Nombre:" + p.getNombre() + " Fecha Nacimiento:" + p.getFecha_nacimiento().get(Calendar.DAY_OF_MONTH) + '/' + p.getFecha_nacimiento().get(Calendar.MONTH) + '/' + p.getFecha_nacimiento().get(Calendar.YEAR) + " Sexo:" + p.getSexo() + " Peso:" + p.getPeso() + " Altura:" + p.getAltura() + " Aficiones:" + p.getAficiones());
     }
 }
