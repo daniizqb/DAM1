@@ -67,7 +67,7 @@ public class GestionaPersona {
         ne.mensajeEdad(p3);
     }
 
-    static void mensajeInformacion() {
-        System.out.println();
+    static void mensajeInformacion(Persona p) {
+        System.out.println("ID:" + p.getIdentificador() + " Nombre:" + p.getNombre() + " Fecha Nacimiento:" + p.getFecha_nacimiento());
     }
 }

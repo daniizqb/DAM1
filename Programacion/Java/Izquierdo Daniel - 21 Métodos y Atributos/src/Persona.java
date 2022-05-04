@@ -32,12 +32,40 @@ public class Persona {
         this.aficiones = aficiones;
     }
 
+    public char getDEFAULTSEX() {
+        return DEFAULTSEX;
+    }
+
+    public int getMAXID() {
+        return MAXID;
+    }
+
+    public int getMINID() {
+        return MINID;
+    }
+
+    public int getIdentificador() {
+        return identificador;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    public GregorianCalendar getFecha_nacimiento() {
+        return fecha_nacimiento;
+    }
+
     public void setFecha_nacimiento(GregorianCalendar fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
+    }
+
+    public char getSexo() {
+        return sexo;
     }
 
     public void setSexo(char sexo) {
@@ -52,8 +80,16 @@ public class Persona {
         this.peso = peso;
     }
 
+    public float getAltura() {
+        return altura;
+    }
+
     public void setAltura(float altura) {
         this.altura = altura;
+    }
+
+    public String getAficiones() {
+        return aficiones;
     }
 
     public void setAficiones(String aficiones) {
