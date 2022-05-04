@@ -19,6 +19,6 @@ public class Ej3 {
         } while (i < TAM);
 
         Arrays.sort(aNum);
-        System.out.println(aNum[TAM-1]);
+        System.out.println("El numero mayor es: " + aNum[TAM-1]);
     }
 }
