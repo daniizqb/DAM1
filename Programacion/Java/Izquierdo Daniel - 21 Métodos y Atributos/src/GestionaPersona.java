@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class GestionaPersona {
     public static void main(String[] args) {
-        //TODO Controlar valores validos en fecha
+        //TODO Controlar valores validos en fecha y acabar el metodo mensajeInformacion
         Scanner sc = new Scanner(System.in);
 
         //Introducir datos por pantalla
