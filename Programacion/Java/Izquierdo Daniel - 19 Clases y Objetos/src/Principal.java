@@ -11,8 +11,10 @@ public class Principal {
 
         System.out.println("||Serie 1||");
 
+
         System.out.println("Titulo");
         s1.setTitulo(sc.nextLine());
+
         System.out.println("Guionista");
         s1.setGuionista(sc.nextLine());
 
@@ -32,8 +34,14 @@ public class Principal {
 
         System.out.println("Titulo");
         s2.setTitulo(sc.nextLine());
-        System.out.println("Numero de Capitulos");
-        s2.setNumCap(Byte.parseByte(sc.nextLine()));
+
+        byte numCap;
+        do {
+            System.out.println("Numero de Capitulos");
+            numCap = Byte.parseByte(sc.nextLine());
+            s2.setNumCap(numCap);
+        } while (numCap > 0);
+
         System.out.println("Genero");
         s2.setGenre(sc.nextLine().charAt(0));
         System.out.println("Guionista");
