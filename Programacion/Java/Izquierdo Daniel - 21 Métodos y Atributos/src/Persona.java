@@ -113,7 +113,7 @@ public class Persona {
         return sex;
     }
 
-    public int generarIdenticador() {
+    private int generarIdenticador() {
         Random rd = new Random();
         int MAXID = 999999;
         int MINID = 100000;

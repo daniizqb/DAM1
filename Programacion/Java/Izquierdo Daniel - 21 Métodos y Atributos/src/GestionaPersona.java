@@ -23,22 +23,27 @@ public class GestionaPersona {
             mes = Byte.parseByte(sc.nextLine());
         } while (mes >= 12 || mes <=0);
 
-        GregorianCalendar gc = new GregorianCalendar();
+        GregorianCalendar fc = new GregorianCalendar();
         do {
             System.out.println("Anyo");
             anyo = Short.parseShort(sc.nextLine());
-        } while (anyo > gc.get(Calendar.YEAR) || anyo < 1900);
-
-        GregorianCalendar fc = new GregorianCalendar(anyo,mes-1,dia);
+        } while (anyo > fc.get(Calendar.YEAR) || anyo < 1900);
+        fc = new GregorianCalendar(anyo,mes-1,dia);
 
         System.out.println("Sexo");
         char sexo = sc.nextLine().charAt(0);
 
-        System.out.println("Peso");
-        float peso = Float.parseFloat(sc.nextLine());
+        float peso;
+        do {
+            System.out.println("Peso");
+            peso = Float.parseFloat(sc.nextLine());
+        } while (peso <= 0);
 
-        System.out.println("Altura");
-        float altura = Float.parseFloat(sc.nextLine());
+        float altura;
+        do {
+            System.out.println("Altura");
+            altura = Float.parseFloat(sc.nextLine());
+        } while (altura <= 0);
 
         System.out.println("Aficiones");
         String aficiones = sc.nextLine();
@@ -77,6 +82,7 @@ public class GestionaPersona {
         System.out.println("Persona 3:");
         ne.mensajeEdad(p3);
 
+        //Imprimir datos de cada persona
         mensajeInformacion(p1);
         mensajeInformacion(p2);
         mensajeInformacion(p3);
