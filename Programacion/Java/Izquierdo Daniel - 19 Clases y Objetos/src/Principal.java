@@ -20,19 +20,34 @@ public class Principal {
         do {
             System.out.println("Actor:");
             s1.getActores()[i] = sc.nextLine();
-            System.out.println("Desea continuar introduciendo actores? (S/N)");
-            retorno = sc.nextLine();
-
+            if (i < Serie.MAXACTORS - 1) {
+                System.out.println("Desea continuar introduciendo actores? (S/N)");
+                retorno = sc.nextLine();
+            }
             i++;
-        } while (retorno.equalsIgnoreCase("S") && i < Serie.MAXACTORS);
+        } while (retorno.equalsIgnoreCase("") && i < Serie.MAXACTORS);
 
 
         System.out.println("||Serie 2||");
 
         System.out.println("Titulo");
         s2.setTitulo(sc.nextLine());
+        System.out.println("Numero de Capitulos");
+        s2.setNumCap(Byte.parseByte(sc.nextLine()));
+        System.out.println("Genero");
+        s2.setGenre(sc.nextLine().charAt(0));
         System.out.println("Guionista");
         s2.setGuionista(sc.nextLine());
+        do {
+            System.out.println("Actor:");
+            s1.getActores()[i] = sc.nextLine();
+            if (i < Serie.MAXACTORS - 1) {
+                System.out.println("Desea continuar introduciendo actores? (S/N)");
+                retorno = sc.nextLine();
+            }
+            i++;
+        } while (retorno.equalsIgnoreCase("") && i < Serie.MAXACTORS);
+
 
 
         System.out.println(s1);

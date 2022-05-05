@@ -3,6 +3,7 @@ import java.util.Random;
 
 public class Persona {
     private final char DEFAULTSEX = 'M';
+
     private final int identificador = generarIdenticador();
     private String nombre;
     private GregorianCalendar fecha_nacimiento;
@@ -105,6 +106,7 @@ public class Persona {
 
     private char comprobarSexo(char sexo) {
         char sex;
+        sexo = Character.toUpperCase(sexo);
         if (sexo != 'H' && sexo != DEFAULTSEX)
             sex = DEFAULTSEX;
         else

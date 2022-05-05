@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Serie {
     public static final byte MAXACTORS = 5;
-    public static final char[] genres = {'C','D','S','T'};
+    public static final char[] GENRES = {'C','D','S','T'};
     public static final byte DEFAULTNUMCAP = 10;
     public static final char DEFAULTGENRE = 'D';
 
@@ -28,7 +28,7 @@ public class Serie {
     public Serie(String titulo, byte numCap, char genre, String guionista, String[] actores, float precio) {
         this.titulo = titulo;
         this.numCap = numCap;
-        if (Arrays.binarySearch(genres,genre) >= 0)
+        if (Arrays.binarySearch(GENRES,genre) >= 0)
             this.genre = genre;
         this.guionista = guionista;
         for (int i = 0; i < actores.length; i++)
@@ -60,7 +60,7 @@ public class Serie {
     }
 
     public void setGenre(char genre) {
-        if (Arrays.binarySearch(genres,genre) >= 0)
+        if (Arrays.binarySearch(GENRES,genre) >= 0)
             this.genre = genre;
         else
             this.genre = DEFAULTGENRE;
