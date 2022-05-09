@@ -11,7 +11,10 @@ public class E1 {
                 numero = Integer.parseInt(sc.nextLine());
                 System.out.println("El numero es " + numero);
                 isNum = true;
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
+                System.out.println("Numero invalido");
+            }catch (Exception e) {
+                System.out.println("Error");
                 e.printStackTrace();
             }
         } while (!isNum);
