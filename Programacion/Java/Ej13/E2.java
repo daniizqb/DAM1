@@ -4,12 +4,12 @@ public class E2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int num1 = obtenerNumero(sc, "Numero1");
+        /*int num1 = obtenerNumero(sc, "Numero1");
         int num2 = obtenerNumero(sc, "Numero2");
-        int num3 = obtenerNumero(sc, "Numero3");
+        int num3 = obtenerNumero(sc, "Numero3");*/
 
 
-        System.out.print("Suma: " + (num1 + num2 + num3));
+        System.out.print("Suma: " + (obtenerNumero(sc, "Numero1") + obtenerNumero(sc, "Numero2") + obtenerNumero(sc, "Numero3")));
     }
 
     public static int obtenerNumero(Scanner sc, String str) {
