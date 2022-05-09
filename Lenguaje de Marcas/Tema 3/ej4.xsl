@@ -1,8 +1,9 @@
-﻿<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:template match="/">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+  <xsl:template match="/">
     <html>
     <head>
-    <title>XSLT Condicionales</title>
+    <title>XSLT Variables</title>
     </head>
     <body>
     <xsl:apply-templates select="ies/ciclos" />
@@ -10,18 +11,22 @@
     </html>
     </xsl:template>
 
-    <xsl:template match="ciclos">
-    <h4>Decreto titulo de grados posterior al 2008</h4>
-    <ul>
+<xsl:template match="ciclos">
     <xsl:apply-templates select="ciclo" />
-    </ul>
     </xsl:template>
 
-    <xsl:template match="ciclo">
-    <xsl:if test="decretoTitulo/@año &gt; 2008">
-    <span><xsl:value-of select="decretoTitulo/@año" /></span>
-    <li><xsl:value-of select="nombre"/></li>
-    <li><xsl:value-of select="grado"/></li>
-    </xsl:if>
+<xsl:template match="ciclo">
+      <xsl:variable name="var"><xsl:value-of select="@id"/></xsl:variable>
+      <p><xsl:value-of select="nombre"/></p>
+      <ul>
+        <li><xsl:value-of select="grado"/></li>
+        <xsl:for-each select="/ies/caracteristicas">
+          <xsl:if test="@id_c=$var">
+            <li><xsl:value-of select="precio"/></li>
+            <li><xsl:value-of select="nota_media"/></li>
+            <li><xsl:value-of select="horas"/></li>
+          </xsl:if>
+        </xsl:for-each>
+      </ul>
     </xsl:template>
 </xsl:stylesheet>

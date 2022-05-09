@@ -11,15 +11,31 @@
       <grado>Superior</grado>
       <decretoTitulo año="2010"/>
     </ciclo>
-    <ciclo>
+    <ciclo id="DAM">
       <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
       <grado>Superior</grado>
       <decretoTitulo año="2010"/>
     </ciclo>
     <ciclo id="SMR">
-      <nombre>Sistemas Microinformáticos y Redes</nombre>
+      <nombre>Sistemas Microinformáticos y Redes S</nombre>
+      <grado>Superior</grado>
+      <decretoTitulo año="2008"/>
+    </ciclo>
+    <ciclo id="SMR">
+      <nombre>Sistemas Microinformáticos y Redes M</nombre>
       <grado>Medio</grado>
       <decretoTitulo año="2008"/>
     </ciclo>
   </ciclos>
+  <caracteristicas id_c="SMR">
+<precio>1500</precio> 
+<nota_media>7.5</nota_media>
+<horas>2800</horas>
+  </caracteristicas>
+  <caracteristicas id_c="ASIR">
+<precio>2000</precio> 
+<nota_media>9.5</nota_media>
+<horas>3800</horas>
+  </caracteristicas>
+ 
 </ies>
