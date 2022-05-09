@@ -1,4 +1,4 @@
-create FUNCTION list_size(lista VARCHAR2)
+create or replace FUNCTION list_size(lista VARCHAR2)
     RETURN INTEGER
     IS
     longitud INTEGER;
