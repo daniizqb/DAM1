@@ -1,7 +1,6 @@
-cmake_minimum_required(VERSION 3.20)
-project(Izquierdo_Daniel___UEFA C)
+cmake_minimum_required(VERSION 3.21)
+project(2_EV_Examen C)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 99)
 
-add_executable(Izquierdo_Daniel___UEFA
-        main.c)
+add_executable(2_EV_Examen main.c)
