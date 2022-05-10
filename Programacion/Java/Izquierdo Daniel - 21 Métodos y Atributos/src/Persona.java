@@ -1,7 +1,11 @@
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Random;
 
 public class Persona {
+    public static final byte IMCINFERIOR20 = -1;
+    public static final byte IMCIDEAL = 0;
+    public static final byte IMCSUPERIOR25 = 1;
     private final char DEFAULTSEX = 'M';
 
     private final int identificador = generarIdenticador();
@@ -30,52 +34,24 @@ public class Persona {
         this.aficiones = aficiones;
     }
 
-    public int getIdentificador() {
-        return identificador;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public GregorianCalendar getFecha_nacimiento() {
-        return fecha_nacimiento;
     }
 
     public void setFecha_nacimiento(GregorianCalendar fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
 
-    public char getSexo() {
-        return sexo;
-    }
-
     public void setSexo(char sexo) {
         this.sexo = sexo;
-    }
-
-    public float getPeso() {
-        return peso;
     }
 
     public void setPeso(float peso) {
         this.peso = peso;
     }
 
-    public float getAltura() {
-        return altura;
-    }
-
     public void setAltura(float altura) {
         this.altura = altura;
-    }
-
-    public String getAficiones() {
-        return aficiones;
     }
 
     public void setAficiones(String aficiones) {
@@ -83,10 +59,6 @@ public class Persona {
     }
 
     public byte calcularMC() {
-        final byte IMCINFERIOR20 = -1;
-        final byte IMCIDEAL = 0;
-        final byte IMCSUPERIOR25 = 1;
-
         float imc = (float) (peso / (Math.pow(altura, 2)));
         byte result = IMCIDEAL;
         if (imc < 20)
@@ -120,5 +92,18 @@ public class Persona {
         int MAXID = 999999;
         int MINID = 100000;
         return rd.nextInt(MAXID - MINID + 1) + MINID;
+    }
+
+    @Override
+    public String toString() {
+        return "ID:" + identificador +
+                " Nombre:" + nombre +
+                " Fecha Nacimiento:" + fecha_nacimiento.get(Calendar.DAY_OF_MONTH) +
+                    '/' + fecha_nacimiento.get(Calendar.MONTH) +
+                    '/' + fecha_nacimiento.get(Calendar.YEAR) +
+                " Sexo:" + sexo +
+                " Peso:" + peso +
+                " Altura:" + altura +
+                " Aficiones:" + aficiones;
     }
 }

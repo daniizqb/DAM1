@@ -13,21 +13,24 @@ public class GestionaPersona {
         System.out.println("Fecha de nacimiento");
         byte dia,mes;
         short anyo;
-        do {
-            System.out.println("Dia");
-            dia = Byte.parseByte(sc.nextLine());
-        } while (dia >= 31 || dia <=0);
 
         do {
             System.out.println("Mes");
             mes = Byte.parseByte(sc.nextLine());
         } while (mes >= 12 || mes <=0);
 
+        do {
+            System.out.println("Dia");
+            dia = Byte.parseByte(sc.nextLine());
+        } while (dia >= 31 || dia <=0);
+
         GregorianCalendar fc = new GregorianCalendar();
+
         do {
             System.out.println("Anyo");
             anyo = Short.parseShort(sc.nextLine());
         } while (anyo > fc.get(Calendar.YEAR) || anyo < 1900);
+
         fc = new GregorianCalendar(anyo,mes-1,dia);
 
         System.out.println("Sexo");
@@ -90,6 +93,6 @@ public class GestionaPersona {
     }
 
     static void mensajeInformacion(Persona p) {
-        System.out.println("ID:" + p.getIdentificador() + " Nombre:" + p.getNombre() + " Fecha Nacimiento:" + p.getFecha_nacimiento().get(Calendar.DAY_OF_MONTH) + '/' + p.getFecha_nacimiento().get(Calendar.MONTH) + '/' + p.getFecha_nacimiento().get(Calendar.YEAR) + " Sexo:" + p.getSexo() + " Peso:" + p.getPeso() + " Altura:" + p.getAltura() + " Aficiones:" + p.getAficiones());
+        System.out.println(p);
     }
 }
