@@ -3,9 +3,15 @@ import java.util.GregorianCalendar;
 import java.util.Random;
 
 public class Persona {
+<<<<<<< HEAD
     public static final byte IMCINFERIOR20 = -1;
     public static final byte IMCIDEAL = 0;
     public static final byte IMCSUPERIOR25 = 1;
+=======
+    public final byte IMCINFERIOR20 = -1;
+    public final byte IMCIDEAL = 0;
+    public final byte IMCSUPERIOR25 = 1;
+>>>>>>> abe10a05b840a97c6fb98f91e2c5617fae41ebba
     private final char DEFAULTSEX = 'M';
 
     private final int identificador = generarIdenticador();
@@ -59,6 +65,11 @@ public class Persona {
     }
 
     public byte calcularMC() {
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> abe10a05b840a97c6fb98f91e2c5617fae41ebba
         float imc = (float) (peso / (Math.pow(altura, 2)));
         byte result = IMCIDEAL;
         if (imc < 20)

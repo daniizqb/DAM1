@@ -1,4 +1,4 @@
-create FUNCTION get_first(lista VARCHAR2)
+create or replace FUNCTION get_first(lista VARCHAR2)
     RETURN VARCHAR2
     IS
     contador INTEGER;
