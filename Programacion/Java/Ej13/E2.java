@@ -16,7 +16,6 @@ public class E2 {
         } catch (Exception e) {
             System.out.println("Numero no puede ser negativo");
         }
-
         System.out.println("Programa Finalizado");
     }
 
@@ -28,6 +27,7 @@ public class E2 {
             try {
                 System.out.println(str);
                 num = Integer.parseInt(sc.nextLine());
+                if (num <= 0) throw new Exception("El numero debe ser mayor que 0");
                 isNum = true;
             } catch (NumberFormatException e) {
                 System.out.println("Esto no es un numero, vuelve a intentarlo");
@@ -36,8 +36,6 @@ public class E2 {
                 e.printStackTrace();
             }
         } while (!isNum);
-
-        if (num <= 0) throw new Exception("El numero debe ser mayor que 0");
 
         return num;
     }
