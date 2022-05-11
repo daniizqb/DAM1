@@ -8,11 +8,19 @@ public class E2 {
         int num2 = obtenerNumero(sc, "Numero2");
         int num3 = obtenerNumero(sc, "Numero3");*/
 
+        try {
+            System.out.print("Suma: " + (
+                    obtenerNumero(sc, "Numero1") +
+                            obtenerNumero(sc, "Numero2") +
+                            obtenerNumero(sc, "Numero3")));
+        } catch (Exception e) {
+            System.out.println("Numero no puede ser negativo");
+        }
 
-        System.out.print("Suma: " + (obtenerNumero(sc, "Numero1") + obtenerNumero(sc, "Numero2") + obtenerNumero(sc, "Numero3")));
+        System.out.println("Programa Finalizado");
     }
 
-    public static int obtenerNumero(Scanner sc, String str) {
+    public static int obtenerNumero(Scanner sc, String str) throws Exception {
         boolean isNum = false;
         int num = 0;
 
@@ -28,6 +36,8 @@ public class E2 {
                 e.printStackTrace();
             }
         } while (!isNum);
+
+        if (num <= 0) throw new Exception("El numero debe ser mayor que 0");
 
         return num;
     }

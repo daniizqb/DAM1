@@ -1,0 +1,69 @@
+{
+    "info_afuera": {
+        "alumnos": {
+            "alumno": [
+                {
+                    "-DNI": "DNI-01",
+                    "-ciudad": "Madrid",
+                    "nombre": "Luis",                
+                    "apellido": "Tordesillas",                
+                    "fecha_nacimiento": "1990-10-10  ",                
+                    "estudios": {                
+                        "-tipo": "medios",                
+                        "#text": "True"                
+                    },
+                    "nota_media": "8"                
+                },                
+                {                
+                    "-DNI": "DNI-02",                
+                    "nombre": "Sergio",                
+                    "apellido": "Garcia",                
+                    "fecha_nacimiento": "1990-10-10 ",                
+                    "estudios": {                
+                        "-tipo": "superiores",                
+                        "#text": "True"                
+                    },
+                    "nota_media": "5"            
+                },
+                {                
+                    "-DNI": "DNI-03",                
+                    "-ciudad": "Barcelona",
+                    "nombre": "Nuria",
+                    "apellido": "Fernandez",
+                    "fecha_nacimiento": "1990-10-10  ",
+                    "estudios": {
+                    "-tipo": "superiores",
+                    "#text": "True"
+                    },
+                    "nota_media": "10"             
+                }
+            ]
+        },
+        "profesores": {
+            "profesor": [
+                {
+                    "-cod": "COD-01",    
+                    "-grado": "ASIR",     
+                    "nombre": "Jon",                
+                    "apellido": "Zamora",                
+                    "fecha_nacimiento": "1990-10-10"              
+                },
+                {
+                    "-DNI": "COD-02",    
+                    "-grado": "DAM",             
+                    "nombre": "Fernando",                
+                    "apellido": "Garcia",                
+                    "fecha_nacimiento": "1960-12-03"                
+                },
+                {
+                    "-DNI": "COD-03",     
+                    "-grado": "DAW",               
+                    "nombre": "Pilar",                
+                    "apellido": "Afuera",                
+                    "fecha_nacimiento": "1954-27-08"             
+
+                }
+            ]
+        }
+    }
+}
