@@ -8,17 +8,16 @@ public class ControlErrores {
         try {
             System.out.println(str);
             num = Integer.parseInt(sc.nextLine());
+            if (num < 0)
+                throw new NumeroNegativo("El numero no puede ser negativo");
+            if (num == 0)
+                throw new NumeroNulo("Numero no puede ser nulo");
         } catch (NumberFormatException e) {
             System.out.println("Esto no es un numero, vuelve a intentarlo");
         } catch (Exception e) {
             System.out.println("Error");
             e.printStackTrace();
         }
-
-        if (num < 0)
-            throw new Exception("El numero no puede ser negativo");
-        else if (num == 0)
-            throw new Exception("Numero no puede ser nulo");
 
         return num;
     }
