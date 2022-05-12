@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ControlErrores {
-    public static int numEntero (String str) throws Exception {
+    public static int numEntero (String str) {
         Scanner sc = new Scanner(System.in);
         int num = 0;
 

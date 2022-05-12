@@ -1,8 +1,6 @@
-import java.util.Scanner;
-
 public class RepeticionError {
     public static int peticionNum (String str) {
-        boolean error = false;
+        boolean error;
         int num = 0;
 
         do {
