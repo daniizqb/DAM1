@@ -16,9 +16,9 @@ $opcion = Read-Host
 
 switch ($opcion) {
     1 { Import-Csv .\info.txt -Delimiter " " -Header Nombre,Apellido,Ciudad,Tlfn | Select Nombre,Apellido,Ciudad,Tlfn | where-object {$_.Ciudad -eq "Madrid"} }
-    1 { Import-Csv .\info.txt -Delimiter " " -Header Nombre,Apellido,Ciudad,Tlfn | Select Nombre,Apellido,Ciudad,Tlfn | where-object {$_.Ciudad -eq "Madrid"} }
-    3 { Import-Csv .\info.txt -Delimiter " " -Header Nombre,Apellido,Ciudad,Tlfn | Select Nombre,Apellido,Ciudad,Tlfn | where-object {$_.Ciudad -eq "Madrid"} }
-    4 { Import-Csv .\info.txt -Delimiter " " -Header Nombre,Apellido,Ciudad,Tlfn | Select Nombre,Apellido,Ciudad,Tlfn | where-object {$_.Ciudad -eq "Madrid"} }
+    2 { Import-Csv .\info.txt -Delimiter " " -Header Nombre,Apellido,Ciudad,Tlfn | Select Tlfn | where-object {$_.Tlfn-like '*5'} }
+    3 { Import-Csv .\info.txt -Delimiter " " -Header Nombre,Apellido,Ciudad,Tlfn | Select Nombre,Apellido,Ciudad | where-object {$_.Ciudad -ne "Madrid"} }
+    4 { Import-Csv .\info.txt -Delimiter " " -Header Nombre,Apellido,Ciudad,Tlfn | Select Nombre,Apellido,Ciudad,Tlfn | Sort-Object Apellido}
     Default {}
 }
 
