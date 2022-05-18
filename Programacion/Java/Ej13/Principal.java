@@ -19,11 +19,11 @@ public class Principal {
     }
 
     public static String obtenerDia() {
-        ClaseEnum[] dias = ClaseEnum.values();
-
         Scanner sc = new Scanner(System.in);
         String dia;
         boolean f;
+        /*
+        ClaseEnum[] dias = ClaseEnum.values();
         int i = 0;
         do {
             System.out.printf("%s\n",i == 0 ? "Dia de la semana" : "Dia incorrecto");
@@ -37,22 +37,20 @@ public class Principal {
                 }
                 i++;
             } while (!f && i <= dias.length-1);
-        } while (!f);
+        } while (!f);*/
 
-        /*do {
-            invalidDay = false;
+        f = false;
+        do {
             System.out.println("Dia de la semana");
             dia = sc.nextLine();
 
-            for (ClaseEnum d: dias) {
-                if (d.toString().equalsIgnoreCase(dia)) {
-                    invalidDay = true;
-                }
-            }
-
-            if (!invalidDay)
+            try {
+                ClaseEnum.valueOf(dia.toUpperCase());
+                f = true;
+            } catch (IllegalArgumentException e) {
                 System.out.println("Dia incorrecto");
-        } while (!invalidDay);*/
+            }
+        } while (!f);
 
         return dia;
     }

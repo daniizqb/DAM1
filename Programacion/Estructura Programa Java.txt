@@ -391,3 +391,7 @@ Clases Interface
 	-No adminten atributos sera public static final por defecto
 	-Se usa con implements en vez de con extends
 	-Se puede implementar mas de una clase
+
+valueOf
+
+	Obtiene el valor de algo si existe en la clase
