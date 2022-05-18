@@ -394,4 +394,4 @@ Clases Interface
 
 valueOf
 
-	Obtiene el valor de algo si existe en la clase
+	Obtiene el valor de algo si existe en la clase, si no existe IlegalArgumentException, si es nulo NullArgumentException
