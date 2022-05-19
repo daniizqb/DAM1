@@ -17,12 +17,12 @@ public class GestionaPersona {
         do {
             System.out.println("Mes");
             mes = Byte.parseByte(sc.nextLine());
-        } while (mes >= 12 || mes <=0);
+        } while (mes > 12 || mes <=0);
 
         do {
             System.out.println("Dia");
             dia = Byte.parseByte(sc.nextLine());
-        } while (dia >= 31 || dia <=0);
+        } while (dia > 31 || dia <=0);
 
         GregorianCalendar fc = new GregorianCalendar();
 
@@ -68,23 +68,6 @@ public class GestionaPersona {
         p2.setAltura((float) 1.65);
         p2.setAficiones("karaoke");
 
-        //Comprobar el IMC de cada persona
-        System.out.println("Persona 1:");
-        Estatico.mensajePeso(p1);
-        System.out.println("Persona 2:");
-        Estatico.mensajePeso(p2);
-        System.out.println("Persona 3:");
-        Estatico.mensajePeso(p3);
-
-        //Comprobar si las personas son mayor de edad
-        NoEstatico ne = new NoEstatico();
-        System.out.println("Persona 1:");
-        ne.mensajeEdad(p1);
-        System.out.println("Persona 2:");
-        ne.mensajeEdad(p2);
-        System.out.println("Persona 3:");
-        ne.mensajeEdad(p3);
-
         //Imprimir datos de cada persona
         mensajeInformacion(p1);
         mensajeInformacion(p2);
@@ -94,5 +77,9 @@ public class GestionaPersona {
 
     static void mensajeInformacion(Persona p) {
         System.out.println(p);
+        Estatico.mensajePeso(p);
+
+        NoEstatico ne = new NoEstatico();
+        ne.mensajeEdad(p);
     }
 }
