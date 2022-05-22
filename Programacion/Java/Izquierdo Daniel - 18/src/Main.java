@@ -5,13 +5,17 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         float interes = 0;
 
-        System.out.println("Capita Inicial:");
+        System.out.println("Capital Inicial:");
         short capital = Short.parseShort(sc.nextLine());
-        System.out.println("Tipo de interes: (0 para terminar)");
-        do {
+        System.out.println("Cuantos interes desea calcular:");
+        short tam = Short.parseShort(sc.nextLine());
+        for (short i = 0;i < tam;i++) {
+            System.out.println("Interes:");
             interes = Float.parseFloat(sc.nextLine());
-        } while (interes != 0);
+        }
         System.out.println("Plazo de la inversion");
         short plazo = Short.parseShort(sc.nextLine());
+
+
     }
 }
