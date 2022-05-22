@@ -1,0 +1,22 @@
+<alumnos>
+    <alumno>
+        <nombre dni="DNI-01" ciudad="Madrid">Luis</nombre>
+        <apellido>Tordesillas</apellido>
+        <fecha_nacimiento>1990-10-10</fecha_nacimiento>
+        <estudios tipo="medios">True</estudios>
+    </alumno>
+
+    <alumno>
+        <nombre dni="DNI-01" ciudad="Madrid">Luis</nombre>
+        <apellido>Tordesillas</apellido>
+        <fecha_nacimiento>1990-10-10</fecha_nacimiento>
+        <estudios tipo="medios">True</estudios>
+    </alumno>
+    
+    <alumno>
+        <nombre dni="DNI-01" ciudad="Madrid">Luis</nombre>
+        <apellido>Tordesillas</apellido>
+        <fecha_nacimiento>1990-10-10</fecha_nacimiento>
+        <estudios tipo="medios">True</estudios>
+    </alumno>
+</alumnos>

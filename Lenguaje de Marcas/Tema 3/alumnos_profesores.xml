@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info_afuera>
+    <alumnos>
+        <alumno DNI="DNI-01" ciudad="Madrid">
+                  <nombre>Luis</nombre>
+                  <apellido>Tordesillas</apellido>
+                  <fecha_nacimiento>1987-12-10 </fecha_nacimiento>
+                  <estudios tipo="medios">True</estudios>
+                  <nota_media>8</nota_media>
+        </alumno>
+        <alumno DNI="DNI-02" ciudad="Fuenlabrada">
+                  <nombre>Sergio</nombre>
+                  <apellido>Garcia</apellido>
+                  <fecha_nacimiento>2001-07-11 </fecha_nacimiento>
+                  <estudios tipo="superiores">True</estudios>
+                  <nota_media>5</nota_media>
+        </alumno>
+        <alumno DNI="DNI-03" ciudad="Barcelona">
+                  <nombre>Nuria</nombre>
+                  <apellido>Fernandez</apellido>
+                  <fecha_nacimiento>1999-01-01 </fecha_nacimiento>
+                  <estudios tipo="superiores">True</estudios>
+                  <nota_media>10</nota_media>
+        </alumno>
+    </alumnos>
+    <profesores>
+        <profesor cod="COD-1" grado="ASIR">
+                  <nombre>Jon</nombre>
+                  <apellido>Zamora</apellido>
+                  <fecha_nacimiento>1990-10-10</fecha_nacimiento>
+        </profesor>
+        <profesor cod="COD-2" grado="DAM">
+                  <nombre>Fernando</nombre>
+                  <apellido>Garcia</apellido>
+                  <fecha_nacimiento>1960-12-03</fecha_nacimiento>
+        </profesor>
+        <profesor cod="COD-3" grado="DAW">
+                  <nombre>Pilar</nombre>
+                  <apellido>Afuera</apellido>
+                  <fecha_nacimiento>1954-27-08</fecha_nacimiento>
+        </profesor>
+    </profesores>
+</info_afuera>

@@ -1,4 +1,3 @@
-import javax.swing.plaf.IconUIResource;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -9,11 +8,11 @@ public class Main {
         String texto = sc.nextLine();
         StringTokenizer st = new StringTokenizer(texto);
         int cont = 0;
-        String[] aS = {"y","e","ni","que"};
 
         while (st.hasMoreTokens()) {
-            if (st.nextToken().equalsIgnoreCase("que") || st.nextToken().equalsIgnoreCase("ni")
-                    || st.nextToken().equalsIgnoreCase("e") || st.nextToken().equalsIgnoreCase("y"))
+            String a = st.nextToken();
+            if (a.equalsIgnoreCase("que") || a.equalsIgnoreCase("ni")
+                    || a.equalsIgnoreCase("e") || a.equalsIgnoreCase("y"))
                 cont++;
         }
 

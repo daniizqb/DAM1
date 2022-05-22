@@ -1,0 +1,23 @@
+{
+  "ies": {
+    "nombre": "IES Abastos",
+    "web": "http://www.iesabastos.org",
+    "ciclos": {
+      "ciclo": [
+        {
+          "nombre": "Administración de Sistemas Informáticos en Red",
+          "grado": "Superior"
+        },
+        {
+          "nombre": "Desarrollo de Aplicaciones Web",
+          "grado": "Superior"
+        },
+        {
+          "nombre": "Sistemas Microinformáticos y Redes",
+          "grado": "Medio"
+        }
+      ]
+    }
+  
+  "#omit-xml-declaration": "yes"
+}

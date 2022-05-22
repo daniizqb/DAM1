@@ -112,6 +112,24 @@ Definir Clases
 
 Metodos
 
+	Estructura
+
+		[especificaroes][tipo.devuelto]nombre.metodo([lista.parametros]) [throw excepciones]
+
+		Ejemplo
+
+				public static void main (String[] args) throws Exception
+
+		Tipos
+
+			Tarea : void
+			Obtener valor
+
+		Entrada:
+
+			Interna
+			Externa: parametros
+
 	getter y setter
 
 		get: suelen ser publicos, sirve para obtener algo
@@ -135,6 +153,7 @@ Metodos
 			}
 
 			sout(pers); (hace el pers.toString)
+
 
 Clase String
 
@@ -277,9 +296,9 @@ Matrizes
 Clase Arrays (java.utils.Arrays)
 
 	System.arraycopy(aOriginal,posOriginal,aDestino,posDestino,numElementos);
-	Arrays.sort(array[,pos,elemento(-1)]); (va desde la posicion indicada)
-	Arrays.sort(array,Collections.reverseOrder());
-	Arrays.binarySearch(array,[posI,elementoF],dato); (si no lo encuentra valor negativo, si lo encuentra devuelve posicion)
+	Arrays.sort(array,[pos,elemento(-1)]); (va desde la posicion indicada)
+	Arrays.sort(array,Collections.reverseOrder()); | ordenarlo de forma invertida
+	Arrays.binarySearch(array,[posI,elementoF],dato); (si no lo encuentra valor negativo, si lo encuentra devuelve posicion) | el array debe estar ordenado
 	Arrays.equals(a1,a2);
 	Arrays.deepEquals(m1,m2);
 	Arrays.fill(array,dato);	Rellenar todo el array con un mismo dato
@@ -318,6 +337,7 @@ Clase Date (java.utils)
 Clase StringTokenizer
 
 	StringTokenizer = new StringTokenizer(cadena) | separa la cadena en tokens en base a la separacion por espacios
+					  new StringTokenizer(cadena," ,?,(") | separa tokens en funcion de lo q introduzcamos
 
 		.countTokens() 		| devuleve el numero de tokens que tiene
 		.hasMoreTokens() 	| devuelve true o false si tiene mas tokens
@@ -340,3 +360,52 @@ Clase Random
 
 	Random rd = new Random();
 	sout(random.nextInt(n))
+
+Clase Character 
+
+	.isDigit(car)
+	.isLowerCase(car)
+	.isUpperCase(car)
+	.isLetter(car)
+	.isLetterOrDigit(car)
+	.isAlphabetic(car)
+	.isSpaceChar(car)
+	.isWhiteSpace(car)
+	.toUpperCase(car)
+	.toLowerCase(car)
+	.toString(car)
+
+
+Clases Abstractas
+
+	-Al menos un metodo abstracto
+	-Metodos abstracto unicamente en clase abstracta
+	-Los metodos abstractos no tienene cuerpo
+	-Pueden contener metodos no abstractos
+	-Una clase abstracta no se puede instanciar
+
+Clases Interface
+
+	-Todos los metodos son abstracto
+	-No se puede instanciar
+	-No adminten atributos sera public static final por defecto
+	-Se usa con implements en vez de con extends
+	-Se puede implementar mas de una clase
+
+Clases Enum
+
+	ClaseEnum diaM = ClaseEnum.TUESDAY;
+        ClaseEnum diaJ = ClaseEnum.THURSDAY;
+        System.out.println(diaM.name());
+        System.out.println(diaJ.name());
+
+        System.out.println(diaM.ordinal());
+        ClaseEnum[] dias = ClaseEnum.values();
+
+        for (ClaseEnum d: dias) {
+            System.out.println(d);
+        }
+
+valueOf
+
+	Obtiene el valor de algo si existe en la clase, si no existe IlegalArgumentException, si es nulo NullArgumentException
