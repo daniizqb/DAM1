@@ -1,0 +1,46 @@
+Ejercicio 1.- Crea dos directorios en la carpeta SMR de forma simultanea.
+new-item-type directory-path .\CAR1\SMR\D1,.\CAR1\SMR\D2
+Ejercicio 2.- Crea 5 archivos .txt en la carpeta SMR de forma simultanea.
+new-item-itemtype file-path .\CAR1\SMR\1.txt,.\CAR1\SMR\2.txt,.\CAR1\SMR\3.txt,.\CAR1\SMR\4.txt,.\
+CAR1\SMR\5.txt
+Ejercicio 3.- Muestra los archivos con extensión distinta a “.doc” contenidos en la carpeta SMR (solo los
+archivos).
+get-childitem-path .\CAR1\SMR\-exclude *.doc | get-childitem-file
+Ejercicio 4.- Muestra el nombre y la última fecha/hora de modificación de las carpetas contenidas en RAIZ.
+get-childitem-directory | select Name,LastWriteTime
+Ejercicio 5.- Muestra el los directorios contenidos en la carpeta CAR1 que contengan la letra “M” y
+mostrarlos en orden descendente (solo los directorios).
+get-childitem-directory-path .\CAR1\-name *M*| sort-object name-desc
+Ejercicio 6.- Muestra el los archivos contenidos en la carpeta SMR que contengan un número y mostrarlos
+por orden de la última modificación (primero los que tengan la última modificación más lejana)
+Get-ChildItem .\CAR1\SMR\*[0-9]*-file| sort-object lastwritetime -desc
+Ejercicio 7.- Muestra todos los archivos contenidos en la carpeta RAIZ y en las carpetas hijas de RAIZ.
+Get-childitem-Recurse-Depth 1
+Ejercicio 8.- Oculta uno de los ficheros contenidos en la carpeta SMR y haz que uno de los directorios
+contenidos en SMR sea de solo lectura (fichero y carpeta a tu elección).
+$FILE=Get-Item .\CAR1\SMR\1.txt
+$FILE.Attributes='Hidden'
+$DIRECTORY=Get-Item .\CAR1\SMR\D1
+$DIRECTORY.Attributes='ReadOnly'
+Daniel Izquierdo Bonilla
+Ejercicio 9.- Muestra todos los archivos ocultos contenidos en la carpeta SMR que contengan al menos 2
+letras “a”.
+Get-ChildItem-Force-path .\CAR1\SMR\*aa*
+Ejercicio 10.- Haz que uno de los directorios contenidos en SMR sea de solo lectura. Muestra todos los
+directorios de solo lectura y todos los archivos ocultos de la carpeta SMR de forma simultanea.
+$DIRECTORY=Get-Item .\CAR1\SMR\D1
+$DIRECTORY.Attributes='ReadOnly'
+@(get-childitem –path .\CAR1\SMR-Attributes ReadOnly-directory)+ @(get-childitem –path .\CAR1\SMR-
+Attributes Hidden-file)
+
+
+fil spenser
+
+
+Import-Csv .\datos.txt-Delimiter " "-Header Nombre,Grado,NotaMedia,FechaNacimiento | select
+Nombre,Grado,NotaMedia | Where-Object {([int]$_.NotaMedia-ge 5)-and ($_.Grado-ne 'SMR')-and
+($_.Nombre-like 'j*')} | sort {$_.Nombre}
+
+(Import-Csv .\datos.txt-Delimiter " "-Header Nombre,Grado,NotaMedia,FechaNacimiento | select
+Nombre,Grado,NotaMedia,FechaNacimiento | Where-Object {($_.FechaNacimiento-like '*/20*')-and
+($_.Grado-eq 'DAM')}).count
