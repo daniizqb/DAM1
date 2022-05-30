@@ -1,0 +1,26 @@
+New-Item -Type Directory -Path .\SOMONO\CARPETA1, .\SOMONO\CARPETA2
+
+New-Item -Type File -Path .\SOMONO\CARPETA1\archivo1.txt, .\SOMONO\CARPETA1\archivo2.zip, .\SOMONO\CARPETA1\archivo3.bat
+
+Ej1 - New-Item -type Directory -Path .\CARPETA1\DIR1 | New-Item -type File -Path .\CARPETA1\fich1.txt
+
+Ej2 - get-childitem -exclude *.txt
+
+Ej3 - get-childitem -Path .\CARPETA1\ | select Name,LastWriteTime | sort-object lastwritetime
+
+Ej4 - Move-Item -Path .\CARPETA1\*[a-z]*txt .\CARPETA2\  
+
+Ej5 - Get-ChildItem .\CARPETA2\*[0-9]* -file | sort-object lastwritetime
+
+Ej6 - Get-childitem -Recurse -Depth 1
+
+Ej7 -   $FILE=Get-Item .\CARPETA1\archivo1.txt
+        $FILE.Attributes='Hidden'
+        $FILE=Get-Item .\CARPETA1\archivo2.zip
+        $FILE.Attributes='ReadOnly'
+
+Ej8 - Get-ChildItem -Force -Path .\CARPETA2\*i*h*
+
+Ej9 - Remove-Item .\*[2-9] -Recurse
+
+Ej10 - tree /f

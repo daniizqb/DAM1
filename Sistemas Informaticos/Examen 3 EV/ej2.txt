@@ -1,0 +1,9 @@
+Import-Csv .\info_perros.txt -Delimiter " "-Header Identificador,Nombre,Edad,Raza,Peso | select Nombre,Peso | Where-Object {$_.Nombre -like '*o*'} | sort {[int]$_.Peso}-Descending | Select-Object -Index 0,1,2 | sort {$_.Nombre}
+
+Import-Csv .\info_perros.txt -Delimiter " "-Header Identificador,Nombre,Edad,Raza,Peso | select Identificador,Nombre,Edad,Raza,Peso | Where-Object {($_.Raza -eq "pug") -or ($_.Raza -eq "chihuahua")} | sort {$_.Edad} | Select-Object -index 0
+
+Import-Csv .\info_perros.txt -Delimiter " "-Header Identificador,Nombre,Edad,Raza,Peso | select Identificador,Nombre,Edad,Raza,Peso | Where-Object {($_.Raza -eq "mastín") -and ($_.Nombre -like "*h*") -and ($_.Peso -gt 5)}
+
+Import-Csv .\info_perros.txt -Delimiter " "-Header Identificador,Nombre,Raza,Peso | select Identificador,Nombre,Edad,Raza,Peso | Where-Object {($_.Peso -ge 5) -and ($_.Peso -le 25) -and ($_.Raza -ne "doverman") -and ($_.Identificador -lt 6)}
+
+Import-Csv .\info_perros.txt -Delimiter " "-Header Identificador,Nombre,Edad,Raza,Peso | select Nombre,Edad | Where-Object {($_.Edad -le $CHISPAS)}

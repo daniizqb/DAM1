@@ -1,0 +1,6 @@
+Jorge 70 20/10/2002 Superactivo
+Rodrigo 65 12/01/2004 Sedentario
+Mario 58 01/01/2005 Activo
+Luismi 62 22/12/2000 Activo
+Javier 65 12/01/1995 Sedentario
+Nuria 80 03/03/2003 Superactivo

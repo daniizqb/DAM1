@@ -1,0 +1,8 @@
+01 Beethoven 6 pug 5
+02 Taco 4 doverman 12
+03 Shiba 2 boxer 5
+04 Chispas 3 mastín 6
+05 Pluto 1 chihuahua 21
+06 Zarpas 2 caniche 1
+07 Kai 1 pug 4
+08 Thor 9 mastín 40
